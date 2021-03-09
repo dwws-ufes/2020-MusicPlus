@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/FW-2015" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/FW-2015" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_hQyeMF00Eem7Q4kk1okOFA" selectedViews="_vdAFQF00Eem7Q4kk1okOFA" version="14.3.1.202003261200">
     <semanticResources>Model.frameweb</semanticResources>
     <semanticResources>Configuration.frameweb</semanticResources>
@@ -14,7 +14,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWeb%20Project']"/>
         <target xmi:type="frameweb:FramewebProject" href="Model.frameweb#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_yyCZ0H7UEeuYYO-xahOrDA" name="FrameWebEntityModel" repPath="#_yx7FEH7UEeuYYO-xahOrDA" changeId="07f57d7d-27a1-429e-96d2-593b460aa70d">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_yyCZ0H7UEeuYYO-xahOrDA" name="FrameWebEntityModel" repPath="#_yx7FEH7UEeuYYO-xahOrDA" changeId="76ba56cb-bb55-4dd6-ba48-d04b434814de">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']"/>
         <target xmi:type="frameweb:EntityModel" href="Model.frameweb#//@compose.0"/>
       </ownedRepresentationDescriptors>
@@ -237,13 +237,364 @@
         <children xmi:type="notation:Node" xmi:id="_zUrM0H7UEeuYYO-xahOrDA" type="2002" element="_zUQWEH7UEeuYYO-xahOrDA">
           <children xmi:type="notation:Node" xmi:id="_zUrz4H7UEeuYYO-xahOrDA" type="5006"/>
           <children xmi:type="notation:Node" xmi:id="_zUrz4X7UEeuYYO-xahOrDA" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_Zpb6UIEcEeunzM-deis-Dw" type="3009" element="_ZpHKMIEcEeunzM-deis-Dw">
+              <children xmi:type="notation:Node" xmi:id="_Zpgy0IEcEeunzM-deis-Dw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_ZphZ4IEcEeunzM-deis-Dw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_eIMkoIEcEeunzM-deis-Dw" type="3010" element="_eH-iMIEcEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_eIMkoYEcEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_eIMkooEcEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_mJ2G4IEcEeunzM-deis-Dw" type="3010" element="_mJs88IEcEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_mJ2G4YEcEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_mJ2G4oEcEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_x8i44IEcEeunzM-deis-Dw" type="3010" element="_x8X5wIEcEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_x8i44YEcEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_x8i44oEcEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_y67zwIEcEeunzM-deis-Dw" type="3010" element="_y6w0oIEcEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_y67zwYEcEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_y67zwoEcEeunzM-deis-Dw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_ZphZ4YEcEeunzM-deis-Dw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_ZphZ4oEcEeunzM-deis-Dw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Zpb6UYEcEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zpb6UoEcEeunzM-deis-Dw" x="79" y="18" width="159" height="99"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-94oQIEcEeunzM-deis-Dw" type="3009" element="_-9sbAIEcEeunzM-deis-Dw">
+              <children xmi:type="notation:Node" xmi:id="_-94oQ4EcEeunzM-deis-Dw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_-95PUIEcEeunzM-deis-Dw" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_-95PUYEcEeunzM-deis-Dw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_-95PUoEcEeunzM-deis-Dw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_-94oQYEcEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-94oQoEcEeunzM-deis-Dw" x="67" y="174" width="87"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_A9nrYIEdEeunzM-deis-Dw" type="3009" element="_A9ehcIEdEeunzM-deis-Dw">
+              <children xmi:type="notation:Node" xmi:id="_A9nrY4EdEeunzM-deis-Dw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_A9nrZIEdEeunzM-deis-Dw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_GMgyIIEdEeunzM-deis-Dw" type="3010" element="_GMY2UIEdEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_GMgyIYEdEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_GMgyIoEdEeunzM-deis-Dw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_A9nrZYEdEeunzM-deis-Dw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_A9nrZoEdEeunzM-deis-Dw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A9nrYYEdEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A9nrYoEdEeunzM-deis-Dw" x="211" y="174" width="123"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_BQThYIEeEeunzM-deis-Dw" type="3009" element="_BQDpwIEeEeunzM-deis-Dw">
+              <children xmi:type="notation:Node" xmi:id="_BQUIcIEeEeunzM-deis-Dw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_BQUIcYEeEeunzM-deis-Dw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_0Qsa4IEeEeunzM-deis-Dw" type="3010" element="_0Qj4AIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_0Qsa4YEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_0Qsa4oEeEeunzM-deis-Dw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_BQUIcoEeEeunzM-deis-Dw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_BQUIc4EeEeunzM-deis-Dw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_BQThYYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BQThYoEeEeunzM-deis-Dw" x="605" y="54" width="115" height="69"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ERtc4IEeEeunzM-deis-Dw" type="3009" element="_ERk6AIEeEeunzM-deis-Dw">
+              <children xmi:type="notation:Node" xmi:id="_ERuD8IEeEeunzM-deis-Dw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_ERuD8YEeEeunzM-deis-Dw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_b4Y90IEfEeunzM-deis-Dw" type="3010" element="_b4OlwIEfEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_b4Y90YEfEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_b4Y90oEfEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_clt94IEfEeunzM-deis-Dw" type="3010" element="_cli-wIEfEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_clt94YEfEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_clt94oEfEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_qn2b4IEfEeunzM-deis-Dw" type="3010" element="_qnugEIEfEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_qn2b4YEfEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_qn2b4oEfEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_u2MroIEfEeunzM-deis-Dw" type="3010" element="_u1_QQIEfEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_u2MroYEfEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_u2MrooEfEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_wc_DQIEfEeunzM-deis-Dw" type="3010" element="_wc0EIIEfEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_wc_DQYEfEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_wc_DQoEfEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_yflNIIEfEeunzM-deis-Dw" type="3010" element="_yfZm8IEfEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_yflNIYEfEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_yflNIoEfEeunzM-deis-Dw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_ERuD8oEeEeunzM-deis-Dw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_ERuD84EeEeunzM-deis-Dw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ERtc4YEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ERtc4oEeEeunzM-deis-Dw" x="583" y="297" width="159" height="153"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Fr2foIEeEeunzM-deis-Dw" type="3009" element="_FrvK4IEeEeunzM-deis-Dw">
+              <children xmi:type="notation:Node" xmi:id="_Fr3GsIEeEeunzM-deis-Dw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_Fr3GsYEeEeunzM-deis-Dw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_J_P8k4EgEeunzM-deis-Dw" type="3010" element="_J_KdAIEgEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_J_P8lIEgEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_J_P8lYEgEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_PQ6qgIEgEeunzM-deis-Dw" type="3010" element="_PQ1K9YEgEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_PQ6qgYEgEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_PQ6qgoEgEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_SZTXwIEgEeunzM-deis-Dw" type="3010" element="_SZKN0IEgEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_SZTXwYEgEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_SZTXwoEgEeunzM-deis-Dw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_Fr3GsoEeEeunzM-deis-Dw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_Fr3Gs4EeEeunzM-deis-Dw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Fr2foYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fr2fooEeEeunzM-deis-Dw" x="271" y="294" width="171" height="159"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_GzW6QIEeEeunzM-deis-Dw" type="3009" element="_GzHpsIEeEeunzM-deis-Dw">
+              <children xmi:type="notation:Node" xmi:id="_GzW6Q4EeEeunzM-deis-Dw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_GzW6RIEeEeunzM-deis-Dw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_auIUsIEgEeunzM-deis-Dw" type="3010" element="_auDcNYEgEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_auIUsYEgEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_auIUsoEgEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_loE5wIEgEeunzM-deis-Dw" type="3010" element="_ln1pMIEgEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_loE5wYEgEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_loE5woEgEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_yBXxsIEgEeunzM-deis-Dw" type="3010" element="_yBS5NYEgEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_yBXxsYEgEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_yBXxsoEgEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_ytDL8IEgEeunzM-deis-Dw" type="3010" element="_ys9FU4EgEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_ytDL8YEgEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_ytDL8oEgEeunzM-deis-Dw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_GzW6RYEeEeunzM-deis-Dw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_GzW6RoEeEeunzM-deis-Dw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_GzW6QYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GzW6QoEeEeunzM-deis-Dw" x="19" y="306" width="123" height="159"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_L-AaMIEeEeunzM-deis-Dw" type="3009" element="_L933UIEeEeunzM-deis-Dw">
+              <children xmi:type="notation:Node" xmi:id="_L-BBQIEeEeunzM-deis-Dw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_L-BBQYEeEeunzM-deis-Dw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_klnCEIEeEeunzM-deis-Dw" type="3010" element="_klfGQIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_klnCEYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_klnCEoEeEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_nKA4gIEeEeunzM-deis-Dw" type="3010" element="_nJ3ukIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_nKA4gYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_nKA4goEeEeunzM-deis-Dw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_L-BBQoEeEeunzM-deis-Dw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_L-BBQ4EeEeunzM-deis-Dw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_L-AaMYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L-AaMoEeEeunzM-deis-Dw" x="919" y="163" width="87" height="123"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_NUCZAIEeEeunzM-deis-Dw" type="3009" element="_NT5PEIEeEeunzM-deis-Dw">
+              <children xmi:type="notation:Node" xmi:id="_NUDAEIEeEeunzM-deis-Dw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_NUDAEYEeEeunzM-deis-Dw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_aDDpUIEeEeunzM-deis-Dw" type="3010" element="_aC87oIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_aDDpUYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_aDDpUoEeEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_byBFgIEeEeunzM-deis-Dw" type="3010" element="_bx04QIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_byBFgYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_byBFgoEeEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_dQf1sIEeEeunzM-deis-Dw" type="3010" element="_dQWrwIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_dQf1sYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_dQf1soEeEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_eWf0cIEeEeunzM-deis-Dw" type="3010" element="_eWZGwIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_eWf0cYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_eWf0coEeEeunzM-deis-Dw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_NUDAEoEeEeunzM-deis-Dw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_NUDAE4EeEeunzM-deis-Dw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_NUCZAYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NUCZAoEeEeunzM-deis-Dw" x="799" y="162" width="99" height="123"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_OL2x0IEeEeunzM-deis-Dw" type="3009" element="_OLtA0IEeEeunzM-deis-Dw">
+              <children xmi:type="notation:Node" xmi:id="_OL2x04EeEeunzM-deis-Dw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_OL2x1IEeEeunzM-deis-Dw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_xEm5YIEeEeunzM-deis-Dw" type="3010" element="_xEdIYIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_xEm5YYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_xEm5YoEeEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_xrCAMIEeEeunzM-deis-Dw" type="3010" element="_xq3BEIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_xrCAMYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_xrCAMoEeEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_yaKXEIEeEeunzM-deis-Dw" type="3010" element="_yaDCUIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_yaKXEYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_yaKXEoEeEeunzM-deis-Dw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_OL2x1YEeEeunzM-deis-Dw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_OL2x1oEeEeunzM-deis-Dw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_OL2x0YEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OL2x0oEeEeunzM-deis-Dw" x="907" y="312" width="111" height="99"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RFLIUIEeEeunzM-deis-Dw" type="3009" element="_RFAwQIEeEeunzM-deis-Dw">
+              <children xmi:type="notation:Node" xmi:id="_RFLIU4EeEeunzM-deis-Dw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_RFLvYIEeEeunzM-deis-Dw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_ovxVYIEeEeunzM-deis-Dw" type="3010" element="_ovnkYIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_ovxVYYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_ovxVYoEeEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_tbh54IEeEeunzM-deis-Dw" type="3010" element="_tbalIIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_tbh54YEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_tbh54oEeEeunzM-deis-Dw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_vTbPoIEeEeunzM-deis-Dw" type="3010" element="_vTObUIEeEeunzM-deis-Dw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_vTbPoYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_vTbPooEeEeunzM-deis-Dw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_RFLvYYEeEeunzM-deis-Dw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_RFLvYoEeEeunzM-deis-Dw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_RFLIUYEeEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RFLIUoEeEeunzM-deis-Dw" x="801" y="312" width="95" height="87"/>
+            </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_zUrz4n7UEeuYYO-xahOrDA"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_zUrz437UEeuYYO-xahOrDA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_zUrM0X7UEeuYYO-xahOrDA" fontName="Ubuntu" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zUrM0n7UEeuYYO-xahOrDA" x="84" y="36" width="519" height="279"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zUrM0n7UEeuYYO-xahOrDA" x="-60" y="12" width="1047" height="483"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_yyVUwn7UEeuYYO-xahOrDA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_JTd8AIEdEeunzM-deis-Dw" type="4001" element="_JSqqwIEdEeunzM-deis-Dw" source="_A9nrYIEdEeunzM-deis-Dw" target="_Zpb6UIEcEeunzM-deis-Dw">
+          <children xmi:type="notation:Node" xmi:id="_JTfKIIEdEeunzM-deis-Dw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JTfKIYEdEeunzM-deis-Dw" x="40" y="19"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JTfKIoEdEeunzM-deis-Dw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JTfKI4EdEeunzM-deis-Dw" x="108" y="16"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JTfxMIEdEeunzM-deis-Dw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JTfxMYEdEeunzM-deis-Dw" x="17"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JTd8AYEdEeunzM-deis-Dw" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JTd8AoEdEeunzM-deis-Dw" fontName="Ubuntu"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JTd8A4EdEeunzM-deis-Dw" points="[-23, 0, 97, 59]$[-23, -24, 97, 35]$[-132, -24, -12, 35]$[-132, -59, -12, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JTi0gIEdEeunzM-deis-Dw" id="(0.6942148760330579,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JTi0gYEdEeunzM-deis-Dw" id="(0.6114649681528662,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_J_iX0IEdEeunzM-deis-Dw" type="4001" element="_J_NAooEdEeunzM-deis-Dw" source="_-94oQIEcEeunzM-deis-Dw" target="_Zpb6UIEcEeunzM-deis-Dw">
+          <children xmi:type="notation:Node" xmi:id="_J_iX1IEdEeunzM-deis-Dw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J_iX1YEdEeunzM-deis-Dw" x="-24" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J_iX1oEdEeunzM-deis-Dw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J_iX14EdEeunzM-deis-Dw" x="-12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J_iX2IEdEeunzM-deis-Dw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J_iX2YEdEeunzM-deis-Dw" x="-9" y="-2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_J_iX0YEdEeunzM-deis-Dw" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_J_iX0oEdEeunzM-deis-Dw" fontName="Ubuntu"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_J_iX04EdEeunzM-deis-Dw" points="[-5, 0, -29, 59]$[-5, -24, -29, 35]$[48, -24, 24, 35]$[48, -59, 24, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J_i-4IEdEeunzM-deis-Dw" id="(0.5647058823529412,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J_i-4YEdEeunzM-deis-Dw" id="(0.3821656050955414,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ozM8gIEhEeunzM-deis-Dw" type="4001" element="_oyqxAIEhEeunzM-deis-Dw" source="_A9nrYIEdEeunzM-deis-Dw" target="_BQThYIEeEeunzM-deis-Dw">
+          <children xmi:type="notation:Node" xmi:id="_ozM8hIEhEeunzM-deis-Dw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ozM8hYEhEeunzM-deis-Dw" x="7" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ozM8hoEhEeunzM-deis-Dw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ozM8h4EhEeunzM-deis-Dw" x="-6" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ozM8iIEhEeunzM-deis-Dw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ozM8iYEhEeunzM-deis-Dw" x="12" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ozM8gYEhEeunzM-deis-Dw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ozM8goEhEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ozM8g4EhEeunzM-deis-Dw" points="[21, -24, -369, 87]$[96, -111, -294, 0]$[334, -111, -56, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ozNjkIEhEeunzM-deis-Dw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ozNjkYEhEeunzM-deis-Dw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_3fejsIEhEeunzM-deis-Dw" type="4001" element="_3fWA2IEhEeunzM-deis-Dw" source="_A9nrYIEdEeunzM-deis-Dw" target="_GzW6QIEeEeunzM-deis-Dw">
+          <children xmi:type="notation:Node" xmi:id="_3fejtIEhEeunzM-deis-Dw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3fejtYEhEeunzM-deis-Dw" x="2" y="32"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3fejtoEhEeunzM-deis-Dw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3fejt4EhEeunzM-deis-Dw" x="2" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3fejuIEhEeunzM-deis-Dw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3fejuYEhEeunzM-deis-Dw" x="-1" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_3fejsYEhEeunzM-deis-Dw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_3fejsoEhEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3fejs4EhEeunzM-deis-Dw" points="[-26, 25, 166, -161]$[-131, 126, 61, -60]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3fejuoEhEeunzM-deis-Dw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3feju4EhEeunzM-deis-Dw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_LUcjAIEiEeunzM-deis-Dw" type="4001" element="_LUN5hoEiEeunzM-deis-Dw" source="_GzW6QIEeEeunzM-deis-Dw" target="_Fr2foIEeEeunzM-deis-Dw">
+          <children xmi:type="notation:Node" xmi:id="_LUcjBIEiEeunzM-deis-Dw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LUcjBYEiEeunzM-deis-Dw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LUdKEIEiEeunzM-deis-Dw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LUdKEYEiEeunzM-deis-Dw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LUdKEoEiEeunzM-deis-Dw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LUdKE4EiEeunzM-deis-Dw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_LUcjAYEiEeunzM-deis-Dw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_LUcjAoEiEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LUcjA4EiEeunzM-deis-Dw" points="[61, -3, -215, 9]$[192, -9, -84, 3]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LUdKFIEiEeunzM-deis-Dw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LUdKFYEiEeunzM-deis-Dw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_S4hYcIEiEeunzM-deis-Dw" type="4001" element="_S4T9EIEiEeunzM-deis-Dw" source="_ERtc4IEeEeunzM-deis-Dw" target="_Fr2foIEeEeunzM-deis-Dw">
+          <children xmi:type="notation:Node" xmi:id="_S4hYdIEiEeunzM-deis-Dw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S4hYdYEiEeunzM-deis-Dw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_S4hYdoEiEeunzM-deis-Dw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S4hYd4EiEeunzM-deis-Dw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_S4hYeIEiEeunzM-deis-Dw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S4hYeYEiEeunzM-deis-Dw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_S4hYcYEiEeunzM-deis-Dw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_S4hYcoEiEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_S4hYc4EiEeunzM-deis-Dw" points="[-78, 0, 228, 0]$[-221, 0, 85, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_S4h_gIEiEeunzM-deis-Dw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_S4h_gYEiEeunzM-deis-Dw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_w_EVQIEiEeunzM-deis-Dw" type="4001" element="_w-yocIEiEeunzM-deis-Dw" source="_GzW6QIEeEeunzM-deis-Dw" target="_ERtc4IEeEeunzM-deis-Dw">
+          <children xmi:type="notation:Node" xmi:id="_w_EVRIEiEeunzM-deis-Dw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w_EVRYEiEeunzM-deis-Dw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_w_EVRoEiEeunzM-deis-Dw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w_EVR4EiEeunzM-deis-Dw" x="-7" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_w_EVSIEiEeunzM-deis-Dw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w_EVSYEiEeunzM-deis-Dw" x="5" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_w_EVQYEiEeunzM-deis-Dw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_w_EVQoEiEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_w_EVQ4EiEeunzM-deis-Dw" points="[61, -43, -521, -31]$[180, -126, -402, -114]$[408, -126, -174, -114]$[504, -64, -78, -52]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_w_E8UIEiEeunzM-deis-Dw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_w_E8UYEiEeunzM-deis-Dw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Hyj7MIEjEeunzM-deis-Dw" type="4001" element="_HycmeIEjEeunzM-deis-Dw" source="_BQThYIEeEeunzM-deis-Dw" target="_ERtc4IEeEeunzM-deis-Dw">
+          <children xmi:type="notation:Node" xmi:id="_Hyj7NIEjEeunzM-deis-Dw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hyj7NYEjEeunzM-deis-Dw" x="7" y="-28"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Hyj7NoEjEeunzM-deis-Dw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hyj7N4EjEeunzM-deis-Dw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Hyj7OIEjEeunzM-deis-Dw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hyj7OYEjEeunzM-deis-Dw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Hyj7MYEjEeunzM-deis-Dw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Hyj7MoEjEeunzM-deis-Dw" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Hyj7M4EjEeunzM-deis-Dw" points="[0, 34, 0, -251]$[0, 210, 0, -75]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Hyj7OoEjEeunzM-deis-Dw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Hyj7O4EjEeunzM-deis-Dw" id="(0.5,0.5)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_yycpgH7UEeuYYO-xahOrDA" source="DANNOTATION_CUSTOMIZATION_KEY">
@@ -259,6 +610,498 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_ZpHKMIEcEeunzM-deis-Dw" name="Pessoa" incomingEdges="_JSqqwIEdEeunzM-deis-Dw _J_NAooEdEeunzM-deis-Dw">
+        <target xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa"/>
+        <semanticElements xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_ZpJmcIEcEeunzM-deis-Dw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_eH-iMIEcEeunzM-deis-Dw" name=" - nome : String {null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa/nome"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa/nome"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_eICMkIEcEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_mJs88IEcEeunzM-deis-Dw" name=" - username : String {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa/username"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa/username"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_mJtkAIEcEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_x8X5wIEcEeunzM-deis-Dw" name=" - email : String {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa/email"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa/email"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_x8Yg0IEcEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_y6w0oIEcEeunzM-deis-Dw" name=" - senha : String {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa/senha"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa/senha"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_y6xbsIEcEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_-9sbAIEcEeunzM-deis-Dw" name="Admin" outgoingEdges="_J_NAooEdEeunzM-deis-Dw">
+        <target xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Admin"/>
+        <semanticElements xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Admin"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_-9tCEIEcEeunzM-deis-Dw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_A9ehcIEdEeunzM-deis-Dw" name="Usuario" outgoingEdges="_JSqqwIEdEeunzM-deis-Dw _oyqxAIEhEeunzM-deis-Dw _3fWA2IEhEeunzM-deis-Dw">
+        <target xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario"/>
+        <semanticElements xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_A9ehcYEdEeunzM-deis-Dw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_GMY2UIEdEeunzM-deis-Dw" name=" - generoFavoritados : List {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario/generoFavoritados"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario/generoFavoritados"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_GMY2UYEdEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_BQDpwIEeEeunzM-deis-Dw" name="Playlist" outgoingEdges="_HycmeIEjEeunzM-deis-Dw" incomingEdges="_oyqxAIEhEeunzM-deis-Dw">
+        <target xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Playlist"/>
+        <semanticElements xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Playlist"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_BQDpwYEeEeunzM-deis-Dw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_0Qj4AIEeEeunzM-deis-Dw" name=" - nome : String {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Playlist/nome"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Playlist/nome"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_0QkfEIEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_ERk6AIEeEeunzM-deis-Dw" name="Musica" outgoingEdges="_S4T9EIEiEeunzM-deis-Dw" incomingEdges="_w-yocIEiEeunzM-deis-Dw _HycmeIEjEeunzM-deis-Dw">
+        <target xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica"/>
+        <semanticElements xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_ERk6AYEeEeunzM-deis-Dw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_b4OlwIEfEeunzM-deis-Dw" name=" - nome : String {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/nome"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/nome"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_b4PM0IEfEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_cli-wIEfEeunzM-deis-Dw" name=" - dataDeLancemento : Date {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/dataDeLancemento"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/dataDeLancemento"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_cljl0IEfEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_qnugEIEfEeunzM-deis-Dw" name=" - duracao : int {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/duracao"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/duracao"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_qnugEYEfEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_u1_QQIEfEeunzM-deis-Dw" name=" - idioma : List {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/idioma"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/idioma"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_u1_3UIEfEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_wc0EIIEfEeunzM-deis-Dw" name=" - genero : List {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/genero"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/genero"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_wc0rMIEfEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_yfZm8IEfEeunzM-deis-Dw" name=" - numVezesFavoritado : int {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/numVezesFavoritado"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica/numVezesFavoritado"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_yfaOAIEfEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_FrvK4IEeEeunzM-deis-Dw" name="Colecao" incomingEdges="_LUN5hoEiEeunzM-deis-Dw _S4T9EIEiEeunzM-deis-Dw">
+        <target xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao"/>
+        <semanticElements xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Frvx8IEeEeunzM-deis-Dw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_J_KdAIEgEeunzM-deis-Dw" name=" - nome : String {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao/nome"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao/nome"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_J_KdAYEgEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_PQ1K9YEgEeunzM-deis-Dw" name=" - dataDeLancemento : Date {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao/dataDeLancemento"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao/dataDeLancemento"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_PQ1yAIEgEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_SZKN0IEgEeunzM-deis-Dw" name=" - tipoColecao : List {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao/tipoColecao"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao/tipoColecao"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_SZK04IEgEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_GzHpsIEeEeunzM-deis-Dw" name="Artista" outgoingEdges="_LUN5hoEiEeunzM-deis-Dw _w-yocIEiEeunzM-deis-Dw" incomingEdges="_3fWA2IEhEeunzM-deis-Dw">
+        <target xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista"/>
+        <semanticElements xmi:type="frameweb:DomainClass" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_GzHpsYEeEeunzM-deis-Dw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_auDcNYEgEeunzM-deis-Dw" name=" - nome : String {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista/nome"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista/nome"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_auEDQIEgEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_ln1pMIEgEeunzM-deis-Dw" name=" - nacionalidade : Pais {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista/nacionalidade"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista/nacionalidade"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_ln2QQIEgEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_yBS5NYEgEeunzM-deis-Dw" name=" - genero : List {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista/genero"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista/genero"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_yBTgQIEgEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_ys9FU4EgEeunzM-deis-Dw" name=" - numVezesFavoritado : int {not null}">
+          <target xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista/numVezesFavoritado"/>
+          <semanticElements xmi:type="frameweb:DomainAttribute" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista/numVezesFavoritado"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_ys9sYIEgEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='DomainClass%20Node']/@subNodeMappings[name='DomainAttribute']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_L933UIEeEeunzM-deis-Dw" name="&lt;&lt;enum>>&#xA;tipoColecao">
+        <target xmi:type="uml:Enumeration" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoColecao"/>
+        <semanticElements xmi:type="uml:Enumeration" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoColecao"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_L94eYIEeEeunzM-deis-Dw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_klfGQIEeEeunzM-deis-Dw" name="Album">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoColecao/Album"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoColecao/Album"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_klfGQYEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_nJ3ukIEeEeunzM-deis-Dw" name="EP">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoColecao/EP"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoColecao/EP"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_nJ4VoIEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_NT5PEIEeEeunzM-deis-Dw" name="&lt;&lt;enum>>&#xA;tipoGenero">
+        <target xmi:type="uml:Enumeration" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoGenero"/>
+        <semanticElements xmi:type="uml:Enumeration" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoGenero"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_NT5PEYEeEeunzM-deis-Dw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_aC87oIEeEeunzM-deis-Dw" name="Pop">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoGenero/Pop"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoGenero/Pop"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_aC87oYEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_bx04QIEeEeunzM-deis-Dw" name="Samba">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoGenero/Samba"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoGenero/Samba"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_bx1fUIEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_dQWrwIEeEeunzM-deis-Dw" name="Indie">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoGenero/Indie"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoGenero/Indie"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_dQXS0IEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_eWZGwIEeEeunzM-deis-Dw" name="Eletronica">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoGenero/Eletronica"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoGenero/Eletronica"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_eWZGwYEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_OLtA0IEeEeunzM-deis-Dw" name="&lt;&lt;enum>>&#xA;tipoIdioma">
+        <target xmi:type="uml:Enumeration" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoIdioma"/>
+        <semanticElements xmi:type="uml:Enumeration" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoIdioma"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_OLtA0YEeEeunzM-deis-Dw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_xEdIYIEeEeunzM-deis-Dw" name="Ingles">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoIdioma/Ingles"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoIdioma/Ingles"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_xEdvcIEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_xq3BEIEeEeunzM-deis-Dw" name="Portugues">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoIdioma/Portugues"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoIdioma/Portugues"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_xq3oIIEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_yaDCUIEeEeunzM-deis-Dw" name="Espanhol">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoIdioma/Espanhol"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/tipoIdioma/Espanhol"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_yaDCUYEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_RFAwQIEeEeunzM-deis-Dw" name="&lt;&lt;enum>>&#xA;Pais">
+        <target xmi:type="uml:Enumeration" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pais"/>
+        <semanticElements xmi:type="uml:Enumeration" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pais"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_RFAwQYEeEeunzM-deis-Dw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_ovnkYIEeEeunzM-deis-Dw" name="Brasil">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pais/Brasil"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pais/Brasil"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_ovnkYYEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_tbalIIEeEeunzM-deis-Dw" name="EUA">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pais/EUA"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pais/EUA"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_tbbMMIEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_vTObUIEeEeunzM-deis-Dw" name="Mexico">
+          <target xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pais/Mexico"/>
+          <semanticElements xmi:type="uml:EnumerationLiteral" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pais/Mexico"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_vTPCYIEeEeunzM-deis-Dw" showIcon="false" labelAlignment="LEFT">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@containerMappings[name='Domain%20Package']/@subContainerMappings[name='Enumeration']/@subNodeMappings[name='EnumerationLiteral']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_JSqqwIEdEeunzM-deis-Dw" sourceNode="_A9ehcIEdEeunzM-deis-Dw" targetNode="_ZpHKMIEcEeunzM-deis-Dw">
+      <target xmi:type="frameweb:DomainGeneralizationSet" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa.1"/>
+      <semanticElements xmi:type="frameweb:DomainGeneralizationSet" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_JTBQEIEdEeunzM-deis-Dw" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainGeneralizationSet']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainGeneralizationSet']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_J_NAooEdEeunzM-deis-Dw" sourceNode="_-9sbAIEcEeunzM-deis-Dw" targetNode="_ZpHKMIEcEeunzM-deis-Dw">
+      <target xmi:type="frameweb:DomainGeneralizationSet" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa.2"/>
+      <semanticElements xmi:type="frameweb:DomainGeneralizationSet" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_J_NnsIEdEeunzM-deis-Dw" targetArrow="InputClosedArrow" size="2" routingStyle="manhattan" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainGeneralizationSet']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainGeneralizationSet']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_oyqxAIEhEeunzM-deis-Dw" name="possui" sourceNode="_A9ehcIEdEeunzM-deis-Dw" targetNode="_BQDpwIEeEeunzM-deis-Dw" beginLabel="1" endLabel="0..*">
+      <target xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/possui"/>
+      <semanticElements xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/possui"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/possui/Source"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/possui/Target"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/possui/Source%20Constraint"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/possui/Target%20Constraint"/>
+      <semanticElements xmi:type="frameweb:VocabularyConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/possui/Vocabulary%20Constraint"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_oyrYEIEhEeunzM-deis-Dw" size="2" centered="Both" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_oyrYEYEhEeunzM-deis-Dw" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_oy2-QIEhEeunzM-deis-Dw" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_oy2XMIEhEeunzM-deis-Dw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_3fWA2IEhEeunzM-deis-Dw" name="favorita" sourceNode="_A9ehcIEdEeunzM-deis-Dw" targetNode="_GzHpsIEeEeunzM-deis-Dw" beginLabel="0..*" endLabel="0..*">
+      <target xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/favorita"/>
+      <semanticElements xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/favorita"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/favorita/Source"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/favorita/Target"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/favorita/Source%20Constraint"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/favorita/Target%20Constraint"/>
+      <semanticElements xmi:type="frameweb:VocabularyConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/favorita/Vocabulary%20Constraint"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3fWA2YEhEeunzM-deis-Dw" size="2" centered="Both" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3fWA2oEhEeunzM-deis-Dw" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_3fWA3IEhEeunzM-deis-Dw" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_3fWA24EhEeunzM-deis-Dw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_LUN5hoEiEeunzM-deis-Dw" name="lanca" sourceNode="_GzHpsIEeEeunzM-deis-Dw" targetNode="_FrvK4IEeEeunzM-deis-Dw" beginLabel="1" endLabel="0..*">
+      <target xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/lanca"/>
+      <semanticElements xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/lanca"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/lanca/Source"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/lanca/Target"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/lanca/Source%20Constraint"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/lanca/Target%20Constraint"/>
+      <semanticElements xmi:type="frameweb:VocabularyConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/lanca/Vocabulary%20Constraint"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_LUOgkIEiEeunzM-deis-Dw" size="2" centered="Both" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_LUOgkYEiEeunzM-deis-Dw" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_LUOgk4EiEeunzM-deis-Dw" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_LUOgkoEiEeunzM-deis-Dw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_S4T9EIEiEeunzM-deis-Dw" name="pertence" sourceNode="_ERk6AIEeEeunzM-deis-Dw" targetNode="_FrvK4IEeEeunzM-deis-Dw" beginLabel="1..*" endLabel="0..*">
+      <target xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/pertence"/>
+      <semanticElements xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/pertence"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/pertence/Source"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/pertence/Target"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/pertence/Source%20Constraint"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/pertence/Target%20Constraint"/>
+      <semanticElements xmi:type="frameweb:VocabularyConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/pertence/Vocabulary%20Constraint"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_S4T9EYEiEeunzM-deis-Dw" size="2" centered="Both" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_S4T9EoEiEeunzM-deis-Dw" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_S4T9FIEiEeunzM-deis-Dw" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_S4T9E4EiEeunzM-deis-Dw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_w-yocIEiEeunzM-deis-Dw" name="performa" sourceNode="_GzHpsIEeEeunzM-deis-Dw" targetNode="_ERk6AIEeEeunzM-deis-Dw" beginLabel="1..*" endLabel="0..*">
+      <target xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/performa"/>
+      <semanticElements xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/performa"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/performa/Source"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/performa/Target"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/performa/Source%20Constraint"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/performa/Target%20Constraint"/>
+      <semanticElements xmi:type="frameweb:VocabularyConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/performa/Vocabulary%20Constraint"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_w-zPgIEiEeunzM-deis-Dw" size="2" centered="Both" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_w-zPgYEiEeunzM-deis-Dw" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_w-zPg4EiEeunzM-deis-Dw" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_w-zPgoEiEeunzM-deis-Dw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_HycmeIEjEeunzM-deis-Dw" name="contem" sourceNode="_BQDpwIEeEeunzM-deis-Dw" targetNode="_ERk6AIEeEeunzM-deis-Dw" beginLabel="0..*" endLabel="0..*">
+      <target xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/contem"/>
+      <semanticElements xmi:type="frameweb:DomainAssociation" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/contem"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/contem/Source"/>
+      <semanticElements xmi:type="frameweb:DomainProperty" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/contem/Target"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/contem/Source%20Constraint"/>
+      <semanticElements xmi:type="frameweb:DomainConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/contem/Target%20Constraint"/>
+      <semanticElements xmi:type="frameweb:VocabularyConstraints" href="Model.frameweb#//@compose.0/br.ufes.informatica.musicplus.core.domain/contem/Vocabulary%20Constraint"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_HycmeYEjEeunzM-deis-Dw" size="2" centered="Both" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_HycmeoEjEeunzM-deis-Dw" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_HycmfIEjEeunzM-deis-Dw" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_Hycme4EjEeunzM-deis-Dw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']/@defaultLayer/@edgeMappings[name='DomainAssociation']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_yx7sIH7UEeuYYO-xahOrDA"/>
