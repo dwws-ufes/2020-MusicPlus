@@ -18,17 +18,21 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']"/>
         <target xmi:type="frameweb:EntityModel" href="Model.frameweb#//@compose.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__cADcIEjEeunzM-deis-Dw" name="FrameWebNavigationModel" repPath="#__b5VwIEjEeunzM-deis-Dw" changeId="7ba00cda-dfc7-4229-8ecc-cc33bd721fcc">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__cADcIEjEeunzM-deis-Dw" name="FrameWebNavigationModel" repPath="#__b5VwIEjEeunzM-deis-Dw" changeId="e3ad3927-ace1-49df-ae37-ba065f16e05d">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']"/>
         <target xmi:type="frameweb:NavigationModel" href="Model.frameweb#//@compose.1"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_3ydlMINSEeuINsJbyiuYeQ" name="FrameWebNavigationModel2" repPath="#_3yG_4INSEeuINsJbyiuYeQ" changeId="f1d3ad12-c6dd-418f-944c-77443d858fa5">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_3ydlMINSEeuINsJbyiuYeQ" name="FrameWebNavigationModel2" repPath="#_3yG_4INSEeuINsJbyiuYeQ" changeId="838c8e7d-c7a4-45bc-94b7-dfe1698ca3fa">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']"/>
         <target xmi:type="frameweb:NavigationModel" href="Model.frameweb#//@compose.4"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ATgGQINgEeuINsJbyiuYeQ" name="FrameWebNavigationModel3" repPath="#_ATZYkINgEeuINsJbyiuYeQ" changeId="301af086-0145-4fc7-8e58-3c7bca9eb62c">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ATgGQINgEeuINsJbyiuYeQ" name="FrameWebNavigationModel3" repPath="#_ATZYkINgEeuINsJbyiuYeQ" changeId="88066e17-97a7-40c8-9922-345b9748f898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']"/>
         <target xmi:type="frameweb:NavigationModel" href="Model.frameweb#//@compose.5"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_X5_yQINnEeuINsJbyiuYeQ" name="FrameWebPersistenceModel" repPath="#_X599EINnEeuINsJbyiuYeQ" changeId="0ce43dae-b8ea-480c-b63e-cc406defee44">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebPersistenceModel']"/>
+        <target xmi:type="frameweb:PersistenceModel" href="Model.frameweb#//@compose.2"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -1382,17 +1386,17 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_rfnwAINREeuINsJbyiuYeQ" type="4001" element="_rfQjoINREeuINsJbyiuYeQ" source="_Z_ruYINREeuINsJbyiuYeQ" target="_RVwd0IElEeunzM-deis-Dw">
           <children xmi:type="notation:Node" xmi:id="_rfnwBINREeuINsJbyiuYeQ" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfnwBYNREeuINsJbyiuYeQ" x="-1" y="-7"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfnwBYNREeuINsJbyiuYeQ" x="-6" y="11"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_rfnwBoNREeuINsJbyiuYeQ" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfnwB4NREeuINsJbyiuYeQ" x="1" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfnwB4NREeuINsJbyiuYeQ" x="2" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_rfnwCINREeuINsJbyiuYeQ" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfnwCYNREeuINsJbyiuYeQ" x="-1" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfnwCYNREeuINsJbyiuYeQ" x="-2" y="10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_rfnwAYNREeuINsJbyiuYeQ" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_rfnwAoNREeuINsJbyiuYeQ" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rfnwA4NREeuINsJbyiuYeQ" points="[0, -7, -226, 0]$[226, -7, 0, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rfnwA4NREeuINsJbyiuYeQ" points="[22, 0, -205, 8]$[227, 0, 0, 8]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rfoXEINREeuINsJbyiuYeQ" id="(0.9097320169252467,0.4954954954954955)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rfoXEYNREeuINsJbyiuYeQ" id="(0.0,0.430939226519337)"/>
         </edges>
@@ -1544,16 +1548,16 @@
         </ownedElements>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Z9yQ8INREeuINsJbyiuYeQ" name="/core/suggestion/">
-      <target xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F"/>
-      <semanticElements xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Z9yQ8INREeuINsJbyiuYeQ" name="core/suggestion/">
+      <target xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F"/>
+      <semanticElements xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Z9zfEINREeuINsJbyiuYeQ" iconPath="/br.ufes.inf.nemo.FrameWeb_Martins2015.design/icons/NavigationPackage.png" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']"/>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Z91UQINREeuINsJbyiuYeQ" name="&lt;&lt;form>>&#xA;sugestaoMusica" outgoingEdges="_vkLxoINREeuINsJbyiuYeQ" incomingEdges="_nnEKEINREeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusica"/>
-        <semanticElements xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusica"/>
+        <target xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusica"/>
+        <semanticElements xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusica"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1563,32 +1567,32 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z-BhgINREeuINsJbyiuYeQ" name=" - generoEscolhido : selectOneMenu">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusica/generoEscolhido.1"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusica/generoEscolhido.1"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusica/generoEscolhido.1"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusica/generoEscolhido.1"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Z-Ek0INREeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z-FL4INREeuINsJbyiuYeQ" name=" - numSugestoes : inputNumber">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusica/numSugestoes"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusica/numSugestoes"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusica/numSugestoes"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusica/numSugestoes"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Z-Fy8INREeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z-GaAINREeuINsJbyiuYeQ" name=" - porRankingOuAleatorio : selectOneMenu">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusica/porRankingOuAleatorio"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusica/porRankingOuAleatorio"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusica/porRankingOuAleatorio"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusica/porRankingOuAleatorio"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Z-HBEINREeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z-HBEYNREeuINsJbyiuYeQ" name=" - porIdioma : selectOneMenu">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusica/porIdioma"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusica/porIdioma"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusica/porIdioma"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusica/porIdioma"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Z-HoIINREeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -1596,8 +1600,8 @@
         </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Z9_sUINREeuINsJbyiuYeQ" name="&lt;&lt;form>>&#xA;sugestaoArtista" outgoingEdges="_rfQjoINREeuINsJbyiuYeQ" incomingEdges="_mzW1MINREeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtista"/>
-        <semanticElements xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtista"/>
+        <target xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtista"/>
+        <semanticElements xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtista"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1607,32 +1611,32 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z-KrcINREeuINsJbyiuYeQ" name=" - generoEscolhido : selectOneMenu">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtista/generoEscolhido"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtista/generoEscolhido"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtista/generoEscolhido"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtista/generoEscolhido"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Z-KrcYNREeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z-LSgINREeuINsJbyiuYeQ" name=" - numSugestoes : inputNumber">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtista/numSugestoes"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtista/numSugestoes"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtista/numSugestoes"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtista/numSugestoes"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Z-L5kINREeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z-MgoINREeuINsJbyiuYeQ" name=" - porRankingOuAleatorio : selectOneMenu">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtista/porRankingOuAleatorio"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtista/porRankingOuAleatorio"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtista/porRankingOuAleatorio"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtista/porRankingOuAleatorio"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Z-NHsINREeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z-NHsYNREeuINsJbyiuYeQ" name=" - porPais : selectOneMenu">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtista/porPais"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtista/porPais"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtista/porPais"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtista/porPais"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Z-NuwINREeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -1640,8 +1644,8 @@
         </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Z-Pj8INREeuINsJbyiuYeQ" name="&lt;&lt;page>>&#xA;index" outgoingEdges="_mzW1MINREeuINsJbyiuYeQ _nnEKEINREeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/index"/>
-        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/index"/>
+        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/index"/>
+        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/index"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1652,8 +1656,8 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Z-RZIINREeuINsJbyiuYeQ" name="&lt;&lt;page>>&#xA;sugestaoMusicaEncontrada" incomingEdges="_AIc1NINSEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusicaEncontrada"/>
-        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusicaEncontrada"/>
+        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusicaEncontrada"/>
+        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusicaEncontrada"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1663,8 +1667,8 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z-TOUINREeuINsJbyiuYeQ" name=" - listaDeMusicas : dataTable">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusicaEncontrada/listaDeMusicas"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoMusicaEncontrada/listaDeMusicas"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusicaEncontrada/listaDeMusicas"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoMusicaEncontrada/listaDeMusicas"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Z-T1YINREeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -1672,8 +1676,8 @@
         </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Z-SAMYNREeuINsJbyiuYeQ" name="&lt;&lt;page>>&#xA;sugestaoArtistaEncontrada" incomingEdges="_4xsDAINREeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtistaEncontrada"/>
-        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtistaEncontrada"/>
+        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtistaEncontrada"/>
+        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtistaEncontrada"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1683,8 +1687,8 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z-UccINREeuINsJbyiuYeQ" name=" - listaDeArtistas : dataTable">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtistaEncontrada/listaDeArtistas"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/sugestaoArtistaEncontrada/listaDeArtistas"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtistaEncontrada/listaDeArtistas"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/sugestaoArtistaEncontrada/listaDeArtistas"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Z-VDgINREeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -1693,8 +1697,8 @@
       </ownedDiagramElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mzW1MINREeuINsJbyiuYeQ" sourceNode="_Z-Pj8INREeuINsJbyiuYeQ" targetNode="_Z9_sUINREeuINsJbyiuYeQ" endLabel="1">
-      <target xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/@packagedElement.7"/>
-      <semanticElements xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/@packagedElement.7"/>
+      <target xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/@packagedElement.7"/>
+      <semanticElements xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/@packagedElement.7"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mzXcQINREeuINsJbyiuYeQ" sourceArrow="FillDiamond" targetArrow="NoDecoration" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='Navigation%20Association']/@style"/>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_mzXcQYNREeuINsJbyiuYeQ" labelSize="9" showIcon="false">
@@ -1704,8 +1708,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='Navigation%20Association']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_nnEKEINREeuINsJbyiuYeQ" sourceNode="_Z-Pj8INREeuINsJbyiuYeQ" targetNode="_Z91UQINREeuINsJbyiuYeQ" endLabel="1">
-      <target xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/@packagedElement.8"/>
-      <semanticElements xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.1/%2Fcore%2Fsuggestion%2F/@packagedElement.8"/>
+      <target xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/@packagedElement.8"/>
+      <semanticElements xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.1/core%2Fsuggestion%2F/@packagedElement.8"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_nnEKEYNREeuINsJbyiuYeQ" sourceArrow="FillDiamond" targetArrow="NoDecoration" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='Navigation%20Association']/@style"/>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_nnEKEoNREeuINsJbyiuYeQ" labelSize="9" showIcon="false">
@@ -2106,9 +2110,9 @@
         </ownedElements>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_gpMHEINTEeuINsJbyiuYeQ" name="/core/playlist">
-      <target xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist"/>
-      <semanticElements xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_gpMHEINTEeuINsJbyiuYeQ" name="core/playlist">
+      <target xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.4/core%2Fplaylist"/>
+      <semanticElements xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.4/core%2Fplaylist"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2117,8 +2121,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']"/>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_iPOQwINTEeuINsJbyiuYeQ" name="&lt;&lt;page>>&#xA;indexAdcMusicaPlaylist" outgoingEdges="_qk3o4INaEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/indexAdcMusicaPlaylist"/>
-        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/indexAdcMusicaPlaylist"/>
+        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/indexAdcMusicaPlaylist"/>
+        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/indexAdcMusicaPlaylist"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2129,8 +2133,8 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_lpQHoINTEeuINsJbyiuYeQ" name="&lt;&lt;form>>&#xA;adcMusicaPlaylist" outgoingEdges="_ZS4EAINXEeuINsJbyiuYeQ" incomingEdges="_qk3o4INaEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/adcMusicaPlaylist"/>
-        <semanticElements xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/adcMusicaPlaylist"/>
+        <target xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.4/core%2Fplaylist/adcMusicaPlaylist"/>
+        <semanticElements xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.4/core%2Fplaylist/adcMusicaPlaylist"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2140,8 +2144,8 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_nhvd0INUEeuINsJbyiuYeQ" name=" - playlist.nome : selectOneMenu">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/adcMusicaPlaylist/playlist.nome"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/adcMusicaPlaylist/playlist.nome"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/adcMusicaPlaylist/playlist.nome"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/adcMusicaPlaylist/playlist.nome"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_nhwE4INUEeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -2149,8 +2153,8 @@
         </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_zKnI8INVEeuINsJbyiuYeQ" name="&lt;&lt;page>>&#xA;sucessoMusicaAdc" incomingEdges="_yXUjcINYEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/sucessoMusicaAdc"/>
-        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/sucessoMusicaAdc"/>
+        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/sucessoMusicaAdc"/>
+        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/sucessoMusicaAdc"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2160,16 +2164,16 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_3oSOKYNVEeuINsJbyiuYeQ" name=" - musicaAtual.nome : outputText">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/sucessoMusicaAdc/musicaAtual.nome"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/sucessoMusicaAdc/musicaAtual.nome"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/sucessoMusicaAdc/musicaAtual.nome"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/sucessoMusicaAdc/musicaAtual.nome"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_3oS1MINVEeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_4AX-B4NVEeuINsJbyiuYeQ" name=" - playlist.nome : outputText">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/sucessoMusicaAdc/playlist.nome"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/sucessoMusicaAdc/playlist.nome"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/sucessoMusicaAdc/playlist.nome"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/sucessoMusicaAdc/playlist.nome"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_4AX-CINVEeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -2177,8 +2181,8 @@
         </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_8cXoMINVEeuINsJbyiuYeQ" name="&lt;&lt;page>>&#xA;erroAoAdicionar" incomingEdges="_BwgT9INZEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/erroAoAdicionar"/>
-        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/erroAoAdicionar"/>
+        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/erroAoAdicionar"/>
+        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/erroAoAdicionar"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2188,16 +2192,16 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_CGmAHINWEeuINsJbyiuYeQ" name=" - musicaAtual.nome : outputText">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/erroAoAdicionar/musicaAtual.nome"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/erroAoAdicionar/musicaAtual.nome"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/erroAoAdicionar/musicaAtual.nome"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/erroAoAdicionar/musicaAtual.nome"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_CGmnIINWEeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Cc8DgYNWEeuINsJbyiuYeQ" name=" - playlist.nome : outputText">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/erroAoAdicionar/playlist.nome"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/erroAoAdicionar/playlist.nome"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/erroAoAdicionar/playlist.nome"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/erroAoAdicionar/playlist.nome"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Cc8DgoNWEeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -2205,8 +2209,8 @@
         </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_YR8WAINYEeuINsJbyiuYeQ" name="&lt;&lt;form>>&#xA;criaPlaylist" outgoingEdges="_dbcmcINYEeuINsJbyiuYeQ" incomingEdges="_rlkQ4INaEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/criaPlaylist"/>
-        <semanticElements xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/criaPlaylist"/>
+        <target xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.4/core%2Fplaylist/criaPlaylist"/>
+        <semanticElements xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.4/core%2Fplaylist/criaPlaylist"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2216,8 +2220,8 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_a0kq1YNYEeuINsJbyiuYeQ" name=" - playlist.nome : inputText">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/criaPlaylist/playlist.nome"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/criaPlaylist/playlist.nome"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/criaPlaylist/playlist.nome"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/criaPlaylist/playlist.nome"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_a0kq1oNYEeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -2225,8 +2229,8 @@
         </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_i-PgoINYEeuINsJbyiuYeQ" name="&lt;&lt;page>>&#xA;sucessoPlaylistCriada" incomingEdges="_d9r7ZoNZEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/sucessoPlaylistCriada"/>
-        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/sucessoPlaylistCriada"/>
+        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/sucessoPlaylistCriada"/>
+        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/sucessoPlaylistCriada"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2236,8 +2240,8 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_rRuZxINYEeuINsJbyiuYeQ" name=" - playlist.nome : outputText">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/sucessoPlaylistCriada/playlist.nome"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/sucessoPlaylistCriada/playlist.nome"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/sucessoPlaylistCriada/playlist.nome"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/sucessoPlaylistCriada/playlist.nome"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_rRuZxYNYEeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -2245,8 +2249,8 @@
         </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_r_mzcINYEeuINsJbyiuYeQ" name="&lt;&lt;page>>&#xA;erroAoCriar" incomingEdges="_YrM4qINaEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/erroAoCriar"/>
-        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/erroAoCriar"/>
+        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/erroAoCriar"/>
+        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/erroAoCriar"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2256,8 +2260,8 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_w1HJ04NYEeuINsJbyiuYeQ" name=" - playlist.nome : outputText">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/erroAoCriar/playlist.nome"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/erroAoCriar/playlist.nome"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/erroAoCriar/playlist.nome"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.4/core%2Fplaylist/erroAoCriar/playlist.nome"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_w1HJ1INYEeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -2265,8 +2269,8 @@
         </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_kwnyUINaEeuINsJbyiuYeQ" name="&lt;&lt;page>>&#xA;indexAdcPlaylist" outgoingEdges="_rlkQ4INaEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/indexAdcPlaylist"/>
-        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/indexAdcPlaylist"/>
+        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/indexAdcPlaylist"/>
+        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.4/core%2Fplaylist/indexAdcPlaylist"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2332,8 +2336,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='ResultDependency%20Line']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_qk3o4INaEeuINsJbyiuYeQ" sourceNode="_iPOQwINTEeuINsJbyiuYeQ" targetNode="_lpQHoINTEeuINsJbyiuYeQ" endLabel="1">
-      <target xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/@packagedElement.8"/>
-      <semanticElements xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/@packagedElement.8"/>
+      <target xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.4/core%2Fplaylist/@packagedElement.8"/>
+      <semanticElements xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.4/core%2Fplaylist/@packagedElement.8"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_qk3o4YNaEeuINsJbyiuYeQ" sourceArrow="FillDiamond" targetArrow="NoDecoration" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='Navigation%20Association']/@style"/>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_qk3o4oNaEeuINsJbyiuYeQ" labelSize="9" showIcon="false">
@@ -2343,8 +2347,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='Navigation%20Association']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rlkQ4INaEeuINsJbyiuYeQ" sourceNode="_kwnyUINaEeuINsJbyiuYeQ" targetNode="_YR8WAINYEeuINsJbyiuYeQ" endLabel="1">
-      <target xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/@packagedElement.9"/>
-      <semanticElements xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.4/%2Fcore%2Fplaylist/@packagedElement.9"/>
+      <target xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.4/core%2Fplaylist/@packagedElement.9"/>
+      <semanticElements xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.4/core%2Fplaylist/@packagedElement.9"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_rlkQ4YNaEeuINsJbyiuYeQ" sourceArrow="FillDiamond" targetArrow="NoDecoration" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='Navigation%20Association']/@style"/>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_rlkQ4oNaEeuINsJbyiuYeQ" labelSize="9" showIcon="false">
@@ -2497,16 +2501,16 @@
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_AU0U4INgEeuINsJbyiuYeQ" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_AU078INgEeuINsJbyiuYeQ"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_MJvUcINgEeuINsJbyiuYeQ" name="/core/buscarMusica">
-      <target xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica"/>
-      <semanticElements xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_MJvUcINgEeuINsJbyiuYeQ" name="core/buscarMusica">
+      <target xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.5/core%2FbuscarMusica"/>
+      <semanticElements xmi:type="frameweb:ViewPackage" href="Model.frameweb#//@compose.5/core%2FbuscarMusica"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_MJvUcYNgEeuINsJbyiuYeQ" iconPath="/br.ufes.inf.nemo.FrameWeb_Martins2015.design/icons/NavigationPackage.png" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']"/>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_0TTjcINiEeuINsJbyiuYeQ" name="&lt;&lt;page>>&#xA;indexBuscarMusica" outgoingEdges="_XgfNcINkEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/indexBuscarMusica"/>
-        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/indexBuscarMusica"/>
+        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/indexBuscarMusica"/>
+        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/indexBuscarMusica"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2517,8 +2521,8 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_5IKZkINiEeuINsJbyiuYeQ" name="&lt;&lt;form>>&#xA;buscaMusica" outgoingEdges="_bfCtsINkEeuINsJbyiuYeQ" incomingEdges="_XgfNcINkEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/buscaMusica"/>
-        <semanticElements xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/buscaMusica"/>
+        <target xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/buscaMusica"/>
+        <semanticElements xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/buscaMusica"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2528,16 +2532,16 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_Lo0RUINjEeuINsJbyiuYeQ" name=" - nomeDoArtista : inputText">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/buscaMusica/nomeDoArtista"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/buscaMusica/nomeDoArtista"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/buscaMusica/nomeDoArtista"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/buscaMusica/nomeDoArtista"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_Lo04YINjEeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_MDPjgINjEeuINsJbyiuYeQ" name=" - nomeDaMusica : inputText">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/buscaMusica/nomeDaMusica"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/buscaMusica/nomeDaMusica"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/buscaMusica/nomeDaMusica"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/buscaMusica/nomeDaMusica"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_MDPjgYNjEeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='UI%20Component%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -2545,8 +2549,8 @@
         </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_8yEfgINiEeuINsJbyiuYeQ" name="&lt;&lt;page>>&#xA;musicasEncontradas" incomingEdges="_iczxEINkEeuINsJbyiuYeQ">
-        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/musicasEncontradas"/>
-        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/musicasEncontradas"/>
+        <target xmi:type="frameweb:Page" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/musicasEncontradas"/>
+        <semanticElements xmi:type="frameweb:Page" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/musicasEncontradas"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2556,8 +2560,8 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_iPjNoINjEeuINsJbyiuYeQ" name=" - listaDeMusicas : dataTable">
-          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/musicasEncontradas/listaDeMusicas"/>
-          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/musicasEncontradas/listaDeMusicas"/>
+          <target xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/musicasEncontradas/listaDeMusicas"/>
+          <semanticElements xmi:type="frameweb:UIComponentField" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/musicasEncontradas/listaDeMusicas"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_iPj0sINjEeuINsJbyiuYeQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@subContainerMappings[name='Page%20Node']/@subNodeMappings[name='UI%20Component%20Field%20Node']/@style"/>
           </ownedStyle>
@@ -2621,8 +2625,8 @@
       </ownedDiagramElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XgfNcINkEeuINsJbyiuYeQ" sourceNode="_0TTjcINiEeuINsJbyiuYeQ" targetNode="_5IKZkINiEeuINsJbyiuYeQ" endLabel="1">
-      <target xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/@packagedElement.3"/>
-      <semanticElements xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.5/%2Fcore%2FbuscarMusica/@packagedElement.3"/>
+      <target xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/@packagedElement.3"/>
+      <semanticElements xmi:type="frameweb:NavigationAssociation" href="Model.frameweb#//@compose.5/core%2FbuscarMusica/@packagedElement.3"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Xgf0gINkEeuINsJbyiuYeQ" sourceArrow="FillDiamond" targetArrow="NoDecoration" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='Navigation%20Association']/@style"/>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_Xgf0gYNkEeuINsJbyiuYeQ" labelSize="9" showIcon="false">
@@ -2653,5 +2657,108 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_ATZYkYNgEeuINsJbyiuYeQ"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer"/>
     <target xmi:type="frameweb:NavigationModel" href="Model.frameweb#//@compose.5"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_X599EINnEeuINsJbyiuYeQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_X6PC0INnEeuINsJbyiuYeQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_X6PC0YNnEeuINsJbyiuYeQ" type="Sirius" element="_X599EINnEeuINsJbyiuYeQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_bETLEINnEeuINsJbyiuYeQ" type="2002" element="_bDujUINnEeuINsJbyiuYeQ">
+          <children xmi:type="notation:Node" xmi:id="_bETLE4NnEeuINsJbyiuYeQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_bETLFINnEeuINsJbyiuYeQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_gbwX8INnEeuINsJbyiuYeQ" type="3007" element="_ga41QINnEeuINsJbyiuYeQ">
+              <children xmi:type="notation:Node" xmi:id="_gbxmEINnEeuINsJbyiuYeQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_gbxmEYNnEeuINsJbyiuYeQ" x="-22" y="31"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_gb460INnEeuINsJbyiuYeQ" type="3002" element="_ga5cUINnEeuINsJbyiuYeQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_gb460YNnEeuINsJbyiuYeQ" fontName="Ubuntu"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gb460oNnEeuINsJbyiuYeQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_gbwX8YNnEeuINsJbyiuYeQ" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gbwX8oNnEeuINsJbyiuYeQ" x="55" y="44" width="30" height="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_gsMAoINnEeuINsJbyiuYeQ" type="3007" element="_grvUsINnEeuINsJbyiuYeQ">
+              <children xmi:type="notation:Node" xmi:id="_gsMnsINnEeuINsJbyiuYeQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_gsMnsYNnEeuINsJbyiuYeQ" x="-22" y="31"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_gsMnsoNnEeuINsJbyiuYeQ" type="3002" element="_grv7wINnEeuINsJbyiuYeQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_gsMns4NnEeuINsJbyiuYeQ" fontName="Ubuntu"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsNOwINnEeuINsJbyiuYeQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_gsMAoYNnEeuINsJbyiuYeQ" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsMAooNnEeuINsJbyiuYeQ" x="165" y="44" width="30" height="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_g6woIINnEeuINsJbyiuYeQ" type="3007" element="_g6CPYINnEeuINsJbyiuYeQ">
+              <children xmi:type="notation:Node" xmi:id="_g6xPMINnEeuINsJbyiuYeQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_g6xPMYNnEeuINsJbyiuYeQ" x="-22" y="31"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_g6x2QINnEeuINsJbyiuYeQ" type="3002" element="_g6CPYYNnEeuINsJbyiuYeQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_g6x2QYNnEeuINsJbyiuYeQ" fontName="Ubuntu"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g6x2QoNnEeuINsJbyiuYeQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_g6woIYNnEeuINsJbyiuYeQ" fontName="Ubuntu" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g6woIoNnEeuINsJbyiuYeQ" x="270" y="44" width="30" height="30"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_bETLFYNnEeuINsJbyiuYeQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_bETLFoNnEeuINsJbyiuYeQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_bETLEYNnEeuINsJbyiuYeQ" fontName="Ubuntu" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bETLEoNnEeuINsJbyiuYeQ" x="25" y="35" width="703" height="303"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_X6PC0oNnEeuINsJbyiuYeQ"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_X6RfEINnEeuINsJbyiuYeQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_X6RfEYNnEeuINsJbyiuYeQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_bDujUINnEeuINsJbyiuYeQ" name="br.ufes.informatica.musicplus.core.persistence">
+      <target xmi:type="frameweb:PersistencePackage" href="Model.frameweb#//@compose.2/br.ufes.informatica.musicplus.core.persistence"/>
+      <semanticElements xmi:type="frameweb:PersistencePackage" href="Model.frameweb#//@compose.2/br.ufes.informatica.musicplus.core.persistence"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_bDujUYNnEeuINsJbyiuYeQ" iconPath="/br.ufes.inf.nemo.FrameWeb_Martins2015.design/icons/PersistencePackage.png" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebPersistenceModel']/@defaultLayer/@containerMappings[name='PersistencePackage']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebPersistenceModel']/@defaultLayer/@containerMappings[name='PersistencePackage']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_ga41QINnEeuINsJbyiuYeQ" name="Interface DAO" width="3" height="3">
+        <target xmi:type="frameweb:DAOInterface" href="Model.frameweb#//@compose.2/br.ufes.informatica.musicplus.core.persistence/Interface%20DAO"/>
+        <semanticElements xmi:type="frameweb:DAOInterface" href="Model.frameweb#//@compose.2/br.ufes.informatica.musicplus.core.persistence/Interface%20DAO"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Dot" uid="_ga5cUINnEeuINsJbyiuYeQ" showIcon="false" backgroundColor="246,139,139">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebPersistenceModel']/@defaultLayer/@containerMappings[name='PersistencePackage']/@subNodeMappings[name='DAOInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebPersistenceModel']/@defaultLayer/@containerMappings[name='PersistencePackage']/@subNodeMappings[name='DAOInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_grvUsINnEeuINsJbyiuYeQ" name="Interface DAO" width="3" height="3">
+        <target xmi:type="frameweb:DAOInterface" href="Model.frameweb#//@compose.2/br.ufes.informatica.musicplus.core.persistence/Interface%20DAO.1"/>
+        <semanticElements xmi:type="frameweb:DAOInterface" href="Model.frameweb#//@compose.2/br.ufes.informatica.musicplus.core.persistence/Interface%20DAO.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Dot" uid="_grv7wINnEeuINsJbyiuYeQ" showIcon="false" backgroundColor="246,139,139">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebPersistenceModel']/@defaultLayer/@containerMappings[name='PersistencePackage']/@subNodeMappings[name='DAOInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebPersistenceModel']/@defaultLayer/@containerMappings[name='PersistencePackage']/@subNodeMappings[name='DAOInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_g6CPYINnEeuINsJbyiuYeQ" name="Interface DAO" width="3" height="3">
+        <target xmi:type="frameweb:DAOInterface" href="Model.frameweb#//@compose.2/br.ufes.informatica.musicplus.core.persistence/Interface%20DAO.2"/>
+        <semanticElements xmi:type="frameweb:DAOInterface" href="Model.frameweb#//@compose.2/br.ufes.informatica.musicplus.core.persistence/Interface%20DAO.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Dot" uid="_g6CPYYNnEeuINsJbyiuYeQ" showIcon="false" backgroundColor="246,139,139">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebPersistenceModel']/@defaultLayer/@containerMappings[name='PersistencePackage']/@subNodeMappings[name='DAOInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebPersistenceModel']/@defaultLayer/@containerMappings[name='PersistencePackage']/@subNodeMappings[name='DAOInterface']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebPersistenceModel']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_X599EYNnEeuINsJbyiuYeQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebPersistenceModel']/@defaultLayer"/>
+    <target xmi:type="frameweb:PersistenceModel" href="Model.frameweb#//@compose.2"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>
