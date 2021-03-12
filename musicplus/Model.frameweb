@@ -278,9 +278,45 @@
   </compose>
   <compose xsi:type="frameweb:PersistenceModel" name="Persistence Model">
     <packagedElement xsi:type="frameweb:PersistencePackage" name="br.ufes.informatica.musicplus.core.persistence">
-      <packagedElement xsi:type="frameweb:DAOInterface" name="Interface DAO"/>
-      <packagedElement xsi:type="frameweb:DAOInterface" name="Interface DAO"/>
-      <packagedElement xsi:type="frameweb:DAOInterface" name="Interface DAO"/>
+      <packagedElement xsi:type="frameweb:DAOInterface" name="MusicaDAO"/>
+      <packagedElement xsi:type="frameweb:DAOInterface" name="ArtistaDAO"/>
+      <packagedElement xsi:type="frameweb:DAOInterface" name="PlaylistDAO"/>
+      <packagedElement xsi:type="frameweb:DAOInterface" name="PessoaDAO"/>
+      <packagedElement xsi:type="frameweb:DAOInterface" name="ColecaoDAO"/>
+      <packagedElement xsi:type="frameweb:DAOInterface" name="UsuarioDAO"/>
+      <packagedElement xsi:type="frameweb:DAOClass" name="MusicaDAOJPA">
+        <ownedOperation xsi:type="frameweb:DAOMethod" name="buscarPorParteDoNome">
+          <ownedParameter name="parteDoNome">
+            <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/String"/>
+          </ownedParameter>
+          <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
+        </ownedOperation>
+        <ownedOperation xsi:type="frameweb:DAOMethod" name="pegarTodasAsMusicasDoArtista">
+          <ownedParameter name="artista" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista"/>
+          <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
+        </ownedOperation>
+        <ownedOperation xsi:type="frameweb:DAOMethod" name="pegarMusicasRankingPorGenero"/>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:DAOClass" name="ArtistaDAOJPA">
+        <ownedOperation xsi:type="frameweb:DAOMethod" name="buscarPorParteDoNome">
+          <ownedParameter name="parteDoNome">
+            <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:DAOClass" name="PlaylistDAOJPA"/>
+      <packagedElement xsi:type="frameweb:DAOClass" name="ColecaoDAOJPA"/>
+      <packagedElement xsi:type="frameweb:DAOClass" name="PessoaDAOJPA" powertypeExtent="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PessoaDAOJPA.1"/>
+      <packagedElement xsi:type="frameweb:DAOClass" name="UsuarioDAOJPA">
+        <generalization xsi:type="frameweb:DAOGeneralization" generalizationSet="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PessoaDAOJPA.1"/>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:DAOGeneralizationSet" name="PessoaDAOJPA" powertype="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PessoaDAOJPA" generalization="//@compose.2/br.ufes.informatica.musicplus.core.persistence/UsuarioDAOJPA/@generalization.0"/>
+      <packagedElement xsi:type="frameweb:DAORealization" client="//@compose.2/br.ufes.informatica.musicplus.core.persistence/UsuarioDAOJPA" supplier="//@compose.2/br.ufes.informatica.musicplus.core.persistence/UsuarioDAO"/>
+      <packagedElement xsi:type="frameweb:DAORealization" client="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PessoaDAOJPA" supplier="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PessoaDAO"/>
+      <packagedElement xsi:type="frameweb:DAORealization" client="//@compose.2/br.ufes.informatica.musicplus.core.persistence/ColecaoDAOJPA" supplier="//@compose.2/br.ufes.informatica.musicplus.core.persistence/ColecaoDAO"/>
+      <packagedElement xsi:type="frameweb:DAORealization" client="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PlaylistDAOJPA" supplier="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PlaylistDAO"/>
+      <packagedElement xsi:type="frameweb:DAORealization" client="//@compose.2/br.ufes.informatica.musicplus.core.persistence/ArtistaDAOJPA" supplier="//@compose.2/br.ufes.informatica.musicplus.core.persistence/ArtistaDAO"/>
+      <packagedElement xsi:type="frameweb:DAORealization" client="//@compose.2/br.ufes.informatica.musicplus.core.persistence/MusicaDAOJPA" supplier="//@compose.2/br.ufes.informatica.musicplus.core.persistence/MusicaDAO"/>
     </packagedElement>
   </compose>
   <compose xsi:type="frameweb:ApplicationModel" name="Application Model"/>
