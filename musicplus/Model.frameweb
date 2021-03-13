@@ -269,7 +269,7 @@
           <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/String"/>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:FrontControllerClass" name="MusicController">
+      <packagedElement xsi:type="frameweb:FrontControllerClass" name="MusicaController">
         <ownedAttribute xsi:type="frameweb:IOParameter" name="nomeDoArtista" visibility="private">
           <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/String"/>
         </ownedAttribute>
@@ -371,24 +371,24 @@
         <ownedEnd xsi:type="frameweb:NavigationCompositionPart" type="//@compose.1/core%2FbuscarMusica/indexBuscarMusica" association="//@compose.1/core%2FbuscarMusica/@packagedElement.3"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xsi:type="frameweb:FrontControllerDependency" client="//@compose.1/core%2FbuscarMusica/buscaMusica" supplier="//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController"/>
-    <packagedElement xsi:type="frameweb:ResultDependency" client="//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController" supplier="//@compose.1/core%2FbuscarMusica/musicasEncontradas" resultMethod="//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController/buscarMusica">
+    <packagedElement xsi:type="frameweb:ResultDependency" client="//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController" supplier="//@compose.1/core%2FbuscarMusica/musicasEncontradas" resultMethod="//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController/buscarMusica">
       <resultDependencyConstraint result="musicasEncontradas.xhtml"/>
     </packagedElement>
-    <packagedElement xsi:type="frameweb:FrontControllerDependency" client="//@compose.1/core%2Fplaylist/adcMusicaPlaylist" supplier="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController"/>
-    <packagedElement xsi:type="frameweb:FrontControllerDependency" client="//@compose.1/core%2Fplaylist/criaPlaylist" supplier="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController"/>
-    <packagedElement xsi:type="frameweb:ResultDependency" client="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController" supplier="//@compose.1/core%2Fplaylist/sucessoPlaylistCriada">
-      <resultDependencyConstraint result="sucessoMusicaAdc.xhtml"/>
+    <packagedElement xsi:type="frameweb:FrontControllerDependency" client="//@compose.1/core%2Fplaylist/adcMusicaPlaylist" supplier="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController" method="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController/adicionarMusicaNaPlaylist"/>
+    <packagedElement xsi:type="frameweb:FrontControllerDependency" client="//@compose.1/core%2Fplaylist/criaPlaylist" supplier="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController" method="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController/criarPlaylist"/>
+    <packagedElement xsi:type="frameweb:ResultDependency" client="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController" supplier="//@compose.1/core%2Fplaylist/sucessoPlaylistCriada" resultMethod="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController/criarPlaylist">
+      <resultDependencyConstraint result="sucessoPlaylistCriada.xhtml"/>
     </packagedElement>
-    <packagedElement xsi:type="frameweb:ResultDependency" client="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController" supplier="//@compose.1/core%2Fplaylist/erroAoCriar">
+    <packagedElement xsi:type="frameweb:ResultDependency" client="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController" supplier="//@compose.1/core%2Fplaylist/erroAoCriar" resultMethod="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController/criarPlaylist">
       <resultDependencyConstraint result="erroAoCriar.xhtml"/>
     </packagedElement>
-    <packagedElement xsi:type="frameweb:ResultDependency" client="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController" supplier="//@compose.1/core%2Fplaylist/sucessoMusicaAdc">
-      <resultDependencyConstraint result="sucessoPlaylistCriada.xhtml"/>
+    <packagedElement xsi:type="frameweb:ResultDependency" client="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController" supplier="//@compose.1/core%2Fplaylist/sucessoMusicaAdc" resultMethod="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController/adicionarMusicaNaPlaylist">
+      <resultDependencyConstraint result="sucessoMusicaAdc.xhtml"/>
     </packagedElement>
     <packagedElement xsi:type="frameweb:ResultDependency" client="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController" supplier="//@compose.1/core%2Fplaylist/erroAoAdicionar" resultMethod="//@compose.1/br.ufes.informatica.musicplus.core.controller/PlaylistController/adicionarMusicaNaPlaylist">
       <resultDependencyConstraint result="erroAoAdicionar.xhtml"/>
     </packagedElement>
+    <packagedElement xsi:type="frameweb:FrontControllerDependency" client="//@compose.1/core%2FbuscarMusica/buscaMusica" supplier="//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController" method="//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController/buscarMusica"/>
   </compose>
   <compose xsi:type="frameweb:PersistenceModel" name="Persistence Model">
     <packagedElement xsi:type="frameweb:PersistencePackage" name="br.ufes.informatica.musicplus.core.persistence">

@@ -18,7 +18,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebEntityModel']"/>
         <target xmi:type="frameweb:EntityModel" href="Model.frameweb#//@compose.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__cADcIEjEeunzM-deis-Dw" name="FrameWebNavigationModel" repPath="#__b5VwIEjEeunzM-deis-Dw" changeId="ca62dcd2-836b-4145-ac97-1148bc6ff8bc">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__cADcIEjEeunzM-deis-Dw" name="FrameWebNavigationModel" repPath="#__b5VwIEjEeunzM-deis-Dw" changeId="a1cd3611-bc93-49a6-97c3-2e5b8d3f6e7c">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']"/>
         <target xmi:type="frameweb:NavigationModel" href="Model.frameweb#//@compose.1"/>
       </ownedRepresentationDescriptors>
@@ -1244,7 +1244,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_l8jZJoOKEeu_2ZyvOxN2jw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_l8jZIYOKEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l8jZIoOKEeu_2ZyvOxN2jw" x="535" y="42" width="171" height="170"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l8jZIoOKEeu_2ZyvOxN2jw" x="648" y="42" width="171" height="170"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_Xfby0IOLEeu_2ZyvOxN2jw" type="3009" element="_XfEmcIOLEeu_2ZyvOxN2jw">
               <children xmi:type="notation:Node" xmi:id="_Xfby04OLEeu_2ZyvOxN2jw" type="5004"/>
@@ -1269,7 +1269,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_Xfby1oOLEeu_2ZyvOxN2jw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_Xfby0YOLEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xfby0oOLEeu_2ZyvOxN2jw" x="1039" y="42" width="147" height="170"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xfby0oOLEeu_2ZyvOxN2jw" x="923" y="42" width="147" height="170"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_JXxJBYEkEeunzM-deis-Dw"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_JXxJBoEkEeunzM-deis-Dw"/>
@@ -1502,7 +1502,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_zx501oOJEeu_2ZyvOxN2jw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_zx500YOJEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zx500oOJEeu_2ZyvOxN2jw" x="355" y="168"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zx500oOJEeu_2ZyvOxN2jw" x="268" y="168"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_zx5014OJEeu_2ZyvOxN2jw" type="3009" element="_zxlrwYOJEeu_2ZyvOxN2jw">
               <children xmi:type="notation:Node" xmi:id="_zx502oOJEeu_2ZyvOxN2jw" type="5004"/>
@@ -1511,7 +1511,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_zx503YOJEeu_2ZyvOxN2jw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_zx502IOJEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zx502YOJEeu_2ZyvOxN2jw" x="199" y="72"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zx502YOJEeu_2ZyvOxN2jw" x="112" y="72"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_zx503oOJEeu_2ZyvOxN2jw" type="3009" element="_zxlrxIOJEeu_2ZyvOxN2jw">
               <children xmi:type="notation:Node" xmi:id="_zx6b4IOJEeu_2ZyvOxN2jw" type="5004"/>
@@ -1524,13 +1524,13 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_zx6b44OJEeu_2ZyvOxN2jw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_zx5034OJEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zx504IOJEeu_2ZyvOxN2jw" x="235" y="372"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zx504IOJEeu_2ZyvOxN2jw" x="148" y="372"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_zx5NxYOJEeu_2ZyvOxN2jw"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_zx5NxoOJEeu_2ZyvOxN2jw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_zx5NwYOJEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zx5NwoOJEeu_2ZyvOxN2jw" x="1248" y="606" width="675" height="627"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zx5NwoOJEeu_2ZyvOxN2jw" x="1335" y="606" width="588" height="627"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="__cRwQYEjEeunzM-deis-Dw"/>
         <edges xmi:type="notation:Edge" xmi:id="_mz95MINREeuINsJbyiuYeQ" type="4001" element="_mzW1MINREeuINsJbyiuYeQ" source="_Z_s8g4NREeuINsJbyiuYeQ" target="_Z_ruYINREeuINsJbyiuYeQ">
@@ -1677,133 +1677,133 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zx7C-oOJEeu_2ZyvOxN2jw" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zx7qAIOJEeu_2ZyvOxN2jw" id="(0.5,0.5)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_3AHLUIOLEeu_2ZyvOxN2jw" type="4001" element="_2_sUmIOLEeu_2ZyvOxN2jw" source="_zx500IOJEeu_2ZyvOxN2jw" target="_Xfby0IOLEeu_2ZyvOxN2jw">
-          <children xmi:type="notation:Node" xmi:id="_3AHLVIOLEeu_2ZyvOxN2jw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3AHLVYOLEeu_2ZyvOxN2jw" x="-33" y="24" width="178" height="12"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_3AHLVoOLEeu_2ZyvOxN2jw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3AHLV4OLEeu_2ZyvOxN2jw" x="62" y="10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_3AHLWIOLEeu_2ZyvOxN2jw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3AHLWYOLEeu_2ZyvOxN2jw" x="-102" y="10"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_3AHLUYOLEeu_2ZyvOxN2jw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_3AHLUoOLEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3AHLU4OLEeu_2ZyvOxN2jw" points="[23, 31, 131, 595]$[48, 31, 156, 595]$[48, -282, 156, 282]$[-240, -282, -132, 282]$[-240, -684, -132, -120]$[-192, -684, -84, -120]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3AHLWoOLEeu_2ZyvOxN2jw" id="(0.8391608391608392,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3AHLW4OLEeu_2ZyvOxN2jw" id="(0.5793103448275863,1.0)"/>
-        </edges>
         <edges xmi:type="notation:Edge" xmi:id="_PEH98IOMEeu_2ZyvOxN2jw" type="4001" element="_PDwxmIOMEeu_2ZyvOxN2jw" source="_Xfby0IOLEeu_2ZyvOxN2jw" target="_zx503oOJEeu_2ZyvOxN2jw">
           <children xmi:type="notation:Node" xmi:id="_PEH99IOMEeu_2ZyvOxN2jw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PEH99YOMEeu_2ZyvOxN2jw" x="-311" y="50"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PEH99YOMEeu_2ZyvOxN2jw" x="-415" y="77"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_PEH99oOMEeu_2ZyvOxN2jw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PEH994OMEeu_2ZyvOxN2jw" x="147" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PEH994OMEeu_2ZyvOxN2jw" x="51" y="185"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_PEH9-IOMEeu_2ZyvOxN2jw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PEH9-YOMEeu_2ZyvOxN2jw" x="3" y="332"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PEH9-YOMEeu_2ZyvOxN2jw" x="-322" y="10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_PEH98YOMEeu_2ZyvOxN2jw" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_PEH98oOMEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PEH984OMEeu_2ZyvOxN2jw" points="[49, -83, 73, -851]$[192, -83, 216, -851]$[192, 793, 216, 25]$[3, 793, 27, 25]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PEH984OMEeu_2ZyvOxN2jw" points="[49, -83, -43, -851]$[308, -83, 216, -851]$[308, 793, 216, 25]$[119, 793, 27, 25]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PEH9-oOMEeu_2ZyvOxN2jw" id="(0.6620689655172414,1.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PEH9-4OMEeu_2ZyvOxN2jw" id="(0.8163265306122449,0.0)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_roQFwIOMEeu_2ZyvOxN2jw" type="4001" element="_rn3EPIOMEeu_2ZyvOxN2jw" source="_9n2bsIOIEeu_2ZyvOxN2jw" target="_l8jZIIOKEeu_2ZyvOxN2jw">
           <children xmi:type="notation:Node" xmi:id="_roQs0IOMEeu_2ZyvOxN2jw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_roQs0YOMEeu_2ZyvOxN2jw" x="189" y="29"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_roQs0YOMEeu_2ZyvOxN2jw" x="355" y="88"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_roQs0oOMEeu_2ZyvOxN2jw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_roQs04OMEeu_2ZyvOxN2jw" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_roQs04OMEeu_2ZyvOxN2jw" x="-17" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_roQs1IOMEeu_2ZyvOxN2jw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_roQs1YOMEeu_2ZyvOxN2jw" x="-34"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_roQs1YOMEeu_2ZyvOxN2jw" x="-43" y="87"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_roQFwYOMEeu_2ZyvOxN2jw" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_roQFwoOMEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_roQFw4OMEeu_2ZyvOxN2jw" points="[32, 25, -400, 625]$[336, 25, -96, 625]$[336, -564, -96, 36]$[432, -564, 0, 36]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_roQFw4OMEeu_2ZyvOxN2jw" points="[33, 25, -512, 625]$[336, 25, -209, 625]$[336, -564, -209, 36]$[545, -564, 0, 36]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_roQs1oOMEeu_2ZyvOxN2jw" id="(0.8048780487804879,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_roQs14OMEeu_2ZyvOxN2jw" id="(0.0,0.0)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_8G2JsIONEeu_2ZyvOxN2jw" type="4001" element="_8GinvoONEeu_2ZyvOxN2jw" source="_9n2bt4OIEeu_2ZyvOxN2jw" target="_l8jZIIOKEeu_2ZyvOxN2jw">
           <children xmi:type="notation:Node" xmi:id="_8G2JtIONEeu_2ZyvOxN2jw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8G2JtYONEeu_2ZyvOxN2jw" x="198" y="41"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8G2JtYONEeu_2ZyvOxN2jw" x="435" y="70"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_8G2JtoONEeu_2ZyvOxN2jw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8G2Jt4ONEeu_2ZyvOxN2jw" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8G2Jt4ONEeu_2ZyvOxN2jw" x="-17" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_8G2wwIONEeu_2ZyvOxN2jw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8G2wwYONEeu_2ZyvOxN2jw" x="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8G2wwYONEeu_2ZyvOxN2jw" x="-106"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_8G2JsYONEeu_2ZyvOxN2jw" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_8G2JsoONEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8G2Js4ONEeu_2ZyvOxN2jw" points="[25, 25, -431, 709]$[408, 25, -48, 709]$[408, -600, -48, 84]$[456, -600, 0, 84]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8G2Js4ONEeu_2ZyvOxN2jw" points="[26, 25, -543, 709]$[408, 25, -161, 709]$[408, -600, -161, 84]$[569, -600, 0, 84]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8G2wwoONEeu_2ZyvOxN2jw" id="(0.8120300751879699,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8G2ww4ONEeu_2ZyvOxN2jw" id="(0.0,0.07142857142857142)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_V7Tw0IOPEeu_2ZyvOxN2jw" type="4001" element="_V6_nzIOPEeu_2ZyvOxN2jw" source="_l8jZIIOKEeu_2ZyvOxN2jw" target="_9n439IOIEeu_2ZyvOxN2jw">
           <children xmi:type="notation:Node" xmi:id="_V7Tw1IOPEeu_2ZyvOxN2jw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V7Tw1YOPEeu_2ZyvOxN2jw" x="-18" y="216"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V7Tw1YOPEeu_2ZyvOxN2jw" x="286" y="21"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_V7Tw1oOPEeu_2ZyvOxN2jw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V7Tw14OPEeu_2ZyvOxN2jw" x="-2" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V7Tw14OPEeu_2ZyvOxN2jw" x="-19" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_V7UX4IOPEeu_2ZyvOxN2jw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V7UX4YOPEeu_2ZyvOxN2jw" x="-12" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V7UX4YOPEeu_2ZyvOxN2jw" x="5" y="10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_V7Tw0YOPEeu_2ZyvOxN2jw" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_V7Tw0oOPEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V7Tw04OPEeu_2ZyvOxN2jw" points="[0, 0, 654, -636]$[0, 636, 654, 0]$[-626, 636, 28, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V7Tw04OPEeu_2ZyvOxN2jw" points="[0, 0, 767, -636]$[0, 636, 767, 0]$[-725, 636, 42, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V7UX4oOPEeu_2ZyvOxN2jw" id="(0.35502958579881655,1.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V7UX44OPEeu_2ZyvOxN2jw" id="(0.7692307692307693,0.5901639344262295)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_kC-2IIOPEeu_2ZyvOxN2jw" type="4001" element="_kCu-kIOPEeu_2ZyvOxN2jw" source="_l8jZIIOKEeu_2ZyvOxN2jw" target="_9n43-4OIEeu_2ZyvOxN2jw">
           <children xmi:type="notation:Node" xmi:id="_kC-2JIOPEeu_2ZyvOxN2jw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kC-2JYOPEeu_2ZyvOxN2jw" x="89" y="426"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kC-2JYOPEeu_2ZyvOxN2jw" x="31" y="548"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_kC-2JoOPEeu_2ZyvOxN2jw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kC-2J4OPEeu_2ZyvOxN2jw" x="-41" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kC-2J4OPEeu_2ZyvOxN2jw" x="-58" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_kC-2KIOPEeu_2ZyvOxN2jw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kC-2KYOPEeu_2ZyvOxN2jw" x="31" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kC-2KYOPEeu_2ZyvOxN2jw" x="48" y="-10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_kC-2IYOPEeu_2ZyvOxN2jw" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_kC-2IoOPEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kC-2I4OPEeu_2ZyvOxN2jw" points="[84, 0, 781, -876]$[84, 900, 781, 24]$[-646, 900, 51, 24]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kC-2I4OPEeu_2ZyvOxN2jw" points="[84, 0, 894, -876]$[84, 900, 894, 24]$[-725, 900, 85, 24]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kC-2KoOPEeu_2ZyvOxN2jw" id="(0.35502958579881655,1.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kC-2K4OPEeu_2ZyvOxN2jw" id="(0.543010752688172,0.1643835616438356)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_y1V3MIOPEeu_2ZyvOxN2jw" type="4001" element="_y0negoOPEeu_2ZyvOxN2jw" source="_l8jZIIOKEeu_2ZyvOxN2jw" target="_9n4Q4IOIEeu_2ZyvOxN2jw">
           <children xmi:type="notation:Node" xmi:id="_y1WeQIOPEeu_2ZyvOxN2jw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y1WeQYOPEeu_2ZyvOxN2jw" x="30" y="232"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y1WeQYOPEeu_2ZyvOxN2jw" x="337" y="18"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_y1WeQoOPEeu_2ZyvOxN2jw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y1WeQ4OPEeu_2ZyvOxN2jw" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y1WeQ4OPEeu_2ZyvOxN2jw" x="-17" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_y1WeRIOPEeu_2ZyvOxN2jw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y1WeRYOPEeu_2ZyvOxN2jw" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y1WeRYOPEeu_2ZyvOxN2jw" x="17" y="10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_y1V3MYOPEeu_2ZyvOxN2jw" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_y1V3MoOPEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_y1V3M4OPEeu_2ZyvOxN2jw" points="[0, 0, 716, -792]$[0, 792, 716, 0]$[-696, 792, 20, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_y1V3M4OPEeu_2ZyvOxN2jw" points="[0, 0, 829, -792]$[0, 792, 829, 0]$[-809, 792, 20, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y1WeRoOPEeu_2ZyvOxN2jw" id="(0.8520710059171598,1.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y1WeR4OPEeu_2ZyvOxN2jw" id="(0.8924731182795699,0.3287671232876712)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="__AFVwIOPEeu_2ZyvOxN2jw" type="4001" element="_-_2FRIOPEeu_2ZyvOxN2jw" source="_l8jZIIOKEeu_2ZyvOxN2jw" target="_9n4Q54OIEeu_2ZyvOxN2jw">
           <children xmi:type="notation:Node" xmi:id="__AFVxIOPEeu_2ZyvOxN2jw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__AFVxYOPEeu_2ZyvOxN2jw" x="23" y="233"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__AFVxYOPEeu_2ZyvOxN2jw" x="331" y="18"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="__AFVxoOPEeu_2ZyvOxN2jw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__AFVx4OPEeu_2ZyvOxN2jw" x="46" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__AFVx4OPEeu_2ZyvOxN2jw" x="29" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="__AFVyIOPEeu_2ZyvOxN2jw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__AFVyYOPEeu_2ZyvOxN2jw" x="-39" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__AFVyYOPEeu_2ZyvOxN2jw" x="-22" y="-10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="__AFVwYOPEeu_2ZyvOxN2jw" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="__AFVwoOPEeu_2ZyvOxN2jw" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__AFVw4OPEeu_2ZyvOxN2jw" points="[-84, 0, 680, -672]$[-84, 696, 680, 24]$[-698, 696, 66, 24]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__AFVw4OPEeu_2ZyvOxN2jw" points="[-84, 0, 793, -672]$[-84, 696, 793, 24]$[-811, 696, 66, 24]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__AFVyoOPEeu_2ZyvOxN2jw" id="(0.8520710059171598,1.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__AFVy4OPEeu_2ZyvOxN2jw" id="(0.6413043478260869,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_1Ip2QIOSEeuXJv6y1dsCkw" type="4001" element="_1F3oAIOSEeuXJv6y1dsCkw" source="_zx500IOJEeu_2ZyvOxN2jw" target="_Xfby0IOLEeu_2ZyvOxN2jw">
+          <children xmi:type="notation:Node" xmi:id="_1JNP4IOSEeuXJv6y1dsCkw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1JNP4YOSEeuXJv6y1dsCkw" x="-58" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1JPFEIOSEeuXJv6y1dsCkw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1JPFEYOSEeuXJv6y1dsCkw" x="-18" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1JQTMIOSEeuXJv6y1dsCkw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1JQTMYOSEeuXJv6y1dsCkw" x="17" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_1Ip2QYOSEeuXJv6y1dsCkw" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_1IqdUIOSEeuXJv6y1dsCkw" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1IqdUYOSEeuXJv6y1dsCkw" points="[0, 0, 256, 564]$[0, -282, 256, 282]$[-256, -282, 0, 282]$[-256, -564, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1JuNQIOSEeuXJv6y1dsCkw" id="(0.6388888888888888,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1JuNQYOSEeuXJv6y1dsCkw" id="(0.16551724137931034,1.0)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
@@ -1956,9 +1956,9 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='Controller%20Package']/@subContainerMappings[name='Front%20Controller%20Node']/@subNodeMappings[name='Front%20Controller%20Method%20Node']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XfEmcIOLEeu_2ZyvOxN2jw" name="MusicController" outgoingEdges="_PDwxmIOMEeu_2ZyvOxN2jw" incomingEdges="_2_sUmIOLEeu_2ZyvOxN2jw">
-        <target xmi:type="frameweb:FrontControllerClass" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController"/>
-        <semanticElements xmi:type="frameweb:FrontControllerClass" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XfEmcIOLEeu_2ZyvOxN2jw" name="MusicaController" outgoingEdges="_PDwxmIOMEeu_2ZyvOxN2jw" incomingEdges="_1F3oAIOSEeuXJv6y1dsCkw">
+        <target xmi:type="frameweb:FrontControllerClass" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController"/>
+        <semanticElements xmi:type="frameweb:FrontControllerClass" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1968,32 +1968,32 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='Controller%20Package']/@subContainerMappings[name='Front%20Controller%20Node']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_g1lp4oOLEeu_2ZyvOxN2jw" name=" - nomeDoArtista : String">
-          <target xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController/nomeDoArtista"/>
-          <semanticElements xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController/nomeDoArtista"/>
+          <target xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController/nomeDoArtista"/>
+          <semanticElements xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController/nomeDoArtista"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_g1lp44OLEeu_2ZyvOxN2jw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='Controller%20Package']/@subContainerMappings[name='Front%20Controller%20Node']/@subNodeMappings[name='IO%20Parameter%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='Controller%20Package']/@subContainerMappings[name='Front%20Controller%20Node']/@subNodeMappings[name='IO%20Parameter%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_iX0RoIOLEeu_2ZyvOxN2jw" name=" - nomeDaMusica : String">
-          <target xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController/nomeDaMusica"/>
-          <semanticElements xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController/nomeDaMusica"/>
+          <target xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController/nomeDaMusica"/>
+          <semanticElements xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController/nomeDaMusica"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_iX0RoYOLEeu_2ZyvOxN2jw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='Controller%20Package']/@subContainerMappings[name='Front%20Controller%20Node']/@subNodeMappings[name='IO%20Parameter%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='Controller%20Package']/@subContainerMappings[name='Front%20Controller%20Node']/@subNodeMappings[name='IO%20Parameter%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_j5Vu0IOLEeu_2ZyvOxN2jw" name=" - listaDeMusicas : List">
-          <target xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController/listaDeMusicas"/>
-          <semanticElements xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController/listaDeMusicas"/>
+          <target xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController/listaDeMusicas"/>
+          <semanticElements xmi:type="frameweb:IOParameter" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController/listaDeMusicas"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_j5Vu0YOLEeu_2ZyvOxN2jw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='Controller%20Package']/@subContainerMappings[name='Front%20Controller%20Node']/@subNodeMappings[name='IO%20Parameter%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='Controller%20Package']/@subContainerMappings[name='Front%20Controller%20Node']/@subNodeMappings[name='IO%20Parameter%20Node']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_l5Xs6IOLEeu_2ZyvOxN2jw" name=" + buscarMusica () : String">
-          <target xmi:type="frameweb:FrontControllerMethod" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController/buscarMusica"/>
-          <semanticElements xmi:type="frameweb:FrontControllerMethod" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicController/buscarMusica"/>
+          <target xmi:type="frameweb:FrontControllerMethod" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController/buscarMusica"/>
+          <semanticElements xmi:type="frameweb:FrontControllerMethod" href="Model.frameweb#//@compose.1/br.ufes.informatica.musicplus.core.controller/MusicaController/buscarMusica"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_l5YT4IOLEeu_2ZyvOxN2jw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
             <description xmi:type="style:DotDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='Controller%20Package']/@subContainerMappings[name='Front%20Controller%20Node']/@subNodeMappings[name='Front%20Controller%20Method%20Node']/@style"/>
           </ownedStyle>
@@ -2410,7 +2410,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@containerMappings[name='View%20Package']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_zxlEsIOJEeu_2ZyvOxN2jw" name="&lt;&lt;form>>&#xA;buscaMusica" outgoingEdges="_2_sUmIOLEeu_2ZyvOxN2jw" incomingEdges="_zxvczIOJEeu_2ZyvOxN2jw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_zxlEsIOJEeu_2ZyvOxN2jw" name="&lt;&lt;form>>&#xA;buscaMusica" outgoingEdges="_1F3oAIOSEeuXJv6y1dsCkw" incomingEdges="_zxvczIOJEeu_2ZyvOxN2jw">
         <target xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.1/core%2FbuscarMusica/buscaMusica"/>
         <semanticElements xmi:type="frameweb:UIComponent" href="Model.frameweb#//@compose.1/core%2FbuscarMusica/buscaMusica"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2482,18 +2482,9 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='Navigation%20Association']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_2_sUmIOLEeu_2ZyvOxN2jw" name="{method=buscarMusica}" sourceNode="_zxlEsIOJEeu_2ZyvOxN2jw" targetNode="_XfEmcIOLEeu_2ZyvOxN2jw">
-      <target xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.12"/>
-      <semanticElements xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.12"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_2_sUmYOLEeu_2ZyvOxN2jw" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="69,69,69">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='FrontControllerDependency%20Line']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_2_sUmoOLEeu_2ZyvOxN2jw" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='FrontControllerDependency%20Line']"/>
-    </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PDwxmIOMEeu_2ZyvOxN2jw" name="{method=buscarMusica, result=musicasEncontradas.xhtml}" sourceNode="_XfEmcIOLEeu_2ZyvOxN2jw" targetNode="_zxlrxIOJEeu_2ZyvOxN2jw">
-      <target xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.13"/>
-      <semanticElements xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.13"/>
+      <target xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.12"/>
+      <semanticElements xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.12"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PDwxmYOMEeu_2ZyvOxN2jw" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='ResultDependency%20Line']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PDwxmoOMEeu_2ZyvOxN2jw" showIcon="false"/>
@@ -2501,8 +2492,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='ResultDependency%20Line']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rn3EPIOMEeu_2ZyvOxN2jw" name="{method=adicionarMusicaNaPlaylist}" sourceNode="_9ngdcIOIEeu_2ZyvOxN2jw" targetNode="_l7_YcIOKEeu_2ZyvOxN2jw">
-      <target xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.14"/>
-      <semanticElements xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.14"/>
+      <target xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.13"/>
+      <semanticElements xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.13"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_rn3rQIOMEeu_2ZyvOxN2jw" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='FrontControllerDependency%20Line']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_rn3rQYOMEeu_2ZyvOxN2jw" showIcon="false"/>
@@ -2510,17 +2501,17 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='FrontControllerDependency%20Line']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8GinvoONEeu_2ZyvOxN2jw" name="{method=criarPlaylist}" sourceNode="_9ngdc4OIEeu_2ZyvOxN2jw" targetNode="_l7_YcIOKEeu_2ZyvOxN2jw">
-      <target xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.15"/>
-      <semanticElements xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.15"/>
+      <target xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.14"/>
+      <semanticElements xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.14"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_8Ginv4ONEeu_2ZyvOxN2jw" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='FrontControllerDependency%20Line']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_8GinwIONEeu_2ZyvOxN2jw" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='FrontControllerDependency%20Line']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V6_nzIOPEeu_2ZyvOxN2jw" name="{method=criarPlaylist, result=sucessoMusicaAdc.xhtml}" sourceNode="_l7_YcIOKEeu_2ZyvOxN2jw" targetNode="_9niSpoOIEeu_2ZyvOxN2jw">
-      <target xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.16"/>
-      <semanticElements xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.16"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V6_nzIOPEeu_2ZyvOxN2jw" name="{method=criarPlaylist, result=sucessoPlaylistCriada.xhtml}" sourceNode="_l7_YcIOKEeu_2ZyvOxN2jw" targetNode="_9niSpoOIEeu_2ZyvOxN2jw">
+      <target xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.15"/>
+      <semanticElements xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.15"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_V6_nzYOPEeu_2ZyvOxN2jw" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='ResultDependency%20Line']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_V6_nzoOPEeu_2ZyvOxN2jw" showIcon="false"/>
@@ -2528,17 +2519,17 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='ResultDependency%20Line']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_kCu-kIOPEeu_2ZyvOxN2jw" name="{method=criarPlaylist, result=erroAoCriar.xhtml}" sourceNode="_l7_YcIOKEeu_2ZyvOxN2jw" targetNode="_9ni5sYOIEeu_2ZyvOxN2jw">
-      <target xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.17"/>
-      <semanticElements xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.17"/>
+      <target xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.16"/>
+      <semanticElements xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.16"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_kCvlkIOPEeu_2ZyvOxN2jw" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='ResultDependency%20Line']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_kCvlkYOPEeu_2ZyvOxN2jw" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='ResultDependency%20Line']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_y0negoOPEeu_2ZyvOxN2jw" name="{method=adicionarMusicaNaPlaylist, result=sucessoPlaylistCriada.xhtml}" sourceNode="_l7_YcIOKEeu_2ZyvOxN2jw" targetNode="_9niSoIOIEeu_2ZyvOxN2jw">
-      <target xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.18"/>
-      <semanticElements xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.18"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_y0negoOPEeu_2ZyvOxN2jw" name="{method=adicionarMusicaNaPlaylist, result=sucessoMusicaAdc.xhtml}" sourceNode="_l7_YcIOKEeu_2ZyvOxN2jw" targetNode="_9niSoIOIEeu_2ZyvOxN2jw">
+      <target xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.17"/>
+      <semanticElements xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.17"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_y0neg4OPEeu_2ZyvOxN2jw" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='ResultDependency%20Line']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_y0nehIOPEeu_2ZyvOxN2jw" showIcon="false"/>
@@ -2546,13 +2537,22 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='ResultDependency%20Line']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_-_2FRIOPEeu_2ZyvOxN2jw" name="{method=adicionarMusicaNaPlaylist, result=erroAoAdicionar.xhtml}" sourceNode="_l7_YcIOKEeu_2ZyvOxN2jw" targetNode="_9niSo4OIEeu_2ZyvOxN2jw">
-      <target xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.19"/>
-      <semanticElements xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.19"/>
+      <target xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.18"/>
+      <semanticElements xmi:type="frameweb:ResultDependency" href="Model.frameweb#//@compose.1/@packagedElement.18"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_-_2FRYOPEeu_2ZyvOxN2jw" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='ResultDependency%20Line']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_-_2FRoOPEeu_2ZyvOxN2jw" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='ResultDependency%20Line']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_1F3oAIOSEeuXJv6y1dsCkw" name="{method=buscarMusica}" sourceNode="_zxlEsIOJEeu_2ZyvOxN2jw" targetNode="_XfEmcIOLEeu_2ZyvOxN2jw">
+      <target xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.19"/>
+      <semanticElements xmi:type="frameweb:FrontControllerDependency" href="Model.frameweb#//@compose.1/@packagedElement.19"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_1F42IIOSEeuXJv6y1dsCkw" lineStyle="dash" size="2" routingStyle="manhattan" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='FrontControllerDependency%20Line']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_1F42IYOSEeuXJv6y1dsCkw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']/@defaultLayer/@edgeMappings[name='FrontControllerDependency%20Line']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/br.ufes.inf.nemo.FrameWeb_Martins2015.design/description/FrameWeb.odesign#//@ownedViewpoints[name='']/@ownedRepresentations[name='FrameWebNavigationModel']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="__b580IEjEeunzM-deis-Dw"/>
