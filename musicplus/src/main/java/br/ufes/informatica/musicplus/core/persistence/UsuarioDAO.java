@@ -2,6 +2,7 @@ package br.ufes.informatica.musicplus.core.persistence;
 
 import javax.ejb.Local;
 
+import br.ufes.inf.nemo.jbutler.ejb.persistence.BaseDAO;
 import br.ufes.informatica.musicplus.core.domain.Artista;
 import br.ufes.informatica.musicplus.core.domain.Usuario;
 

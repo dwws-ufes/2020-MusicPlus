@@ -4,6 +4,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import br.ufes.inf.nemo.jbutler.ejb.persistence.BaseJPADAO;
 import br.ufes.informatica.musicplus.core.domain.Artista;
 import br.ufes.informatica.musicplus.core.domain.Usuario;
 
