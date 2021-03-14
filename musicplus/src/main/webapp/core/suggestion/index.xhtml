@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:adm="http://github.com/adminfaces"
+	template="/WEB-INF/templates/template.xhtml">
+
+
+	<ui:define name="title">
+		<h:outputText value="#{msgsCore['sugestao.title']}" />
+	</ui:define>
+
+	<ui:define name="description">
+		<h:outputText value="#{msgsCore['sugestao.title.description']}" />
+	</ui:define>
+
+	<ui:define name="body">
+		<adm:breadcrumb link="/core/registration/index"
+			title="#{msgsCore['sugestao.title']}" />
+		<h:form id="sugestaoArtista">
+
+			<p:selectOneMenu id="generoEscolhido"
+				value="#{sugestaoController.generoEscolhido}" />
+			<p:inputNumber id="numSugestoes"
+				value="#{sugestaoController.numSugestoes}" />
+			<p:selectOneMenu id="porRankingOuAleatorio"
+				value="#{sugestaoController.porRankingOuAleatorio}" />
+			<p:selectOneMenu id="porPais" value="#{sugestaoController.porPais}" />
+		</h:form>
+		<h:form id="sugestaoMusica">
+
+			<p: id="" value="#{sugestaoController.}" />
+			<p:TipoGenero id="generoEscolhido"
+				value="#{sugestaoController.generoEscolhido}" />
+			<p:selectOneMenu id="generoEscolhido"
+				value="#{sugestaoController.generoEscolhido}" />
+			<p:inputNumber id="numSugestoes"
+				value="#{sugestaoController.numSugestoes}" />
+			<p:selectOneMenu id="porRankingOuAleatorio"
+				value="#{sugestaoController.porRankingOuAleatorio}" />
+			<p:selectOneMenu id="porIdioma"
+				value="#{sugestaoController.porIdioma}" />
+		</h:form>
+
+	</ui:define>
+</ui:composition>
