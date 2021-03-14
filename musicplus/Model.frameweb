@@ -499,10 +499,6 @@
           <ownedParameter name="usuario" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario"/>
           <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
         </ownedOperation>
-        <ownedOperation xsi:type="frameweb:DAOMethod" name="listarPlaylistsDoUsuario">
-          <ownedParameter name="usuario" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario"/>
-          <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
-        </ownedOperation>
         <ownedOperation xsi:type="frameweb:DAOMethod" name="checarSeMusicaEstaNaPlaylist">
           <ownedParameter name="musica" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica"/>
           <ownedParameter name="playlist" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Playlist"/>
