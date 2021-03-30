@@ -37,9 +37,6 @@
         <ownedAttribute xsi:type="frameweb:DomainAttribute" name="nome" visibility="private">
           <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/String"/>
         </ownedAttribute>
-        <ownedAttribute xsi:type="frameweb:DomainAttribute" name="dataDeLancemento" visibility="private">
-          <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/Date"/>
-        </ownedAttribute>
         <ownedAttribute xsi:type="frameweb:DomainAttribute" name="duracao" visibility="private">
           <type xsi:type="uml:PrimitiveType" href="frameweb/Java.frameweb#//@compose.0/int"/>
         </ownedAttribute>
@@ -51,6 +48,9 @@
         </ownedAttribute>
         <ownedAttribute xsi:type="frameweb:DomainAttribute" name="numVezesFavoritado" visibility="private">
           <type xsi:type="uml:PrimitiveType" href="frameweb/Java.frameweb#//@compose.0/int"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:DateTimeAttribute" name="dataLancamento" visibility="private" dateTimePrecision="date">
+          <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/Date"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xsi:type="frameweb:DomainClass" name="Colecao">
@@ -419,7 +419,6 @@
       <packagedElement xsi:type="frameweb:DAOInterface" name="PlaylistDAO"/>
       <packagedElement xsi:type="frameweb:DAOInterface" name="PessoaDAO"/>
       <packagedElement xsi:type="frameweb:DAOInterface" name="ColecaoDAO"/>
-      <packagedElement xsi:type="frameweb:DAOInterface" name="UsuarioDAO"/>
       <packagedElement xsi:type="frameweb:DAOClass" name="MusicaDAOJPA">
         <ownedOperation xsi:type="frameweb:DAOMethod" name="buscarPorNome">
           <ownedParameter name="nome">
@@ -488,14 +487,6 @@
         </ownedOperation>
       </packagedElement>
       <packagedElement xsi:type="frameweb:DAOClass" name="PlaylistDAOJPA">
-        <ownedOperation xsi:type="frameweb:DAOMethod" name="adicionarMusica">
-          <ownedParameter name="musica" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica"/>
-          <ownedParameter name="playlist" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Playlist"/>
-        </ownedOperation>
-        <ownedOperation xsi:type="frameweb:DAOMethod" name="removerMusica">
-          <ownedParameter name="musica" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica"/>
-          <ownedParameter name="playlist" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Playlist"/>
-        </ownedOperation>
         <ownedOperation xsi:type="frameweb:DAOMethod" name="buscarPorNome" methodType="//@compose.0/br.ufes.informatica.musicplus.core.domain/Playlist">
           <ownedParameter name="nome">
             <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/String"/>
@@ -506,20 +497,8 @@
           <ownedParameter name="usuario" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario"/>
           <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
         </ownedOperation>
-        <ownedOperation xsi:type="frameweb:DAOMethod" name="listarMusicasDaPlaylist">
-          <ownedParameter name="playlist" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Playlist"/>
-          <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
-        </ownedOperation>
       </packagedElement>
       <packagedElement xsi:type="frameweb:DAOClass" name="ColecaoDAOJPA">
-        <ownedOperation xsi:type="frameweb:DAOMethod" name="adicionarMusica">
-          <ownedParameter name="musica" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica"/>
-          <ownedParameter name="colecao" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao"/>
-        </ownedOperation>
-        <ownedOperation xsi:type="frameweb:DAOMethod" name="removerMusica">
-          <ownedParameter name="musica" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica"/>
-          <ownedParameter name="colecao" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao"/>
-        </ownedOperation>
         <ownedOperation xsi:type="frameweb:DAOMethod" name="buscarPorArtista">
           <ownedParameter name="artista" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista"/>
           <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
@@ -534,14 +513,6 @@
           </ownedParameter>
           <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
         </ownedOperation>
-        <ownedOperation xsi:type="frameweb:DAOMethod" name="listarMusicasDaColecao">
-          <ownedParameter name="colecao" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao"/>
-          <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
-        </ownedOperation>
-        <ownedOperation xsi:type="frameweb:DAOMethod" name="listarArtistasDaColecao">
-          <ownedParameter name="colecao" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Colecao"/>
-          <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
-        </ownedOperation>
       </packagedElement>
       <packagedElement xsi:type="frameweb:DAOClass" name="PessoaDAOJPA" powertypeExtent="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PessoaDAOJPA.1">
         <ownedOperation xsi:type="frameweb:DAOMethod" name="buscarPorEmail" methodType="//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa">
@@ -550,19 +521,8 @@
           </ownedParameter>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:DAOClass" name="UsuarioDAOJPA">
-        <generalization xsi:type="frameweb:DAOGeneralization" generalizationSet="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PessoaDAOJPA.1"/>
-        <ownedOperation xsi:type="frameweb:DAOMethod" name="favoritarArtista">
-          <ownedParameter name="artista" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Artista"/>
-          <ownedParameter name="usuario" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario"/>
-        </ownedOperation>
-        <ownedOperation xsi:type="frameweb:DAOMethod" name="listarArtistasFavoritos">
-          <ownedParameter name="usuario" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario"/>
-          <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
-        </ownedOperation>
-      </packagedElement>
-      <packagedElement xsi:type="frameweb:DAOGeneralizationSet" name="PessoaDAOJPA" powertype="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PessoaDAOJPA" generalization="//@compose.2/br.ufes.informatica.musicplus.core.persistence/UsuarioDAOJPA/@generalization.0"/>
-      <packagedElement xsi:type="frameweb:DAORealization" client="//@compose.2/br.ufes.informatica.musicplus.core.persistence/UsuarioDAOJPA" supplier="//@compose.2/br.ufes.informatica.musicplus.core.persistence/UsuarioDAO"/>
+      <packagedElement xsi:type="frameweb:DAOGeneralizationSet" name="PessoaDAOJPA" powertype="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PessoaDAOJPA"/>
+      <packagedElement xsi:type="frameweb:DAORealization"/>
       <packagedElement xsi:type="frameweb:DAORealization" client="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PessoaDAOJPA" supplier="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PessoaDAO"/>
       <packagedElement xsi:type="frameweb:DAORealization" client="//@compose.2/br.ufes.informatica.musicplus.core.persistence/ColecaoDAOJPA" supplier="//@compose.2/br.ufes.informatica.musicplus.core.persistence/ColecaoDAO"/>
       <packagedElement xsi:type="frameweb:DAORealization" client="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PlaylistDAOJPA" supplier="//@compose.2/br.ufes.informatica.musicplus.core.persistence/PlaylistDAO"/>
@@ -637,6 +597,19 @@
           <ownedParameter name="musica" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica"/>
           <ownedParameter name="usuario" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario"/>
           <methodType xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/Boolean"/>
+        </ownedOperation>
+        <ownedOperation xsi:type="frameweb:ServiceMethod" name="removerMusicaDaPlaylist">
+          <ownedParameter name="usuarioLogado" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario"/>
+          <ownedParameter name="musicaAtual" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Musica"/>
+          <ownedParameter name="nomePlaylist">
+            <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xsi:type="frameweb:ServiceMethod" name="listarMusicasDaPlaylist">
+          <ownedParameter name="usuarioLogado" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/Usuario"/>
+          <ownedParameter name="nomePlaylist">
+            <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/String"/>
+          </ownedParameter>
         </ownedOperation>
       </packagedElement>
       <packagedElement xsi:type="frameweb:ServiceClass" name="MusicaServiceBean">
