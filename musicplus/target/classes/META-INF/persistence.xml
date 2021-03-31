@@ -6,6 +6,13 @@
 	<persistence-unit name="musicplus">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<jta-data-source>java:jboss/datasources/MusicPlus</jta-data-source>
+		<class>br.ufes.informatica.musicplus.core.domain.Admin</class>
+		<class>br.ufes.informatica.musicplus.core.domain.Artista</class>
+		<class>br.ufes.informatica.musicplus.core.domain.Colecao</class>
+		<class>br.ufes.informatica.musicplus.core.domain.Musica</class>
+		<class>br.ufes.informatica.musicplus.core.domain.Pessoa</class>
+		<class>br.ufes.informatica.musicplus.core.domain.Playlist</class>
+		<class>br.ufes.informatica.musicplus.core.domain.Usuario</class>
 		<class>br.ufes.inf.nemo.jbutler.ejb.persistence.PersistentObjectSupport</class>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="update" />
