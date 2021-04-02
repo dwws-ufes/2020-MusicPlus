@@ -21,7 +21,7 @@
       </packagedElement>
       <packagedElement xsi:type="frameweb:DomainClass" name="Usuario">
         <generalization xsi:type="frameweb:DomainGeneralization" generalizationSet="//@compose.0/br.ufes.informatica.musicplus.core.domain/Pessoa.1"/>
-        <ownedAttribute xsi:type="frameweb:DomainAttribute" name="generoFavoritados" visibility="private" owlEquivalentProperty="">
+        <ownedAttribute xsi:type="frameweb:DomainAttribute" name="generoFavoritados" visibility="private" isNull="true" owlEquivalentProperty="">
           <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
           <defaultValue xsi:type="uml:LiteralString" value=""/>
         </ownedAttribute>
@@ -43,7 +43,7 @@
         <ownedAttribute xsi:type="frameweb:DomainAttribute" name="idioma" visibility="private">
           <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
         </ownedAttribute>
-        <ownedAttribute xsi:type="frameweb:DomainAttribute" name="genero" visibility="private">
+        <ownedAttribute xsi:type="frameweb:DomainAttribute" name="genero" visibility="private" isNull="true">
           <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
         </ownedAttribute>
         <ownedAttribute xsi:type="frameweb:DomainAttribute" name="numVezesFavoritado" visibility="private">
@@ -57,7 +57,7 @@
         <ownedAttribute xsi:type="frameweb:DomainAttribute" name="nome" visibility="private">
           <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/String"/>
         </ownedAttribute>
-        <ownedAttribute xsi:type="frameweb:DomainAttribute" name="tipoColecao" visibility="private" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/TipoColecao"/>
+        <ownedAttribute xsi:type="frameweb:DomainAttribute" name="tipoColecao" visibility="private" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/TipoColecao" isNull="true"/>
         <ownedAttribute xsi:type="frameweb:DateTimeAttribute" name="dataLancamento" visibility="private" dateTimePrecision="date">
           <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/Date"/>
         </ownedAttribute>
@@ -67,7 +67,7 @@
           <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/String"/>
         </ownedAttribute>
         <ownedAttribute xsi:type="frameweb:DomainAttribute" name="nacionalidade" visibility="private" type="//@compose.0/br.ufes.informatica.musicplus.core.domain/TipoPais"/>
-        <ownedAttribute xsi:type="frameweb:DomainAttribute" name="genero" visibility="private">
+        <ownedAttribute xsi:type="frameweb:DomainAttribute" name="genero" visibility="private" isNull="true">
           <type xsi:type="uml:Class" href="frameweb/Java.frameweb#//@compose.0/List"/>
         </ownedAttribute>
         <ownedAttribute xsi:type="frameweb:DomainAttribute" name="numVezesFavoritado" visibility="private">

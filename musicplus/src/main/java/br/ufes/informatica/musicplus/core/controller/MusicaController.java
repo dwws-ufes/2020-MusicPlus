@@ -55,12 +55,12 @@ public class MusicaController extends JSFController {
 	}
 
 	/** Getter for listaDeMusicas. */
-	public List getListaDeMusicas() {
+	public List<Musica> getListaDeMusicas() {
 		return listaDeMusicas;
 	}
 
 	/** Setter for listaDeMusicas. */
-	public void setListaDeMusicas(List listaDeMusicas) {
+	public void setListaDeMusicas(List<Musica> listaDeMusicas) {
 		this.listaDeMusicas = listaDeMusicas;
 	}
 
