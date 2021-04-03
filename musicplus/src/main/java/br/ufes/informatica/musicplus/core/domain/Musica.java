@@ -133,7 +133,16 @@ public class Musica extends PersistentObjectSupport implements Comparable<Musica
 	/** @see java.lang.Comparable#compareTo(java.lang.Object) */
 	@Override
 	public int compareTo(Musica o) {
-		// FIXME: auto-generated method stub
-		return super.compareTo(o);
+		if (this.getId() == o.getId())
+			return 0 ;
+		else {
+			if (this.numVezesFavoritado == o.numVezesFavoritado) {
+				return this.nome.compareTo(o.nome);
+			}else {
+				Integer thisNumVezesFavoritado = this.numVezesFavoritado;
+				Integer oNumVezesFavoritado = o.numVezesFavoritado;
+				return thisNumVezesFavoritado.compareTo(oNumVezesFavoritado);
+			}
+		}
 	}
 }

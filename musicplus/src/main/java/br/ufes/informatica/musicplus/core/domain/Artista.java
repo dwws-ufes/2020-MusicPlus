@@ -76,11 +76,6 @@ public class Artista extends PersistentObjectSupport implements Comparable<Artis
 		return generos;
 	}
 
-	/** Setter for genero. */
-	private void setGenero(List<TipoGenero> generos) {
-		this.generos = generos;
-	}
-
 	/** Getter for numVezesFavoritado. */
 	public int getNumVezesFavoritado() {
 		return numVezesFavoritado;
@@ -109,7 +104,16 @@ public class Artista extends PersistentObjectSupport implements Comparable<Artis
 	/** @see java.lang.Comparable#compareTo(java.lang.Object) */
 	@Override
 	public int compareTo(Artista o) {
-		// FIXME: auto-generated method stub
-		return super.compareTo(o);
+		if (this.getId() == o.getId())
+			return 0 ;
+		else {
+			if (this.numVezesFavoritado == o.numVezesFavoritado) {
+				return this.nome.compareTo(o.nome);
+			}else {
+				Integer thisNumVezesFavoritado = this.numVezesFavoritado;
+				Integer oNumVezesFavoritado = o.numVezesFavoritado;
+				return thisNumVezesFavoritado.compareTo(oNumVezesFavoritado);
+			}
+		}
 	}
 }
