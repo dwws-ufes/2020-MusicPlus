@@ -1,5 +1,6 @@
 package br.ufes.informatica.musicplus.core.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -119,5 +120,10 @@ public class Artista extends PersistentObjectSupport implements Comparable<Artis
 				return thisNumVezesFavoritado.compareTo(oNumVezesFavoritado);
 			}
 		}
+	}
+	
+	public Artista() {
+		super();
+		this.generos = new ArrayList<TipoGenero>(); 
 	}
 }

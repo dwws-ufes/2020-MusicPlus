@@ -15,27 +15,34 @@
     <ui:define name="description">
         <h:outputText value="#{msgsCore['artista.novo.description']}" />
     </ui:define>
-
+	<br/>
     <ui:define name="body">
 		<h:form id="registerForm">
 		
 			<p:outputLabel value="Nome"/>
+					<br />
+			
 			<p:inputText id="nome" value="#{artistaController.nome}" />
-		
+		<br />	
+		<br />
 			<p:outputLabel value="Generos Musicais"/>
         	<p:selectManyCheckbox id="grid" value="#{artistaController.generosEscolhidos}" layout="grid" columns="3" styleClass="grid-checkbox">
             	<f:selectItems value="#{artistaController.todosOsGeneros}"/>
         	</p:selectManyCheckbox>
-			
+		<br />
+		<br />
 			<p:outputLabel value="Nacionalidade"/>
             <p:selectOneMenu id="labeled" value="#{artistaController.nacionalidade}" label="Selecione o país de origem do artista"
                                 alwaysDisplayLabel="true">
             	<f:selectItems value="#{artistaController.todosOsPaises}"/>
             </p:selectOneMenu>
+		<br />
+        <br />
+            <p:commandButton type="submit" value="Salvar"
+			action="#{artistaController.salvar}" />
 		</h:form>
-		
-		<p:commandButton type="button" value="Salvar"
-		action="#{registrationController.salvar}" />
+		<br />
+
     
     </ui:define>
 </ui:composition>
