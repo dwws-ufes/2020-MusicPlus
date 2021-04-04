@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+
+    <ui:define name="title">
+        <h:outputText value="#{msgsCore['artista.title']}" />
+    </ui:define>
+
+    <ui:define name="description">
+        <h:outputText value="#{msgsCore['artista.title.description']}" />
+    </ui:define>
+
+    <ui:define name="body">
+		<h:form id="registerForm">
+		
+			<h5>Nome</h5>
+			<p:inputText id="artista.nome" value="#{artistaController.artista.nome}" />
+		
+			<h5>Generos</h5>
+        	<p:selectManyCheckbox id="grid" value="#{artistaController.todosOsGeneros}" layout="grid" columns="3" styleClass="grid-checkbox">
+            	<f:selectItems value="#{checkboxView.generosEscolhidos}" var="genero" itemLabel="#{genero}" itemValue="#{genero}"/>
+        	</p:selectManyCheckbox>
+			
+			<h5>Nacionalidade</h5>
+			<p:outputLabel value="Label"/>
+            <p:selectOneMenu id="labeled" value="#{artistaController.nacionalidade}" label="Selecione o país de origem do artista"
+                                alwaysDisplayLabel="true">
+            	<f:selectItems value="#{artistaController.todosOsPaises}"/>
+            </p:selectOneMenu>
+		</h:form>
+		
+		<p:commandButton type="button" value="#{artistaController.Salvar}" />
+    
+    </ui:define>
+</ui:composition>
