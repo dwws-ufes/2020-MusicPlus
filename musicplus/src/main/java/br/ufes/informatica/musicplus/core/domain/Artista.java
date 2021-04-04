@@ -100,6 +100,10 @@ public class Artista extends PersistentObjectSupport implements Comparable<Artis
 	public Set<Musica> getMusicas() {
 		return musicas;
 	}
+	
+	public void addGenero(TipoGenero genero) {
+		this.generos.add(genero) ;
+	}
 
 	/** @see java.lang.Comparable#compareTo(java.lang.Object) */
 	@Override

@@ -66,10 +66,10 @@ public class ArtistaDAOJPA extends BaseJPADAO<Artista> implements ArtistaDAO {
 		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
 		CriteriaQuery<Artista> cq = cb.createQuery(Artista.class);
 		Root<Artista> root = cq.from(Artista.class);
-		ListJoin<Artista, TipoGenero> Artista_generos = root.join(Artista_.generos);
+		ListJoin<Artista, TipoGenero> Artista_genero = root.join(Artista_.generos);
 		
 		ParameterExpression<TipoGenero> paramGenero = cb.parameter(TipoGenero.class);
-		cq.where(cb.equal(Artista_generos, paramGenero));
+		cq.where(cb.equal(Artista_genero, paramGenero));
 		List<Artista> result = entityManager.createQuery(cq).getResultList();
 		logger.log(Level.INFO, "Recuperandos os Artistas pelo genero musical \"{0}\" retornou \"{1}\"", new Object[] { genero, result });
 
