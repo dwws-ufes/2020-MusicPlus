@@ -93,7 +93,6 @@ public class ArtistaController extends JSFController {
     }
     
     public String salvar() {
-		logger.log(Level.FINE, "Criando novo artista no sistema...");
     	Artista artista = new Artista();
     	for (TipoGenero g : generosEscolhidos) {
     		artista.addGenero(g);
@@ -101,7 +100,6 @@ public class ArtistaController extends JSFController {
     	artista.setNacionalidade(nacionalidade);
     	artista.setNome(nome);
     	artista.setNumVezesFavoritado(numVezesFavoritado);
-		logger.log(Level.FINE, "Artista criado");
     	artistaService.save(artista);
     	return "/index.xhtml" ;
     	
