@@ -38,6 +38,14 @@ public class ArtistaController extends JSFController {
 		numVezesFavoritado = 0;
 	}
 	
+    public TipoGenero[] getTodosOsGeneros() {
+        return todosOsGeneros;
+    }
+    
+    public TipoPais[] getTodosOsPaises() {
+        return todosOsPaises;
+    }
+    
     public TipoGenero[] getGenerosEscolhidos() {
         return generosEscolhidos;
     }
@@ -50,7 +58,7 @@ public class ArtistaController extends JSFController {
     	return nome ;
     }
     
-    public String Salvar() {
+    public String salvar() {
     	Artista artista = new Artista();
     	for (TipoGenero g : generosEscolhidos) {
     		artista.addGenero(g);

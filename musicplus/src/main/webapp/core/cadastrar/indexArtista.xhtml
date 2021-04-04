@@ -19,23 +19,23 @@
     <ui:define name="body">
 		<h:form id="registerForm">
 		
-			<h5>Nome</h5>
-			<p:inputText id="artista.nome" value="#{artistaController.artista.nome}" />
+			<p:outputLabel value="Nome"/>
+			<p:inputText id="nome" value="#{artistaController.nome}" />
 		
-			<h5>Generos</h5>
-        	<p:selectManyCheckbox id="grid" value="#{artistaController.todosOsGeneros}" layout="grid" columns="3" styleClass="grid-checkbox">
-            	<f:selectItems value="#{checkboxView.generosEscolhidos}" var="genero" itemLabel="#{genero}" itemValue="#{genero}"/>
+			<p:outputLabel value="Generos Musicais"/>
+        	<p:selectManyCheckbox id="grid" value="#{artistaController.generosEscolhidos}" layout="grid" columns="3" styleClass="grid-checkbox">
+            	<f:selectItems value="#{artistaController.todosOsGeneros}"/>
         	</p:selectManyCheckbox>
 			
-			<h5>Nacionalidade</h5>
-			<p:outputLabel value="Label"/>
+			<p:outputLabel value="Nacionalidade"/>
             <p:selectOneMenu id="labeled" value="#{artistaController.nacionalidade}" label="Selecione o país de origem do artista"
                                 alwaysDisplayLabel="true">
             	<f:selectItems value="#{artistaController.todosOsPaises}"/>
             </p:selectOneMenu>
 		</h:form>
 		
-		<p:commandButton type="button" value="#{artistaController.Salvar}" />
+		<p:commandButton type="button" value="Salvar"
+		action="#{registrationController.salvar}" />
     
     </ui:define>
 </ui:composition>
