@@ -122,6 +122,14 @@ public class Artista extends PersistentObjectSupport implements Comparable<Artis
 		}
 	}
 	
+	public String imprimirGeneros() {
+		String gens = "";
+		for (TipoGenero g : this.generos) {
+			gens = gens + "; " + g ;
+		}
+		return gens ;
+	}
+	
 	public Artista() {
 		super();
 		this.generos = new ArrayList<TipoGenero>(); 

@@ -9,11 +9,11 @@
 	
 
 	<ui:define name="title">
-		<h:outputText value="#{msgs['artista.novo']}" />
+		<h:outputText value="#{msgs['musica.novo']}" />
 	</ui:define>
 
 	<ui:define name="description">
-		<h:outputText value="#{msgs['artista.novo.description']}" />
+		<h:outputText value="#{msgs['musica.novo.description']}" />
 	</ui:define>
     
 	<br/>
@@ -32,15 +32,22 @@
         	</p:selectManyCheckbox>
 		<br />
 		<br />
-			<p:outputLabel value="Nacionalidade"/>
-            <p:selectOneMenu id="labeled" value="#{cadastroController.nacionalidade}" label="Selecione o país de origem do artista"
-                                alwaysDisplayLabel="true">
-            	<f:selectItems value="#{cadastroController.todosOsPaises}"/>
-            </p:selectOneMenu>
+			<p:outputLabel value="Idioma"/>
+            <p:selectManyCheckbox id="labeled" value="#{cadastroController.idiomasEscolhidos}" layout="grid" columns="3" styleClass="grid-checkbox">
+            	<f:selectItems value="#{cadastroController.todosOsIdiomas}"/>
+            </p:selectManyCheckbox>
 		<br />
         <br />
+        	<p:outputLabel value="Duração:"/>
+            <p:calendar id="time" value="#{cadastroController.duracao}" pattern="HH:mm:ss" timeOnly="true"/>
+		<br />
+        <br />   
+       		<p:outputLabel value="Data de Lançamento: "/>
+            <p:calendar id="inline" value="#{cadastroController.dataDeLancamento}" navigator="true" mode="inline" pattern="yyyy-MMM-dd"/>         
+        <br />
+        <br /> 
             <p:commandButton type="submit" value="Salvar"
-			action="#{cadastroController.salvarArtista}" />
+			action="#{cadastroController.salvarMusica}" />
 		</h:form>
 		<br />
 

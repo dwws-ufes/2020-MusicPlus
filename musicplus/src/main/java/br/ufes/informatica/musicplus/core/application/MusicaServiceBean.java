@@ -5,6 +5,7 @@ import java.util.List;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
+import br.ufes.informatica.musicplus.core.domain.Artista;
 import br.ufes.informatica.musicplus.core.domain.Musica;
 import br.ufes.informatica.musicplus.core.persistence.MusicaDAO;
 
@@ -23,6 +24,10 @@ public class MusicaServiceBean implements MusicaService {
 	public List<Musica> buscarMusica(String NomeDaMusica, String NomeDoArtista) {
 		// FIXME: auto-generated method stub
 		return null;
+	}
+	
+	public void save(Musica artista) {
+		musicaDAO.save(artista);
 	}
 
 }

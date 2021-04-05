@@ -8,17 +8,17 @@ import javax.persistence.metamodel.SetAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="Dali", date="2021-04-03T18:00:15.014-0300")
+@Generated(value="Dali", date="2021-04-04T20:05:30.857-0300")
 @StaticMetamodel(Musica.class)
 public class Musica_ extends PersistentObjectSupport_ {
 	public static volatile SingularAttribute<Musica, String> nome;
-	public static volatile SingularAttribute<Musica, Integer> duracao;
+	public static volatile SingularAttribute<Musica, Date> duracao;
 	public static volatile SetAttribute<Musica, Usuario> usuariosQueFavoritaram;
-	public static volatile ListAttribute<Musica, TipoIdioma> idioma;
-	public static volatile ListAttribute<Musica, TipoGenero> genero;
+	public static volatile ListAttribute<Musica, TipoGenero> generos;
 	public static volatile SingularAttribute<Musica, Integer> numVezesFavoritado;
 	public static volatile SingularAttribute<Musica, Date> dataLancamento;
 	public static volatile SetAttribute<Musica, Colecao> colecoes;
 	public static volatile SetAttribute<Musica, Artista> artistas;
 	public static volatile SetAttribute<Musica, Playlist> playlists;
+	public static volatile ListAttribute<Musica, TipoIdioma> idiomas;
 }
