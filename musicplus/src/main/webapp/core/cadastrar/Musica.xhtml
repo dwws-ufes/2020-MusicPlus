@@ -22,7 +22,6 @@
 		
 			<p:outputLabel value="Nome"/>
 					<br />
-			
 			<p:inputText id="nome" value="#{cadastroController.nome}" />
 		<br />	
 		<br />
@@ -38,14 +37,20 @@
             </p:selectManyCheckbox>
 		<br />
         <br />
-        	<p:outputLabel value="Duração:"/>
-            <p:calendar id="time" value="#{cadastroController.duracao}" pattern="HH:mm:ss" timeOnly="true"/>
-		<br />
-        <br />   
        		<p:outputLabel value="Data de Lançamento: "/>
-            <p:calendar id="inline" value="#{cadastroController.dataDeLancamento}" navigator="true" mode="inline" pattern="yyyy-MMM-dd"/>         
+            <p:calendar id="inline" value="#{cadastroController.dataDeLancamento}" navigator="true" mode="inline" locale="pt"/>         
+        	<h:outputText value="#{cadastroController.dataDeLancamento}">
+                <f:convertDateTime pattern="MM/dd/yyyy"/>
+            </h:outputText>
         <br />
-        <br /> 
+        <br />
+            <p:outputLabel value="Duração:"/>
+            <p:calendar id="time" value="#{cadastroController.duracao}" pattern="HH:mm:ss" timeOnly="true"/>
+            <h:outputText value="#{cadastroController.duracao}">
+            	<f:convertDateTime pattern="HH:mm:ss"/>
+            </h:outputText>
+		<br />
+        <br />    
             <p:commandButton type="submit" value="Salvar"
 			action="#{cadastroController.salvarMusica}" />
 		</h:form>
