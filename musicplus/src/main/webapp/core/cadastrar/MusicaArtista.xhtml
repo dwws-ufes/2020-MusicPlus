@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+
+	<ui:define name="title">
+		<h:outputText value="#{msgs['musica.novo']}" />
+	</ui:define>
+
+	<ui:define name="description">
+		<h:outputText value="#{msgs['musica.novo.description']}" />
+	</ui:define>
+    
+	<br/>
+    <ui:define name="body">
+		<h:form id="registerForm">
+		
+		    <p:outputLabel value="Procurar pelo artista que performa a música #{cadastroMusicaController.musica.nome}"/>
+					<br />
+			<p:inputText id="nome" value="#{cadastroMusicaController.nomeArtista}" />
+		<br />	
+		<br />
+			<p:commandButton type="submit" value="Procurar Artista"
+				action="#{cadastroMusicaController.descobrirArtistas}" />
+		</h:form>
+		<br />	
+		<br />
+		<h:form id="selectForm">
+			<div class="card">
+				<p:dataTable id="artistas" var="artista" value="#{cadastroMusicaController.artistas}"
+                     selection="#{cadastroMusicaController.artistaEscolhido}" rowKey="#{artista.id}">
+            	<p:outputLabel value="Selecione o Artista que performa a música: "/>
+            	<p:column selectionMode="single" style="width:20px;text-align:center"/>
+	            <p:column headerText="Nome">
+	                <h:outputText value="#{artista.nome}" />
+	            </p:column>
+	
+	            <p:column headerText="Nacionalidade">
+	                <h:outputText value="#{artista.nacionalidade}" />
+	            </p:column>
+	
+	            <p:column headerText="Generos Musicais">
+	                <h:outputText value="#{artista.imprimirGeneros()}" />
+	            </p:column>
+	            <f:facet name="footer">
+	                <p:commandButton type="submit" value="Adicionar Artista"
+				action="#{cadastroMusicaController.salvarArtistaMusica}" />
+	            </f:facet>
+        		</p:dataTable>
+    		</div>
+    	</h:form>
+    </ui:define>
+</ui:composition>

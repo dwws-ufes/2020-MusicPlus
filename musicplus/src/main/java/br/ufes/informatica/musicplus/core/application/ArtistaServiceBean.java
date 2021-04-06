@@ -1,5 +1,7 @@
 package br.ufes.informatica.musicplus.core.application;
 
+import java.util.List;
+
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
@@ -17,6 +19,11 @@ public class ArtistaServiceBean implements ArtistaService {
 
 	public void save(Artista artista) {
 		artistaDAO.save(artista);
+	}
+
+	@Override
+	public List<Artista> buscarPorNome(String nome) {
+		return artistaDAO.buscarPorNome(nome);
 	}
 
 }

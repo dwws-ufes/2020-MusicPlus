@@ -22,37 +22,38 @@
 		
 			<p:outputLabel value="Nome"/>
 					<br />
-			<p:inputText id="nome" value="#{cadastroController.nome}" />
+			<p:inputText id="nome" value="#{cadastroMusicaController.nomeMusica}" />
 		<br />	
 		<br />
 			<p:outputLabel value="Generos Musicais"/>
-        	<p:selectManyCheckbox id="grid" value="#{cadastroController.generosEscolhidos}" layout="grid" columns="3" styleClass="grid-checkbox">
-            	<f:selectItems value="#{cadastroController.todosOsGeneros}"/>
+        	<p:selectManyCheckbox id="grid" value="#{cadastroMusicaController.generosEscolhidos}" layout="grid" columns="3" styleClass="grid-checkbox">
+            	<f:selectItems value="#{cadastroMusicaController.todosOsGeneros}"/>
         	</p:selectManyCheckbox>
 		<br />
 		<br />
 			<p:outputLabel value="Idioma"/>
-            <p:selectManyCheckbox id="labeled" value="#{cadastroController.idiomasEscolhidos}" layout="grid" columns="3" styleClass="grid-checkbox">
-            	<f:selectItems value="#{cadastroController.todosOsIdiomas}"/>
-            </p:selectManyCheckbox>
+            <p:selectOneMenu id="labeled" value="#{cadastroMusicaController.idiomaEscolhido}" label="Selecione o idioma da música"
+                                alwaysDisplayLabel="true">
+            	<f:selectItems value="#{cadastroMusicaController.todosOsIdiomas}"/>
+            </p:selectOneMenu>
 		<br />
         <br />
        		<p:outputLabel value="Data de Lançamento: "/>
-            <p:calendar id="inline" value="#{cadastroController.dataDeLancamento}" navigator="true" mode="inline" locale="pt"/>         
-        	<h:outputText value="#{cadastroController.dataDeLancamento}">
+            <p:calendar id="inline" value="#{cadastroMusicaController.dataDeLancamento}" navigator="true" mode="inline" locale="pt"/>         
+        	<h:outputText value="#{cadastroMusicaController.dataDeLancamento}">
                 <f:convertDateTime pattern="MM/dd/yyyy"/>
             </h:outputText>
         <br />
         <br />
             <p:outputLabel value="Duração:"/>
-            <p:calendar id="time" value="#{cadastroController.duracao}" pattern="HH:mm:ss" timeOnly="true"/>
-            <h:outputText value="#{cadastroController.duracao}">
+            <p:calendar id="time" value="#{cadastroMusicaController.duracao}" pattern="HH:mm:ss" timeOnly="true"/>
+            <h:outputText value="#{cadastroMusicaController.duracao}">
             	<f:convertDateTime pattern="HH:mm:ss"/>
             </h:outputText>
 		<br />
         <br />    
             <p:commandButton type="submit" value="Salvar"
-			action="#{cadastroController.salvarMusica}" />
+			action="#{cadastroMusicaController.salvarMusica}" />
 		</h:form>
 		<br />
 
