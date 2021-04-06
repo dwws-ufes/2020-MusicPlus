@@ -162,7 +162,7 @@ public class CadastroMusicaController extends JSFController {
 
 	public String salvarArtistaMusica() {
 		this.musica.addArtista(this.artistaEscolhido) ;
-		this.artistaEscolhido.addMusica(this.musica);
+		//this.artistaEscolhido.addMusica(this.musica);
 		artistaService.save(artistaEscolhido);
 		musicaService.save(musica);
 		return "/index.xhtml?faces-redirect=true" ;

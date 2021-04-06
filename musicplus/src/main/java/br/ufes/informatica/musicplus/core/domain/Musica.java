@@ -2,6 +2,7 @@ package br.ufes.informatica.musicplus.core.domain;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -158,7 +159,8 @@ public class Musica extends PersistentObjectSupport implements Comparable<Musica
 	
 	public Musica() {
 		super();
-		this.generos = new ArrayList<TipoGenero>(); 
+		this.generos = new ArrayList<TipoGenero>();
+		this.artistas = new HashSet<Artista>();
 	}
 
 	/** @see java.lang.Comparable#compareTo(java.lang.Object) */
