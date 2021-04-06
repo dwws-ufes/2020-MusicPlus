@@ -4,13 +4,16 @@ import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.enterprise.inject.Model;
 
+import br.ufes.inf.nemo.jbutler.ejb.controller.JSFController;
 import br.ufes.informatica.musicplus.core.application.ArtistaService;
 import br.ufes.informatica.musicplus.core.domain.Artista;
 import br.ufes.informatica.musicplus.core.domain.TipoGenero;
 import br.ufes.informatica.musicplus.core.domain.TipoPais;
 
 @Model
-public class CadastroArtistaController {
+public class CadastroArtistaController extends JSFController {
+
+	private static final long serialVersionUID = 1L;
 
 	@EJB
 	private ArtistaService artistaService;

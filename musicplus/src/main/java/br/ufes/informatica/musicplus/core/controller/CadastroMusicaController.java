@@ -15,7 +15,6 @@ import br.ufes.informatica.musicplus.core.domain.Artista;
 import br.ufes.informatica.musicplus.core.domain.Musica;
 import br.ufes.informatica.musicplus.core.domain.TipoGenero;
 import br.ufes.informatica.musicplus.core.domain.TipoIdioma;
-import br.ufes.informatica.musicplus.core.domain.TipoPais;
 
 @Model
 @SessionScoped
@@ -30,10 +29,8 @@ public class CadastroMusicaController extends JSFController {
 	@EJB
 	private MusicaService musicaService;
 
-	private String nomeMusica;
-	
-	private String nomeArtista;
-	
+	private String nome ;
+		
 	private Date duracao;
 
 	private Date dataDeLancamento ;
@@ -116,13 +113,14 @@ public class CadastroMusicaController extends JSFController {
     		musica.addGenero(g);
     	}
     	musica.setIdioma(idiomaEscolhido);
-    	musica.setNome(nomeMusica);
+    	musica.setNome(nome);
     	musica.setNumVezesFavoritado(numVezesFavoritado);
     	musica.setDataLancamento(dataDeLancamento);
     	musica.setDuracao(duracao);
     	musicaService.save(musica);
     	this.musica = musica ;
-    	return "/core/cadastrar/MusicaArtista.xhtml" ;
+    	this.nome = null;
+    	return "/core/cadastrar/MusicaArtista.xhtml?faces-redirect=true" ;
     }
     
 	public Musica getMusica() {
@@ -134,29 +132,16 @@ public class CadastroMusicaController extends JSFController {
 	}
 	
 	public String descobrirArtistas(){
-		System.out.println("\n\n\n\n\n\n\n\n\n" + nomeArtista + "\n\n\n\n\n\n\n\n\n");
-		try {
-			artistas = artistaService.buscarPorNome(nomeArtista);
-		}catch(Exception e) {
-			System.out.println("erro") ;
-		}
+		artistas = artistaService.buscarPorNome(nome);
 		return "/core/cadastrar/MusicaArtista.xhtml?faces-redirect=true" ;
 	}
 	
-	public String getNomeMusica() {
-		return nomeMusica;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNomeMusica(String nomeMusica) {
-		this.nomeMusica = nomeMusica;
-	}
-	
-	public String getNomeArtista() {
-		return nomeArtista;
-	}
-
-	public void setNomeArtista(String nomeArtista) {
-		this.nomeMusica = nomeArtista;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public Artista getArtistaEscolhido() {
