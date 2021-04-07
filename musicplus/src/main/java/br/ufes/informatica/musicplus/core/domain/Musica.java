@@ -136,7 +136,7 @@ public class Musica extends PersistentObjectSupport implements Comparable<Musica
 		for (TipoGenero g : this.generos) {
 			gens = gens + "; " + g ;
 		}
-		gens.replaceFirst("; ","");
+		gens = gens.replaceFirst("; ","");
 		return gens ;
 	}
 	
@@ -145,7 +145,7 @@ public class Musica extends PersistentObjectSupport implements Comparable<Musica
 		for (Artista m : this.artistas) {
 			musicos = musicos + "; " + m.getNome() ;
 		}
-		musicos.replaceFirst("; ","");
+		musicos = musicos.replaceFirst("; ","");
 		return musicos ;
 	}
 	

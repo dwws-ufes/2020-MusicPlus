@@ -51,6 +51,7 @@ public class CadastroMusicaController extends JSFController {
 
 	private List<Artista> artistas ;
 
+	private List<Musica> musicas ;
 	
 	@PostConstruct
 	public void init() {
@@ -120,7 +121,7 @@ public class CadastroMusicaController extends JSFController {
     	musicaService.save(musica);
     	this.musica = musica ;
     	this.nome = null;
-    	return "/core/cadastrar/MusicaArtista.xhtml?faces-redirect=true" ;
+    	return musicaArtista() ;
     }
     
 	public Musica getMusica() {
@@ -133,7 +134,24 @@ public class CadastroMusicaController extends JSFController {
 	
 	public String descobrirArtistas(){
 		artistas = artistaService.buscarPorNome(nome);
+		nome = null ;
+		return musicaArtista() ;
+	}
+	
+	public String redirectToMusicaArtista() {
+		musicas = null ;
+		return musicaArtista() ;
+	}
+	
+	public String musicaArtista() {
 		return "/core/cadastrar/MusicaArtista.xhtml?faces-redirect=true" ;
+	}
+	public String descobrirMusicas(){
+		musica = null ;
+		artistas = null ;
+		musicas = musicaService.buscarPorNome(nome);
+		nome = null ;
+		return "/core/cadastrar/BuscarMusica.xhtml?faces-redirect=true" ;
 	}
 	
 	public String getNome() {
@@ -156,8 +174,8 @@ public class CadastroMusicaController extends JSFController {
 		return artistas;
 	}
 
-	public void setArtistas(List<Artista> artistas) {
-		this.artistas = artistas;
+	public List<Musica> getMusicas() {
+		return musicas;
 	}
 
 	public String salvarArtistaMusica() {
@@ -165,6 +183,9 @@ public class CadastroMusicaController extends JSFController {
 		//this.artistaEscolhido.addMusica(this.musica);
 		artistaService.save(artistaEscolhido);
 		musicaService.save(musica);
+		artistas = null ;
+		musicas = null ;
+		musica = null ;
 		return "/index.xhtml?faces-redirect=true" ;
 	}
 }

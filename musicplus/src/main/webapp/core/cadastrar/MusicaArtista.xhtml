@@ -18,15 +18,24 @@
     
 	<br/>
     <ui:define name="body">
+	    <h:form id="incorretForm">
+	    	<p:outputLabel value="Você não seguiu o fluxo certo de 
+	    	eventos para executar essa funcionalidade." 
+	    	rendered="#{empty cadastroMusicaController.musica}" />
+		</h:form>
+	    
 		<h:form id="registerForm">
 		
-		    <p:outputLabel value="Procurar pelo artista que performa a música #{cadastroMusicaController.musica.nome}"/>
+		    <p:outputLabel value="Procurar pelo artista que performa a música #{cadastroMusicaController.musica.nome}"
+		    rendered="#{not empty cadastroMusicaController.musica}"/>
 					<br />
-			<p:inputText id="nome" value="#{cadastroMusicaController.nome}" />
+			<p:inputText id="nome" value="#{cadastroMusicaController.nome}" 
+			   rendered="#{not empty cadastroMusicaController.musica}"/>
 		<br />	
 		<br />
 			<p:commandButton type="submit" value="Procurar Artista"
-				action="#{cadastroMusicaController.descobrirArtistas}" />
+				action="#{cadastroMusicaController.descobrirArtistas}" 
+				rendered="#{not empty cadastroMusicaController.musica}"/>
 		</h:form>
 		<br />	
 		<br />

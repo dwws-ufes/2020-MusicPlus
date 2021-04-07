@@ -26,6 +26,11 @@ public class MusicaServiceBean implements MusicaService {
 		return null;
 	}
 	
+	public List<Musica> buscarPorNome(String NomeDaMusica) {
+		// FIXME: auto-generated method stub
+		return musicaDAO.buscarPorNome(NomeDaMusica);
+	}
+	
 	public void save(Musica artista) {
 		musicaDAO.save(artista);
 	}

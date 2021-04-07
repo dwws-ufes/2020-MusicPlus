@@ -1,7 +1,10 @@
 package br.ufes.informatica.musicplus.core.controller;
 
+import java.util.ArrayList;
+
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
+import javax.enterprise.context.SessionScoped;
 import javax.enterprise.inject.Model;
 
 import br.ufes.inf.nemo.jbutler.ejb.controller.JSFController;
@@ -11,6 +14,7 @@ import br.ufes.informatica.musicplus.core.domain.TipoGenero;
 import br.ufes.informatica.musicplus.core.domain.TipoPais;
 
 @Model
+@SessionScoped
 public class CadastroArtistaController extends JSFController {
 
 	private static final long serialVersionUID = 1L;
@@ -86,6 +90,9 @@ public class CadastroArtistaController extends JSFController {
     	artista.setNome(nomeArtista);
     	artista.setNumVezesFavoritado(numVezesFavoritado);
     	artistaService.save(artista);
+    	generosEscolhidos = null ;
+    	nomeArtista = null ;
+    	nacionalidade = null ;
     	return "/index.xhtml?faces-redirect=true" ;
     }
 	
