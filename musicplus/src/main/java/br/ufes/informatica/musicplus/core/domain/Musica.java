@@ -157,6 +157,10 @@ public class Musica extends PersistentObjectSupport implements Comparable<Musica
 		this.artistas.add(artista) ;
 	}
 	
+	public void removerArtista(Artista artista) {
+		this.artistas.remove(artista) ;
+	}
+	
 	public Musica() {
 		super();
 		this.generos = new ArrayList<TipoGenero>();

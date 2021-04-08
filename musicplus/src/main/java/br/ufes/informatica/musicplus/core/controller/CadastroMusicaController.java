@@ -121,7 +121,7 @@ public class CadastroMusicaController extends JSFController {
     	musicaService.save(musica);
     	this.musica = musica ;
     	this.nome = null;
-    	return musicaArtista() ;
+    	return musicaArtistaAdicionar() ;
     }
     
 	public Musica getMusica() {
@@ -135,16 +135,25 @@ public class CadastroMusicaController extends JSFController {
 	public String descobrirArtistas(){
 		artistas = artistaService.buscarPorNome(nome);
 		nome = null ;
-		return musicaArtista() ;
+		return musicaArtistaAdicionar() ;
 	}
 	
 	public String redirectToMusicaArtista() {
 		musicas = null ;
-		return musicaArtista() ;
+		return musicaArtistaAdicionar() ;
 	}
 	
-	public String musicaArtista() {
-		return "/core/cadastrar/MusicaArtista.xhtml?faces-redirect=true" ;
+	public String redirectToMusicaArtistaRemover() {
+		musicas = null ;
+		return musicaArtistaRemover() ;
+	}
+	
+	public String musicaArtistaRemover() {
+		return "/core/cadastrar/MusicaArtistaRemover.xhtml?faces-redirect=true" ;
+	}
+	
+	public String musicaArtistaAdicionar() {
+		return "/core/cadastrar/MusicaArtistaAdicionar.xhtml?faces-redirect=true" ;
 	}
 	public String descobrirMusicas(){
 		musica = null ;
@@ -180,8 +189,15 @@ public class CadastroMusicaController extends JSFController {
 
 	public String salvarArtistaMusica() {
 		this.musica.addArtista(this.artistaEscolhido) ;
-		//this.artistaEscolhido.addMusica(this.musica);
-		artistaService.save(artistaEscolhido);
+		musicaService.save(musica);
+		artistas = null ;
+		musicas = null ;
+		musica = null ;
+		return "/index.xhtml?faces-redirect=true" ;
+	}
+	
+	public String removerArtistaMusica() {
+		this.musica.removerArtista(this.artistaEscolhido) ;
 		musicaService.save(musica);
 		artistas = null ;
 		musicas = null ;

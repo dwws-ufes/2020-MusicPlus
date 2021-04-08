@@ -26,7 +26,31 @@
 	    
 		<h:form id="registerForm">
 		
-		    <p:outputLabel value="Procurar pelo artista que performa a música #{cadastroMusicaController.musica.nome}"
+			<div class="card">
+			    <p:panelGrid columns="2"
+			    rendered="#{not empty cadastroMusicaController.musica}">
+			    
+			        <h:outputText value="Nome da Música:"/>
+			        <h:outputText value="#{cadastroMusicaController.musica.nome}"/>
+					
+					<h:outputText value="Duração da Música:"/>
+			        <h:outputText value="#{cadastroMusicaController.musica.duracao}"/>
+			        
+			        <h:outputText value="Data de Lançamento da Música:"/>
+			        <h:outputText value="#{cadastroMusicaController.musica.dataLancamento}"/>
+						        
+			        <h:outputText value="Gêneros da Música:"/>
+			        <h:outputText value="#{cadastroMusicaController.musica.imprimirGeneros()}"/>
+			
+			        <h:outputText value="Artistas que performam a música:"/>
+			        <h:outputText value="#{cadastroMusicaController.musica.imprimirArtistas()}"
+			        rendered="#{not empty cadastroMusicaController.musica.artistas}"/>
+			
+			    </p:panelGrid>
+			</div>
+			<br/>
+			<br/>
+		    <p:outputLabel value="Procurar pelo artista que performa a música"
 		    rendered="#{not empty cadastroMusicaController.musica}"/>
 					<br />
 			<p:inputText id="nome" value="#{cadastroMusicaController.nome}" 
@@ -58,7 +82,7 @@
 	                <h:outputText value="#{artista.imprimirGeneros()}" />
 	            </p:column>
 	            <f:facet name="footer">
-	                <p:commandButton type="submit" value="Adicionar Artista"
+	                <p:commandButton type="submit" value="Adicionar"
 				action="#{cadastroMusicaController.salvarArtistaMusica}" />
 	            </f:facet>
         		</p:dataTable>
