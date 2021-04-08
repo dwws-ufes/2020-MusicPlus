@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+
+	<ui:define name="title">
+		<h:outputText value="#{msgs['musica_artista.novo']}" />
+	</ui:define>
+
+	<ui:define name="description">
+		<h:outputText value="#{msgs['musica_artista.novo.description']}" />
+	</ui:define>
+    
+	<br/>
+    <ui:define name="body">
+	    <h:form id="incorretForm">
+	    	<p:outputLabel value="Você não seguiu o fluxo certo de 
+	    	eventos para executar essa funcionalidade." 
+	    	rendered="#{empty cadastroMusicaController.musica}" />
+		</h:form>
+	    
+		<h:form id="registerForm">
+		
+			<div class="card">
+			    <p:panelGrid columns="2"
+			    rendered="#{not empty cadastroMusicaController.musica}">
+			    
+			        <h:outputText value="Nome da Música:"/>
+			        <h:outputText value="#{cadastroMusicaController.musica.nome}"/>
+					
+					<h:outputText value="Duração da Música:"/>
+			        <h:outputText value="#{cadastroMusicaController.musica.duracao}"/>
+			        
+			        <h:outputText value="Data de Lançamento da Música:"/>
+			        <h:outputText value="#{cadastroMusicaController.musica.dataLancamento}"/>
+						        
+			        <h:outputText value="Gêneros da Música:"/>
+			        <h:outputText value="#{cadastroMusicaController.musica.imprimirGeneros()}"/>
+			
+			    </p:panelGrid>
+			</div>
+		</h:form>
+			
+			<br/>
+			<br/>
+		    <p:outputLabel value="Artistas que performam a música:"
+		    rendered="#{not empty cadastroMusicaController.musica.artistas}"/>
+		<br />
+		<br />
+		<h:form id="selectForm">
+			<div class="card">
+				<p:dataTable id="artistas" var="artista" value="#{cadastroMusicaController.musica.artistas}"
+                     selection="#{cadastroMusicaController.artistaEscolhido}" rowKey="#{artista.id}"
+                     rendered="#{not empty cadastroMusicaController.musica.artistas}">
+	            	<p:outputLabel value="Selecione o Artista a ser removido da Música: "/>
+	            	<p:column selectionMode="single" style="width:50px;text-align:center"/>
+		            <p:column headerText="Nome">
+		                <h:outputText value="#{artista.nome}" />
+		            </p:column>
+		
+		            <p:column headerText="Nacionalidade">
+		                <h:outputText value="#{artista.nacionalidade}" />
+		            </p:column>
+		
+		            <p:column headerText="Generos Musicais">
+		                <h:outputText value="#{artista.imprimirGeneros()}" />
+		            </p:column>
+		            <f:facet name="footer">
+		                <p:commandButton type="submit" value="Remover"
+					action="#{cadastroMusicaController.removerArtistaMusica}" />
+		            </f:facet>
+        		</p:dataTable>
+    		</div>
+    	</h:form>
+    </ui:define>
+</ui:composition>
