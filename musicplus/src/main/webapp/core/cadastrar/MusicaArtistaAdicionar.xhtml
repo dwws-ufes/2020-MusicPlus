@@ -43,8 +43,7 @@
 			        <h:outputText value="#{cadastroMusicaController.musica.imprimirGeneros()}"/>
 			
 			        <h:outputText value="Artistas que performam a música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.imprimirArtistas()}"
-			        rendered="#{not empty cadastroMusicaController.musica.artistas}"/>
+			        <h:outputText value="#{cadastroMusicaController.musica.imprimirArtistas()}"/>
 			
 			    </p:panelGrid>
 			</div>
@@ -66,26 +65,30 @@
 		<h:form id="selectForm">
 			<div class="card">
 				<p:dataTable id="artistas" var="artista" value="#{cadastroMusicaController.artistas}"
-                     selection="#{cadastroMusicaController.artistaEscolhido}" rowKey="#{artista.id}"
-                     rendered="#{not empty cadastroMusicaController.artistas}">
-            	<p:outputLabel value="Selecione o Artista que performa a música: "/>
-            	<p:column selectionMode="single" style="width:50px;text-align:center"/>
-	            <p:column headerText="Nome">
-	                <h:outputText value="#{artista.nome}" />
-	            </p:column>
+	                     selection="#{cadastroMusicaController.artistaEscolhido}" rowKey="#{artista.id}"
+	                     rendered="#{not empty cadastroMusicaController.artistas}">
+	                
+	                <f:ajax event="rowSelectRadio" listener="#{cadastroMusicaController.habilitarBotao}" render="artistas"/>
+	            	
+	            	<p:outputLabel value="Selecione o Artista que performa a música: "/>
+	            	<p:column selectionMode="single" style="width:50px;text-align:center"/>
+		            <p:column headerText="Nome">
+		                <h:outputText value="#{artista.nome}" />
+		            </p:column>
+		
+		            <p:column headerText="Nacionalidade">
+		                <h:outputText value="#{artista.nacionalidade}" />
+		            </p:column>
 	
-	            <p:column headerText="Nacionalidade">
-	                <h:outputText value="#{artista.nacionalidade}" />
-	            </p:column>
-	
-	            <p:column headerText="Generos Musicais">
-	                <h:outputText value="#{artista.imprimirGeneros()}" />
-	            </p:column>
-	            <f:facet name="footer">
-	                <p:commandButton type="submit" value="Adicionar"
-				action="#{cadastroMusicaController.salvarArtistaMusica}" />
-	            </f:facet>
-        		</p:dataTable>
+		            <p:column headerText="Generos Musicais">
+		                <h:outputText value="#{artista.imprimirGeneros()}" />
+		            </p:column>
+		            <f:facet name="footer">
+		                <p:commandButton id ="myButtonId" type="submit" value="Adicionar" disabled="#{cadastroMusicaController.desabilitarBotao}"
+						action="#{cadastroMusicaController.salvarArtistaMusica}"/>
+	            	</f:facet>
+        		</p:dataTable>	
+        		
     		</div>
     	</h:form>
     </ui:define>

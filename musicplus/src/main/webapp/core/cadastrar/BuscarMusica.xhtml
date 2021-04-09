@@ -35,6 +35,9 @@
 				<p:dataTable id="musicas" var="m" value="#{cadastroMusicaController.musicas}"
                      selection="#{cadastroMusicaController.musica}" rowKey="#{m.id}"
                      rendered="#{not empty cadastroMusicaController.musicas}">
+            	
+            	<f:ajax event="rowSelectRadio" listener="#{cadastroMusicaController.habilitarBotao}" render="musicas"/>
+            	
             	<p:outputLabel value="Selecione a Música: "/>
             	<p:column selectionMode="single" style="width:50px;text-align:center"/>
 	            <p:column headerText="Nome">
@@ -53,11 +56,11 @@
 	                <h:outputText value="#{m.imprimirArtistas()}" />
 	            </p:column>
 	            <f:facet name="footer">
-	                <p:commandButton type="submit" value="Adicionar Artista"
+	                <p:commandButton type="submit" value="Adicionar Artista" disabled="#{cadastroMusicaController.desabilitarBotao}"
 				action="#{cadastroMusicaController.redirectToMusicaArtista}" />
 	            </f:facet>
 	            <f:facet name="footer">
-	                <p:commandButton type="submit" value="Remover Artista"
+	                <p:commandButton type="submit" value="Remover Artista" disabled="#{cadastroMusicaController.desabilitarBotao}"
 				action="#{cadastroMusicaController.redirectToMusicaArtistaRemover}" />
 	            </f:facet>
         		</p:dataTable>

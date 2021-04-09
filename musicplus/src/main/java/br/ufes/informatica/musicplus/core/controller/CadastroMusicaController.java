@@ -53,11 +53,26 @@ public class CadastroMusicaController extends JSFController {
 
 	private List<Musica> musicas ;
 	
+	private Boolean desabilitarBotao ;
+	
 	@PostConstruct
 	public void init() {
 		todosOsGeneros = TipoGenero.todosMenosQualquerUm();
 		todosOsIdiomas = TipoIdioma.todosMenosQualquerUm();
 		numVezesFavoritado = 0;
+		desabilitarBotao = true ;
+	}
+
+	public Boolean getDesabilitarBotao() {
+		return desabilitarBotao;
+	}
+
+	public void setDesabilitarBotao(Boolean desabilitarBotao) {
+		this.desabilitarBotao = desabilitarBotao;
+	}
+	
+	public void habilitarBotao() {
+		desabilitarBotao = false ;
 	}
 
 	public void setDuracao(Date duracao) {
@@ -139,20 +154,26 @@ public class CadastroMusicaController extends JSFController {
 	}
 	
 	public String redirectToMusicaArtista() {
-		musicas = null ;
 		return musicaArtistaAdicionar() ;
 	}
 	
 	public String redirectToMusicaArtistaRemover() {
-		musicas = null ;
 		return musicaArtistaRemover() ;
 	}
 	
+	public void auxMusicaArtistaDefaults() {
+		musicas = null ;
+		artistaEscolhido = null ;
+		desabilitarBotao = true ;
+	}
+	
 	public String musicaArtistaRemover() {
+		auxMusicaArtistaDefaults() ;
 		return "/core/cadastrar/MusicaArtistaRemover.xhtml?faces-redirect=true" ;
 	}
 	
 	public String musicaArtistaAdicionar() {
+		auxMusicaArtistaDefaults() ;
 		return "/core/cadastrar/MusicaArtistaAdicionar.xhtml?faces-redirect=true" ;
 	}
 	public String descobrirMusicas(){
@@ -160,6 +181,7 @@ public class CadastroMusicaController extends JSFController {
 		artistas = null ;
 		musicas = musicaService.buscarPorNome(nome);
 		nome = null ;
+		desabilitarBotao = true ;
 		return "/core/cadastrar/BuscarMusica.xhtml?faces-redirect=true" ;
 	}
 	
@@ -193,6 +215,7 @@ public class CadastroMusicaController extends JSFController {
 		artistas = null ;
 		musicas = null ;
 		musica = null ;
+		desabilitarBotao = true ;
 		return "/index.xhtml?faces-redirect=true" ;
 	}
 	
@@ -202,6 +225,7 @@ public class CadastroMusicaController extends JSFController {
 		artistas = null ;
 		musicas = null ;
 		musica = null ;
+		desabilitarBotao = true ;
 		return "/index.xhtml?faces-redirect=true" ;
 	}
 }
