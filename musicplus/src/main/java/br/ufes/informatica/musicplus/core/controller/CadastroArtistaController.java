@@ -1,7 +1,5 @@
 package br.ufes.informatica.musicplus.core.controller;
 
-import java.util.ArrayList;
-
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
@@ -36,8 +34,8 @@ public class CadastroArtistaController extends JSFController {
 	
 	@PostConstruct
 	public void init() {
-		todosOsGeneros = TipoGenero.todosMenosQualquerUm();
-		todosOsPaises = TipoPais.todosMenosQualquerUm();
+		todosOsGeneros = TipoGenero.todos();
+		todosOsPaises = TipoPais.todos();
 		numVezesFavoritado = 0;
 	}
 	

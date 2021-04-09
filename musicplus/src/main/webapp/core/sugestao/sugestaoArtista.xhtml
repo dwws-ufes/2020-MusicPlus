@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+
+    <ui:define name="title">
+        <h:outputText value="#{msgsCore['sugestao.title']}" />
+    </ui:define>
+
+    <ui:define name="description">
+        <h:outputText value="#{msgsCore['sugestao.title.description']}" />
+    </ui:define>
+
+    <ui:define name="body">
+
+		<h:form> 
+			<p:outputLabel for="numSugestoes" value="Número de Sugestões desejadas (0 para número ilimitado)" />
+			<br/>
+			<p:inputNumber id="numSugestoes" value="#{sugestaoArtistaController.numSugestoes}" minValue="0" decimalPlaces="0"/>
+		</h:form>
+		<br/>
+		<br/>
+		<h:form id="gens">
+			<p:selectBooleanCheckbox itemLabel = "Todos os Gêneros" value="#{sugestaoArtistaController.allGeneros}">
+					<f:ajax event="change" listener="#{sugestaoArtistaController.escolherTodosOsGeneros}" render="gens" />
+			</p:selectBooleanCheckbox>
+			<p:selectManyCheckbox id="items" value="#{sugestaoArtistaController.generosEscolhidos}">
+				<f:selectItems value="#{sugestaoArtistaController.todosOsGeneros}" />
+				<f:ajax event="change" listener="#{sugestaoArtistaController.changeEscolherTodosOsGeneros}" render="gens" />
+			</p:selectManyCheckbox>
+		</h:form>
+		<br/>
+		<br/>
+		<h:form id="nacionalidades">
+			<p:selectBooleanCheckbox itemLabel = "Todos as Nacionalidades" value="#{sugestaoArtistaController.allPaises}">
+					<f:ajax event="change" listener="#{sugestaoArtistaController.escolherTodosOsPaises}" render="nacionalidades" />
+			</p:selectBooleanCheckbox>
+			<p:selectManyCheckbox id="items" value="#{sugestaoArtistaController.paisesEscolhidos}">
+				<f:selectItems value="#{sugestaoArtistaController.todosOsPaises}" />
+				<f:ajax event="change" listener="#{sugestaoArtistaController.changeEscolherTodosOsPaises}" render="nacionalidades" />
+			</p:selectManyCheckbox>
+		</h:form>
+		
+	</ui:define>
+</ui:composition>

@@ -57,8 +57,8 @@ public class CadastroMusicaController extends JSFController {
 	
 	@PostConstruct
 	public void init() {
-		todosOsGeneros = TipoGenero.todosMenosQualquerUm();
-		todosOsIdiomas = TipoIdioma.todosMenosQualquerUm();
+		todosOsGeneros = TipoGenero.todos();
+		todosOsIdiomas = TipoIdioma.todos();
 		numVezesFavoritado = 0;
 		desabilitarBotao = true ;
 	}
