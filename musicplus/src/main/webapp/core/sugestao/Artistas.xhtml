@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+
+    <ui:define name="title">
+        <h:outputText value="#{msgs['sugestao_artista.title']}" />
+    </ui:define>
+		<br/>
+		<br/>
+    <ui:define name="description">
+        <h:outputText value="#{msgs['sugestao_artista.title.description']}" />
+    </ui:define>
+		<br/>
+		<br/>
+    <ui:define name="body">
+
+		<h:form id ="numSug"> 
+			<p:outputLabel for="numSug" value="Qual o número de sugestões que deseja receber?"/>
+			<br/>
+			<p:outputLabel for="numSug" value="OBS: Deixar esse campo vazio ou nulo resultará em um conjunto vazio como resultado!" rendered="#{sugestaoArtistaController.numSugestoesNulo()}"/>
+			<br/>
+			<p:inputNumber id="numSugestoes" value="#{sugestaoArtistaController.numSugestoes}" minValue="0" decimalPlaces="0">
+				<f:ajax event="blur" render="numSug" />
+			</p:inputNumber>
+		</h:form>
+		<br/>
+		<br/>
+		<h:form id="gens">
+			<p:outputLabel for="gens" value="Deseja sugestões de artistas de quais gêneros musicais?" />
+			<br/>
+			<p:outputLabel for="gens" value="OBS: Não selecionar nenhuma opção resultará em um conjunto vazio como resultado!" 
+			rendered="#{sugestaoArtistaController.warningVazioGenero}"/>
+			<br/>
+			<br/>
+			<p:selectBooleanCheckbox itemLabel = "Todos os Gêneros" value="#{sugestaoArtistaController.allGeneros}">
+					<f:ajax event="change" listener="#{sugestaoArtistaController.escolherTodosOsGeneros}" render="gens" />
+			</p:selectBooleanCheckbox>
+			<p:selectManyCheckbox id="items" value="#{sugestaoArtistaController.generosEscolhidos}">
+				<f:selectItems value="#{sugestaoArtistaController.todosOsGeneros}" />
+				<f:ajax event="change" listener="#{sugestaoArtistaController.dispensarTodosOsGeneros}" render="gens" />
+			</p:selectManyCheckbox>
+		</h:form>
+		<br/>
+		<br/>
+		<h:form id="nacionalidades">
+			<p:outputLabel for="nacionalidades" value="Deseja sugestões de artistas de quais nacionalidades?" />
+			<br/>
+			<p:outputLabel for="nacionalidades" value="OBS: Não selecionar nenhuma opção resultará em um conjunto vazio como resultado!" 
+			rendered="#{sugestaoArtistaController.warningVazioPais}"/>
+			<br/>
+			<br/>
+			<p:selectBooleanCheckbox itemLabel = "Todas as Nacionalidades" value="#{sugestaoArtistaController.allPaises}">
+					<f:ajax event="change" listener="#{sugestaoArtistaController.escolherTodosOsPaises}" render="nacionalidades" />
+			</p:selectBooleanCheckbox>
+			<p:selectManyCheckbox id="items" value="#{sugestaoArtistaController.paisesEscolhidos}">
+				<f:selectItems value="#{sugestaoArtistaController.todosOsPaises}" />
+				<f:ajax event="change" listener="#{sugestaoArtistaController.dispensarTodosOsPaises}" render="nacionalidades" />
+			</p:selectManyCheckbox>
+		</h:form>
+		<br/>
+		<br/>
+		<h:form>
+            <div class="p-field p-col-12 p-md-4">
+                <p:outputLabel for="selectRankingAleatorio" value="Deseja sugestões de forma aleatória ou pelo ranking de artistas mais favoritados?"/>
+				<br/>
+				<br/>
+                <p:selectOneMenu id="selectRankingAleatorio" value="#{sugestaoArtistaController.porRankingOuAleatorio}">
+                    <f:selectItem itemLabel="Aleatório" itemValue="Aleatório"/>
+                    <f:selectItem itemLabel="Ranking" itemValue="Ranking"/>
+                </p:selectOneMenu>
+            </div>		
+			<br/>
+			<br/>
+			<p:commandButton id ="myButtonId" type="submit" value="Requisitar Sugestão"
+			action="#{sugestaoArtistaController.pedirSugestaoArtista}"/>
+		</h:form>
+					
+	</ui:define>
+</ui:composition>
