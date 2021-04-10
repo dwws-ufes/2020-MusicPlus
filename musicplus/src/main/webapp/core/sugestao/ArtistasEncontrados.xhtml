@@ -17,7 +17,37 @@
     </ui:define>
 
     <ui:define name="body">
-		<adm:breadcrumb link="/core/registration/index" title="#{msgsCore['sugestao.title']}" />
-		<p:dataTable id="listaDeArtistas" value="#{sugestaoController.listaDeArtistas}" />
+	<h:form id="selectForm">
+		<div class="card">
+		<p:dataTable id="artistas" var="artista" value="#{sugestaoArtistaController.artistas}"
+		             selection="#{sugestaoArtistaController.artistaEscolhido}" rowKey="#{artista.id}">
+		    	
+		    	<f:ajax event="rowSelectRadio" listener="#{sugestaoArtistaController.habilitarBotao}" render="artistas"/>
+		    	
+		    	<p:outputLabel value="Selecione o Artista: "/>
+		    	<p:column selectionMode="single" style="width:50px;text-align:center"/>
+			    <p:column headerText="Nome">
+			        <h:outputText value="#{artista.nome}" />
+			    </p:column>
+		
+			    <p:column headerText="Nacionalidade">
+			        <h:outputText value="#{artista.nacionalidade}" />
+			    </p:column>
+		
+			    <p:column headerText="Generos Musicais">
+			        <h:outputText value="#{artista.imprimirGeneros()}" />
+			    </p:column>
+			    
+			    <f:facet name="footer">
+			        <p:commandButton type="submit" value="Favoritar" disabled="#{sugestaoArtistaController.desabilitarBotao}"
+					action="#{sugestaoArtistaController.favoritar}" />
+			    </f:facet>
+			    <f:facet name="footer">
+			        <p:commandButton type="submit" value="Ver Musicas" disabled="#{sugestaoArtistaController.desabilitarBotao}"
+					action="#{sugestaoArtistaController.verMusicas}" />
+			    </f:facet>
+        	</p:dataTable>
+    		</div>
+    	</h:form>
     </ui:define>
 </ui:composition>

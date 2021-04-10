@@ -62,14 +62,12 @@ public class ArtistaDAOJPA extends BaseJPADAO<Artista> implements ArtistaDAO {
 	public List<Artista> buscarPorGenero(TipoGenero genero) throws PersistentObjectNotFoundException, MultiplePersistentObjectsFoundException {
 		logger.log(Level.FINE, "Recuperando os Artistas que performam o genero musica \"{0}\"...", genero);
 
-		// Constroi a query na classe Artista.
 		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
 		CriteriaQuery<Artista> cq = cb.createQuery(Artista.class);
 		Root<Artista> root = cq.from(Artista.class);
 		ListJoin<Artista, TipoGenero> Artista_genero = root.join(Artista_.generos);
 		
-		ParameterExpression<TipoGenero> paramGenero = cb.parameter(TipoGenero.class);
-		cq.where(cb.equal(Artista_genero, paramGenero));
+		cq.where(cb.equal(Artista_genero, genero));
 		List<Artista> result = entityManager.createQuery(cq).getResultList();
 		logger.log(Level.INFO, "Recuperandos os Artistas pelo genero musical \"{0}\" retornou \"{1}\"", new Object[] { genero, result });
 
@@ -81,12 +79,10 @@ public class ArtistaDAOJPA extends BaseJPADAO<Artista> implements ArtistaDAO {
 	public List<Artista> buscarPorPais(TipoPais nacionalidade) throws PersistentObjectNotFoundException, MultiplePersistentObjectsFoundException {
 		logger.log(Level.FINE, "Recuperando o Artista cuja nacionalidade eh \"{0}\"...", nacionalidade);
 
-		// Constroi a query na classe Artista.
 		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
 		CriteriaQuery<Artista> cq = cb.createQuery(Artista.class);
 		Root<Artista> root = cq.from(Artista.class);
 
-		// Filtra a quero pelo pais.
 		cq.where(cb.equal(root.get(Artista_.nacionalidade), nacionalidade));
 		List<Artista> result = entityManager.createQuery(cq).getResultList();
 		logger.log(Level.INFO, "Recuperando o Artista pelo pais \"{0}\" retornou \"{1}\"", new Object[] { nacionalidade, result });

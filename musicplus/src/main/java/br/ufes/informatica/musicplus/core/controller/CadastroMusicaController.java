@@ -5,6 +5,7 @@ import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.enterprise.inject.Model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -149,6 +150,13 @@ public class CadastroMusicaController extends JSFController {
 	
 	public String descobrirArtistas(){
 		artistas = artistaService.buscarPorNome(nome);
+		List<Artista> artistasRemovidos = new ArrayList<Artista>();
+		for (Artista a : artistas) {
+			if (musica.getArtistas().contains(a)) {
+				artistasRemovidos.add(a) ;
+			}
+		}
+		artistas.removeAll(artistasRemovidos) ;
 		nome = null ;
 		return musicaArtistaAdicionar() ;
 	}
@@ -209,23 +217,22 @@ public class CadastroMusicaController extends JSFController {
 		return musicas;
 	}
 
-	public String salvarArtistaMusica() {
-		this.musica.addArtista(this.artistaEscolhido) ;
+	public void salvarRemoverAux() {
 		musicaService.save(musica);
 		artistas = null ;
 		musicas = null ;
 		musica = null ;
 		desabilitarBotao = true ;
+	}
+	public String salvarArtistaMusica() {
+		this.musica.addArtista(this.artistaEscolhido) ;
+		salvarRemoverAux() ;
 		return "/index.xhtml?faces-redirect=true" ;
 	}
 	
 	public String removerArtistaMusica() {
 		this.musica.removerArtista(this.artistaEscolhido) ;
-		musicaService.save(musica);
-		artistas = null ;
-		musicas = null ;
-		musica = null ;
-		desabilitarBotao = true ;
+		salvarRemoverAux() ;
 		return "/index.xhtml?faces-redirect=true" ;
 	}
 }

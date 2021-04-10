@@ -88,6 +88,10 @@ public class Artista extends PersistentObjectSupport implements Comparable<Artis
 	public void setNumVezesFavoritado(int numVezesFavoritado) {
 		this.numVezesFavoritado = numVezesFavoritado;
 	}
+	
+	public void incrementaNumVezesFavoritado() {
+		this.numVezesFavoritado = this.numVezesFavoritado + 1;
+	}
 
 	/** Getter for Source. */
 	public Set<Usuario> getUsuariosQueFavoritaram() {
