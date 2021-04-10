@@ -52,11 +52,60 @@ PrimeFaces.locales['pt'] = {
 					<i class="fa fa-home"></i>
 					<span><h:outputText value="#{msgs['menu.home']}" /></span>
 				</p:link></li>
-			<li class="header">Header</li>
-			<li><p:link outcome="/index" onclick="clearBreadCrumbs()">
-					<i class="fa fa-calendar"></i>
-					<span>Blank Link</span>
+				
+			<li class="header">Criar</li>
+			
+			<li><p:link outcome="/core/cadastrar/Artista.xhtml" onclick="clearBreadCrumbs()">
+					<i class="fa fa-user"></i>
+					<span>Artista</span>
 				</p:link></li>
+					
+			<li><p:link outcome="/core/cadastrar/Musica.xhtml" onclick="clearBreadCrumbs()">
+					<i class="fa fa-music"></i>
+					<span>Música</span>
+				</p:link></li>
+				
+			<li><p:link outcome="/index" onclick="clearBreadCrumbs()">
+					<i class="fa fa-play-circle"></i>
+					<span>Playlist</span>
+				</p:link></li>
+				
+			<li class="header">Buscar</li>
+			
+			<li><p:link outcome="/index" onclick="clearBreadCrumbs()">
+					<i class="fa fa-user"></i>
+					<span>Artista</span>
+				</p:link></li>
+					
+			<li><p:link outcome="/index" onclick="clearBreadCrumbs()">
+					<i class="fa fa-music"></i>
+					<span>Música</span>
+				</p:link></li>
+				
+			<li><p:link outcome="/index" onclick="clearBreadCrumbs()">
+					<i class="fa fa-play-circle"></i>
+					<span>Playlist</span>
+				</p:link></li>
+				
+			<li class="header">Sugestões</li>
+			
+			<li><p:link outcome="/index" onclick="clearBreadCrumbs()">
+					<i class="fa fa-music"></i>
+					<span>Músicas</span>
+				</p:link></li>
+				
+				<li><p:link outcome="/index" onclick="clearBreadCrumbs()">
+					<i class="fa fa-users"></i>
+					<span>Artistas</span>
+				</p:link></li>
+				
+			<li class="header">Operações</li>
+			
+			<li><p:link outcome="/core/cadastrar/MusicaArtista.xhtml" onclick="clearBreadCrumbs()">
+					<i class="fa fa-arrows-alt-h"></i>
+					<span>Vincular música em artista</span>
+				</p:link></li>
+				
 		</ul>
 	</ui:define>
 
