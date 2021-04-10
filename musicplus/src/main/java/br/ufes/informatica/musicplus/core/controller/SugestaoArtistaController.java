@@ -62,7 +62,7 @@ public class SugestaoArtistaController extends JSFController {
 		allPaises = true; 
 		paisesEscolhidos = todosOsPaises ;
 		generosEscolhidos = todosOsGeneros ;
-		numSugestoes = 1; 
+		numSugestoes = null; 
 		warningVazioGenero = false ;
 		warningVazioPais = false ;
 	}
@@ -161,12 +161,6 @@ public class SugestaoArtistaController extends JSFController {
 			allGeneros = false ;
 		}
 		return ;
-	}
-	
-	public boolean numSugestoesNulo() {
-		if (numSugestoes == null) return true ;
-		if (numSugestoes == 0) return true ;
-		return false;
 	}
 	
 	public void escolherTodosOsPaises() {

@@ -21,12 +21,10 @@
     <ui:define name="body">
 
 		<h:form id ="numSug"> 
-			<p:outputLabel for="numSug" value="Qual o número de sugestões que deseja receber?"/>
+			<p:outputLabel for="numSug" value="Qual o número de sugestões que deseja receber? (Deixe o campo vazio para definir valor ilimitado)" />
 			<br/>
-			<p:outputLabel for="numSug" value="OBS: Deixar esse campo vazio ou nulo resultará em um conjunto vazio como resultado!" rendered="#{sugestaoArtistaController.numSugestoesNulo()}"/>
 			<br/>
 			<p:inputNumber id="numSugestoes" value="#{sugestaoArtistaController.numSugestoes}" minValue="0" decimalPlaces="0">
-				<f:ajax event="blur" render="numSug" />
 			</p:inputNumber>
 		</h:form>
 		<br/>
