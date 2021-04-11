@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+	<ui:define name="title">
+		<h:outputText value="#{msgs['album_artista.novo']}" />
+	</ui:define>
+
+	<ui:define name="description">
+		<h:outputText value="#{msgs['album_artista.novo.description']}" />
+	</ui:define>
+    
+	<br/>
+    <ui:define name="body">
+	    <h:form id="incorretForm">
+	    	<p:outputLabel value="Você não seguiu o fluxo certo de 
+	    	eventos para executar essa funcionalidade." 
+	    	rendered="#{empty cadastroAlbumController.album}" />
+		</h:form>
+	    
+		<h:form id="registerForm">
+		
+			<div class="card">
+			    <p:panelGrid columns="2"
+			    rendered="#{not empty cadastroAlbumController.album}">
+			    
+			        <h:outputText value="Nome do Album:"/>
+			        <h:outputText value="#{cadastroAlbumController.album.nome}"/>
+			        
+			        <h:outputText value="Data de Lançamento do Album:"/>
+			        <h:outputText value="#{cadastroAlbumController.album.dataLancamento}"/>
+					
+			    </p:panelGrid>
+			</div>
+			<br/>
+			<br/>
+		    <p:outputLabel value="Procurar pelo artista dono do Album"
+		    rendered="#{not empty cadastroAlbumController.album}"/>
+					<br />
+			<p:inputText id="nome" value="#{cadastroAlbumController.nome}" 
+			   rendered="#{not empty cadastroAlbumController.album}"/>
+		<br />	
+		<br />
+			<p:commandButton type="submit" value="Procurar Artista"
+				action="#{cadastroAlbumController.descobrirArtistas}" 
+				rendered="#{not empty cadastroAlbumController.album}"/>
+		</h:form>
+		<br />	
+		<br />
+		<h:form id="selectForm">
+			<div class="card">
+				<p:dataTable id="artistas" var="artista" value="#{cadastroAlbumController.artistas}"
+	                     selection="#{cadastroAlbumController.artistaEscolhido}" rowKey="#{artista.id}"
+	                     rendered="#{not empty cadastroAlbumController.artistas}">
+	                
+	                <f:ajax event="rowSelectRadio" listener="#{cadastroAlbumController.habilitarBotao}" render="artistas"/>
+	            	
+	            	<p:outputLabel value="Selecione o Artista que performa a música: "/>
+	            	<p:column selectionMode="single" style="width:50px;text-align:center"/>
+		            <p:column headerText="Nome">
+		                <h:outputText value="#{artista.nome}" />
+		            </p:column>
+		
+		            <p:column headerText="Nacionalidade">
+		                <h:outputText value="#{artista.nacionalidade}" />
+		            </p:column>
+	
+		            <p:column headerText="Generos Musicais">
+		                <h:outputText value="#{artista.imprimirGeneros()}" />
+		            </p:column>
+		            
+		            <f:facet name="footer">
+		                <p:commandButton id ="myButtonId" type="submit" value="Adicionar" disabled="#{cadastroAlbumController.desabilitarBotao}"
+						action="#{cadastroAlbumController.salvarAlbumArtista}"/>
+	            	</f:facet>
+        		</p:dataTable>	
+        		
+    		</div>
+    	</h:form>
+    </ui:define>
+</ui:composition>

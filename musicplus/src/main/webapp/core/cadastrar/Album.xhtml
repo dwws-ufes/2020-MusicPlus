@@ -18,23 +18,23 @@
 	<br/>
     <ui:define name="body">
 		<h:form id="registerForm">
-		
+			
 			<p:outputLabel value="Nome"/>
 					<br />
 			
-			<p:inputText id="nome" value="#{albumController.nomeDoAlbum}" />
+			<p:inputText id="nome" value="#{cadastroAlbumController.nomeDoAlbum}" />
 			
 			<br />
 			<br />
 			
        		<p:outputLabel value="Data de Lançamento: "/>
-            <p:calendar id="inline" value="#{albumController.dataDeLancamento}" navigator="true" mode="inline" locale="pt"/>         
+            <p:calendar id="inline" value="#{cadastroAlbumController.dataDeLancamento}" navigator="true" mode="inline" locale="pt"/>         
             
             <br />
 			<br />
 			
             <p:commandButton type="submit" value="Salvar"
-			action="#{albumController.salvarAlbum}" />
+			action="#{cadastroAlbumController.salvarAlbum}" />
 			
 		</h:form>
 
