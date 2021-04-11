@@ -1,0 +1,37 @@
+version: '3.2'
+
+networks:
+  bubble:
+    external: true
+
+services:
+  db.backend.dev:
+    container_name: db.backend.dev
+    image: mysql:8.0
+    command: --max_allowed_packet=512M
+    volumes:
+      - mysql_dev:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: musicplus
+
+    ports:
+      - '3306:3306'
+    networks:
+      - bubble
+
+  api.backend.dev:
+    container_name: api.backend.dev
+    build:
+      context: ./musicplus
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ./backend:/usr/src/app
+    ports:
+      - '8080:8080'
+    networks:
+      - bubble
+
+volumes:
+  mysql_dev:
