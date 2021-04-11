@@ -26,6 +26,10 @@ public class MusicaServiceBean implements MusicaService {
 		return null;
 	}
 	
+	public List<Musica> buscarPorArtista(Artista artista){
+		return musicaDAO.buscarPorArtista(artista);
+	}
+	
 	public List<Musica> buscarPorNome(String NomeDaMusica) {
 		// FIXME: auto-generated method stub
 		return musicaDAO.buscarPorNome(NomeDaMusica);
