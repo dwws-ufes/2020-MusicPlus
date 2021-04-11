@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+	<ui:define name="title">
+		<h:outputText value="#{msgs['album.novo']}" />
+	</ui:define>
+
+	<ui:define name="description">
+		<h:outputText value="#{msgs['album.novo.description']}" />
+	</ui:define>
+    
+	<br/>
+    <ui:define name="body">
+		<h:form id="registerForm">
+		
+			<p:outputLabel value="Nome"/>
+					<br />
+			
+			<p:inputText id="nome" value="#{albumController.nomeDoAlbum}" />
+			
+			<br />
+			<br />
+			
+       		<p:outputLabel value="Data de Lançamento: "/>
+            <p:calendar id="inline" value="#{albumController.dataDeLancamento}" navigator="true" mode="inline" locale="pt"/>         
+            
+            <br />
+			<br />
+			
+            <p:commandButton type="submit" value="Salvar"
+			action="#{albumController.salvarAlbum}" />
+			
+		</h:form>
+
+    </ui:define>
+</ui:composition>
