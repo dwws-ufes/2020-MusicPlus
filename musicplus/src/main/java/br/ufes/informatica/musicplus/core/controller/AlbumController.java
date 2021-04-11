@@ -9,6 +9,8 @@ import javax.enterprise.inject.Model;
 
 import br.ufes.inf.nemo.jbutler.ejb.controller.JSFController;
 import br.ufes.informatica.musicplus.core.application.AlbumService;
+import br.ufes.informatica.musicplus.core.domain.Album;
+import br.ufes.informatica.musicplus.core.domain.Artista;
 
 @Model
 @SessionScoped
@@ -27,7 +29,12 @@ public class AlbumController extends JSFController {
 	private String nomeDoAlbum;
 	
     public String salvarAlbum() {
-    	return "Musica Salva";
+    	Album album = new Album();
+    	album.setNome(nomeDoAlbum);
+    	album.setDataLancamento(dataDeLancamento);
+    	albumService.save(album);
+    	album.setNome("");
+    	return "/core/cadastrar/Album.xhtml?faces-redirect=true" ;
     }
 
 	public Date getDataDeLancamento() {

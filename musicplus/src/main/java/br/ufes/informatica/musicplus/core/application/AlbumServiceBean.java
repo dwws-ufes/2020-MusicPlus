@@ -6,6 +6,7 @@ import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 import br.ufes.informatica.musicplus.core.domain.Album;
+import br.ufes.informatica.musicplus.core.domain.Artista;
 import br.ufes.informatica.musicplus.core.domain.Usuario;
 import br.ufes.informatica.musicplus.core.persistence.AlbumDAO;
 
@@ -17,7 +18,7 @@ public class AlbumServiceBean implements AlbumService {
 
 	@EJB
 	private AlbumDAO albumDAO;
-
+	
 	@Override
 	public void criarAlbum(String nomeAlbum) {
 		// TODO Auto-generated method stub
@@ -39,6 +40,12 @@ public class AlbumServiceBean implements AlbumService {
 	@Override
 	public void listarMusicasDoAlbum(Usuario usuarioLogado, String nomeAlbum) {
 		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void save(Album album) {
+		// TODO Auto-generated method stub
+		albumDAO.save(album);
 	}
 
 }
