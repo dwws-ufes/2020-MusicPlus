@@ -20,18 +20,19 @@ services:
     networks:
       - bubble
 
-  api.backend.dev:
-    container_name: api.backend.dev
-    build:
-      context: ./musicplus
-      dockerfile: Dockerfile
-    restart: unless-stopped
-    volumes:
-      - ./backend:/usr/src/app
-    ports:
-      - '8080:8080'
-    networks:
-      - bubble
+  # api.backend.dev:
+  #   container_name: api.backend.dev
+  #   build:
+  #     context: ./musicplus
+  #     dockerfile: Dockerfile
+  #   restart: unless-stopped
+  #   volumes:
+  #     - ./backend:/usr/src/app
+  #   ports:
+  #     - '8080:8080'
+  #   networks:
+  #     - bubble
 
 volumes:
   mysql_dev:
+    
