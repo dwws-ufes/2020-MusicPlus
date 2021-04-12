@@ -21,21 +21,21 @@
 
     <ui:define name="body">
 		<h:form id="buscaMusica">
-			<p:outputLabel value="Procurar pelo nome do artista/banda (Deixe o campo vazio para procurar apenas pelo nome da música)"/>
+			<p:outputLabel value="Procurar pelo nome do artista/banda"/>
 			<br />
 			<p:inputText id="nomeArtista" value="#{musicaController.nomeDoArtista}">
-				<f:ajax event="blur" listener="#{musicaController.habilitaBotao}" render="buscaMusica"/>
+				<f:ajax event="blur" listener="#{musicaController.habilitarBotaoBusca}" render="buscaMusica"/>
 			</p:inputText>
 			<br />	
 			<br />
-			<p:outputLabel value="Procurar pelo nome da música (Deixe o campo vazio para procurar apenas por artista/banda)"/>
+			<p:outputLabel value="Procurar pelo nome da música"/>
 			<br />
 			<p:inputText id="nomeMusica" value="#{musicaController.nomeDaMusica}">
-						<f:ajax event="blur" listener="#{musicaController.habilitarBotao}" render="buscaMusica"/>
+						<f:ajax event="blur" listener="#{musicaController.habilitarBotaoBusca}" render="buscaMusica"/>
 			</p:inputText>
 			<br />	
 			<br />
-			<p:commandButton id ="myButtonId" type="submit" value="Procurar Música" disabled="musicaController.desabilitarBotao" 
+			<p:commandButton id ="myButtonId" type="submit" value="Procurar Música" disabled="#{musicaController.desabilitarBotaoBusca}" 
 			action="#{musicaController.buscarMusica}"/>
 		</h:form>
     

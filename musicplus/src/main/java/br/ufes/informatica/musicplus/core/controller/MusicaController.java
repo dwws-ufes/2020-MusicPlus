@@ -53,6 +53,8 @@ public class MusicaController extends JSFController {
 	
 	private Boolean desabilitarBotao ;
 	
+	private Boolean desabilitarBotaoBusca ;
+	
 	private Integer numSugestoes;
 	
 	private String porRankingOuAleatorio;
@@ -77,9 +79,11 @@ public class MusicaController extends JSFController {
 		auxClean() ;
 	}
 	
-	public void habilitaBotao() {
+	public void habilitarBotaoBusca() {
 		if (nomeDoArtista != null || nomeDaMusica != null) {
-			desabilitarBotao = false ;
+			desabilitarBotaoBusca = false ;
+		}else {
+			desabilitarBotaoBusca = true ;
 		}
 	}
 	
@@ -94,12 +98,14 @@ public class MusicaController extends JSFController {
 		nomeDoArtista = null ;
 		nomeDaMusica = null ;
 		desabilitarBotao = true ;
+		desabilitarBotaoBusca = true ;
 		artistaEscolhido = null ;
 	}	
 	
 	public String buscarMusica() {
 		if (nomeDoArtista == null) {
 			musicas = musicaService.buscarPorNome(nomeDaMusica);
+			return musicasEncontradas();
 		}
 		List<Artista> artistas = artistaService.buscarPorNome(nomeDoArtista);
 		if (nomeDaMusica == null) {
@@ -108,6 +114,14 @@ public class MusicaController extends JSFController {
 			musicas = musicaService.buscarMusica(nomeDaMusica, artistas) ;
 		}
 		return musicasEncontradas();
+	}
+	
+	public String favoritar() {
+		// IF (USUARIO AINDA NAO FAVORITOU MUSICA) {
+		musicaEscolhida.incrementaNumVezesFavoritado();
+		musicaService.save(musicaEscolhida);
+		// }
+		return "/index.xhtml?faces-redirect=true" ;
 	}
 	
 	public String musicasEncontradas() {
@@ -331,5 +345,15 @@ public class MusicaController extends JSFController {
 	public void setTodosOsGeneros(TipoGenero[] todosOsGeneros) {
 		this.todosOsGeneros = todosOsGeneros;
 	}
+
+	public Boolean getDesabilitarBotaoBusca() {
+		return desabilitarBotaoBusca;
+	}
+
+	public void setDesabilitarBotaoBusca(Boolean desabilitarBotaoBusca) {
+		this.desabilitarBotaoBusca = desabilitarBotaoBusca;
+	}
+	
+	
 
 }
