@@ -23,7 +23,7 @@
 			<p:outputLabel for="numSug" value="Qual o número de sugestões que deseja receber? (Deixe o campo vazio para definir valor ilimitado)"/>
 			<br/>
 			<br/>
-			<p:inputNumber id="numSugestoes" value="#{sugestaoMusicaController.numSugestoes}" minValue="0" decimalPlaces="0">
+			<p:inputNumber id="numSugestoes" value="#{musicaController.numSugestoes}" minValue="0" decimalPlaces="0">
 			</p:inputNumber>
 		</h:form>
 		<br/>
@@ -32,15 +32,15 @@
 			<p:outputLabel for="gens" value="Deseja sugestões de músicas de quais gêneros?" />
 			<br/>
 			<p:outputLabel for="gens" value="OBS: Não selecionar nenhuma opção resultará em um conjunto vazio como resultado!" 
-			rendered="#{sugestaoMusicaController.warningVazioGenero}"/>
+			rendered="#{musicaController.warningVazioGenero}"/>
 			<br/>
 			<br/>
-			<p:selectBooleanCheckbox itemLabel = "Todos os Gêneros" value="#{sugestaoMusicaController.allGeneros}">
-					<f:ajax event="change" listener="#{sugestaoMusicaController.escolherTodosOsGeneros}" render="gens" />
+			<p:selectBooleanCheckbox itemLabel = "Todos os Gêneros" value="#{musicaController.allGeneros}">
+					<f:ajax event="change" listener="#{musicaController.escolherTodosOsGeneros}" render="gens" />
 			</p:selectBooleanCheckbox>
-			<p:selectManyCheckbox id="items" value="#{sugestaoMusicaController.generosEscolhidos}">
-				<f:selectItems value="#{sugestaoMusicaController.todosOsGeneros}" />
-				<f:ajax event="change" listener="#{sugestaoMusicaController.dispensarTodosOsGeneros}" render="gens" />
+			<p:selectManyCheckbox id="items" value="#{musicaController.generosEscolhidos}">
+				<f:selectItems value="#{musicaController.todosOsGeneros}" />
+				<f:ajax event="change" listener="#{musicaController.dispensarTodosOsGeneros}" render="gens" />
 			</p:selectManyCheckbox>
 		</h:form>
 		<br/>
@@ -49,15 +49,15 @@
 			<p:outputLabel for="linguas" value="Deseja sugestões de músicas em quais idiomas?" />
 			<br/>
 			<p:outputLabel for="linguas" value="OBS: Não selecionar nenhuma opção resultará em um conjunto vazio como resultado!" 
-			rendered="#{sugestaoMusicaController.warningVazioIdioma}"/>
+			rendered="#{musicaController.warningVazioIdioma}"/>
 			<br/>
 			<br/>
-			<p:selectBooleanCheckbox itemLabel = "Todos os Idiomas" value="#{sugestaoMusicaController.allIdiomas}">
-					<f:ajax event="change" listener="#{sugestaoMusicaController.escolherTodosOsIdiomas}" render="linguas" />
+			<p:selectBooleanCheckbox itemLabel = "Todos os Idiomas" value="#{musicaController.allIdiomas}">
+					<f:ajax event="change" listener="#{musicaController.escolherTodosOsIdiomas}" render="linguas" />
 			</p:selectBooleanCheckbox>
-			<p:selectManyCheckbox id="items" value="#{sugestaoMusicaController.idiomasEscolhidos}">
-				<f:selectItems value="#{sugestaoMusicaController.todosOsIdiomas}" />
-				<f:ajax event="change" listener="#{sugestaoMusicaController.dispensarTodosOsIdiomas}" render="linguas" />
+			<p:selectManyCheckbox id="items" value="#{musicaController.idiomasEscolhidos}">
+				<f:selectItems value="#{musicaController.todosOsIdiomas}" />
+				<f:ajax event="change" listener="#{musicaController.dispensarTodosOsIdiomas}" render="linguas" />
 			</p:selectManyCheckbox>
 		</h:form>
 		<br/>
@@ -67,7 +67,7 @@
                 <p:outputLabel for="selectRankingAleatorio" value="Deseja sugestões de forma aleatória ou pelo ranking de músicas mais favoritadas?"/>
 				<br/>
 				<br/>
-                <p:selectOneMenu id="selectRankingAleatorio" value="#{sugestaoMusicaController.porRankingOuAleatorio}">
+                <p:selectOneMenu id="selectRankingAleatorio" value="#{musicaController.porRankingOuAleatorio}">
                     <f:selectItem itemLabel="Aleatório" itemValue="Aleatório"/>
                     <f:selectItem itemLabel="Ranking" itemValue="Ranking"/>
                 </p:selectOneMenu>
@@ -75,7 +75,7 @@
 			<br/>
 			<br/>
 			<p:commandButton id ="myButtonId" type="submit" value="Requisitar Sugestão"
-			action="#{sugestaoMusicaController.pedirSugestaoMusica}"/>
+			action="#{musicaController.pedirSugestaoMusica}"/>
 		</h:form>
 					
 	</ui:define>

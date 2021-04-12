@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+
+    <ui:define name="title">
+        <h:outputText value="#{msgs['buscar_musica.title']}" />
+    </ui:define>
+			<br />
+			<br />
+    <ui:define name="description">
+        <h:outputText value="#{msgs['buscar_musica.title.description']}" />
+    </ui:define>
+			<br />
+			<br />
+
+    <ui:define name="body">
+		<h:form id="buscaMusica">
+			<p:outputLabel value="Procurar pelo nome do artista/banda (Deixe o campo vazio para procurar apenas pelo nome da música)"/>
+			<br />
+			<p:inputText id="nomeArtista" value="#{musicaController.nomeDoArtista}">
+				<f:ajax event="blur" listener="#{musicaController.habilitaBotao}" render="buscaMusica"/>
+			</p:inputText>
+			<br />	
+			<br />
+			<p:outputLabel value="Procurar pelo nome da música (Deixe o campo vazio para procurar apenas por artista/banda)"/>
+			<br />
+			<p:inputText id="nomeMusica" value="#{musicaController.nomeDaMusica}">
+						<f:ajax event="blur" listener="#{musicaController.habilitarBotao}" render="buscaMusica"/>
+			</p:inputText>
+			<br />	
+			<br />
+			<p:commandButton id ="myButtonId" type="submit" value="Procurar Música" disabled="musicaController.desabilitarBotao" 
+			action="#{musicaController.buscarMusica}"/>
+		</h:form>
+    
+    </ui:define>
+</ui:composition>
