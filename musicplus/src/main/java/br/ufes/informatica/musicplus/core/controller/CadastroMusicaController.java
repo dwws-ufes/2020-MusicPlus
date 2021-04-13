@@ -5,9 +5,7 @@ import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.enterprise.inject.Model;
 
-import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
