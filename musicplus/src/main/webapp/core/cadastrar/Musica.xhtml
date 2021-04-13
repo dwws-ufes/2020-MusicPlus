@@ -38,20 +38,17 @@
             </p:selectOneMenu>
 		<br />
         <br />
-       		<p:outputLabel value="Data de Lançamento: "/>
-            <p:calendar id="inline" value="#{cadastroMusicaController.dataDeLancamento}" navigator="true" mode="inline" locale="pt"/>         
-        	<h:outputText value="#{cadastroMusicaController.dataDeLancamento}">
-                <f:convertDateTime pattern="MM/dd/yyyy"/>
-            </h:outputText>
+       		<p:outputLabel for="mask_c" value="Data de Lançamento: "/>
+            <p:calendar id="mask_c" value="#{cadastroMusicaController.dataDeLancamento}" navigator="true" locale="pt" pattern="dd/MM/yyyy" mask="true">         
+            </p:calendar>
         <br />
         <br />
             <p:outputLabel value="Duração:"/>
-            <p:calendar id="time" value="#{cadastroMusicaController.duracao}" pattern="HH:mm:ss" timeOnly="true"/>
-            <h:outputText value="#{cadastroMusicaController.duracao}">
+            <p:calendar id="time" value="#{cadastroMusicaController.duracao}" pattern="HH:mm:ss" timeOnly="true">
             	<f:convertDateTime pattern="HH:mm:ss"/>
-            </h:outputText>
+            </p:calendar>
 		<br />
-        <br />    
+        <br />
             <p:commandButton type="submit" value="Salvar"
 			action="#{cadastroMusicaController.salvarMusica}" />
 		</h:form>

@@ -34,11 +34,15 @@
 			        <h:outputText value="#{cadastroMusicaController.musica.nome}"/>
 					
 					<h:outputText value="Duração da Música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.duracao}"/>
+			        <h:outputText value="#{cadastroMusicaController.musica.duracao}">
+			            <f:convertDateTime pattern="HH:mm:ss" />
+			        </h:outputText>
 			        
 			        <h:outputText value="Data de Lançamento da Música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.dataLancamento}"/>
-						        
+			        <h:outputText value="#{cadastroMusicaController.musica.dataLancamento}">
+			            <f:convertDateTime pattern="dd.MM.yyyy" />
+			        </h:outputText>
+			        
 			        <h:outputText value="Gêneros da Música:"/>
 			        <h:outputText value="#{cadastroMusicaController.musica.imprimirGeneros()}"/>
 			
