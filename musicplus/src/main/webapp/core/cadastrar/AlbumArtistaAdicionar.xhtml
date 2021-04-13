@@ -33,7 +33,9 @@
 			        <h:outputText value="#{cadastroAlbumController.album.nome}"/>
 			        
 			        <h:outputText value="Data de Lançamento do Album:"/>
-			        <h:outputText value="#{cadastroAlbumController.album.dataLancamento}"/>
+			        <h:outputText value="#{cadastroAlbumController.album.dataLancamento}">
+			        	<f:convertDateTime pattern="dd/MM/yyyy" />
+			        </h:outputText>
 					
 			    </p:panelGrid>
 			</div>

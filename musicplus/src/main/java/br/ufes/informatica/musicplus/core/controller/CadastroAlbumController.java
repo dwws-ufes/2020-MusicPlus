@@ -78,7 +78,6 @@ public class CadastroAlbumController extends JSFController {
 	}
 	
 	public void salvarRemoverAux() {
-		albumService.save(album);
 		artistas = null ;
 		album = null ;
 		desabilitarBotao = true ;
@@ -86,6 +85,7 @@ public class CadastroAlbumController extends JSFController {
 	
 	public String salvarAlbumArtista() {
 		this.album.addArtista(this.artistaEscolhido) ;
+		albumService.save(album); 
 		salvarRemoverAux() ;
 		return "/index.xhtml?faces-redirect=true" ;
 	}

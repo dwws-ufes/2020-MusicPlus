@@ -34,13 +34,26 @@
 			        <h:outputText value="#{musica.idioma}" />
 			    </p:column>
 		
-			    <p:column headerText="Generos Musicais">
+			    <p:column headerText="Gêneros">
 			        <h:outputText value="#{musica.imprimirGeneros()}" />
 			    </p:column>
 
 			    <p:column headerText="Artistas">
 			        <h:outputText value="#{musica.imprimirArtistas()}" />
 			    </p:column>
+			    
+			    <p:column headerText="Duração">
+			    		<h:outputText value="#{cadastroMusicaController.musica.duracao}">
+			            	<f:convertDateTime pattern="HH:mm:ss" />
+			    		</h:outputText>
+			    </p:column>
+			    
+			    <p:column headerText="Data de Lançamento">
+			        <h:outputText value="#{musica.dataLancamento}">
+			            <f:convertDateTime pattern="dd/MM/yyyy" />
+			        </h:outputText>
+			    </p:column>
+			    
 			    
 			    <f:facet name="footer">
 			        <p:commandButton type="submit" value="Favoritar" disabled="#{musicaController.desabilitarBotao}"
