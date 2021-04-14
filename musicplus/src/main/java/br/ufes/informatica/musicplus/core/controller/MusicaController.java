@@ -1,6 +1,7 @@
 package br.ufes.informatica.musicplus.core.controller;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -55,6 +56,8 @@ public class MusicaController extends JSFController {
 	
 	private Boolean desabilitarBotaoBusca ;
 	
+	private Boolean desabilitarBotaoCadastro ;
+	
 	private Integer numSugestoes;
 	
 	private String porRankingOuAleatorio;
@@ -71,12 +74,19 @@ public class MusicaController extends JSFController {
 	
 	private TipoGenero[] todosOsGeneros ;
 	
+	private TipoIdioma idiomaEscolhido ;
+	
+	private int numVezesFavoritado;
+	
+	private Date duracao;
+
+	private Date dataDeLancamento ;
+	
 	@PostConstruct
 	public void init() {
-		todosOsGeneros = TipoGenero.todos();
-		todosOsIdiomas = TipoIdioma.todos();
-		musicas = null ;
-		auxClean() ;
+		auxBuscarMusica();
+		auxCleanForPedirSugestaoDeMusica();
+		auxCadastrarMusica();
 	}
 	
 	public void habilitarBotaoBusca() {
@@ -87,18 +97,38 @@ public class MusicaController extends JSFController {
 		}
 	}
 	
-	public void auxClean() {
-		allGeneros = true ;
-		allIdiomas = true; 
-		idiomasEscolhidos = todosOsIdiomas ;
-		generosEscolhidos = todosOsGeneros ;
-		numSugestoes = null; 
-		warningVazioGenero = false ;
-		warningVazioIdioma = false ;
+	public void auxBuscarMusica() {
 		nomeDoArtista = null ;
 		nomeDaMusica = null ;
-		desabilitarBotao = true ;
 		desabilitarBotaoBusca = true ;
+		//return "/core/buscar/Musica.xhtml?faces-redirect=true" ;
+	}
+	
+	public void auxCleanForPedirSugestaoDeMusica() {
+		musicas = null ;
+		todosOsGeneros = TipoGenero.todos();
+		todosOsIdiomas = TipoIdioma.todos();
+		generosEscolhidos = null ;
+		allGeneros = false ;
+		allIdiomas = false ;
+		numSugestoes = null; 
+		desabilitarBotao = true ;
+		warningVazioGenero = true ;
+		warningVazioIdioma = true ;
+		//return "/core/sugestao/Musica.xhtml?faces-redirect=true" ;
+	}
+	
+	public void auxCadastrarMusica() {
+		duracao = null ;
+		dataDeLancamento = null ;
+		numVezesFavoritado = 0 ;
+		nomeDaMusica = null ;
+		desabilitarBotaoCadastro = true ;
+		//return "/core/cadastrar/Musica.xhtml?faces-redirect=true" ;
+	}
+	
+	public void auxAdRrmArtista() {
+		desabilitarBotao = true ;
 		artistaEscolhido = null ;
 	}	
 	
@@ -121,7 +151,21 @@ public class MusicaController extends JSFController {
 		musicaEscolhida.incrementaNumVezesFavoritado();
 		musicaService.save(musicaEscolhida);
 		// }
+		return paginaInicial() ;
+	}
+	
+	public String paginaInicial() {
 		return "/index.xhtml?faces-redirect=true" ;
+	}
+	
+	public String editar() {
+		nomeDaMusica = musicaEscolhida.getNome() ;
+		//dataDeLancamento = musicaEscolhida.getDataLancamento();
+		//duracao = musicaEscolhida.getDuracao() ;
+		generosEscolhidos = (TipoGenero[]) musicaEscolhida.getGenero().toArray();
+		//idiomaEscolhido = musicaEscolhida.getIdioma() ;
+		numVezesFavoritado = musicaEscolhida.getNumVezesFavoritado(); 
+		return "/core/cadastrar/Musica.xhtml?faces-redirect=true" ;
 	}
 	
 	public String musicasEncontradas() {
@@ -207,8 +251,27 @@ public class MusicaController extends JSFController {
 			}
 			musicas = sugestaoService.pedirSugestaoMusica(porRankingOuAleatorio, idiomas, allIdiomas, numSugestoes, generos, allGeneros);
 		}
+		auxBuscarMusica();
+		auxCadastrarMusica();
 		return musicasEncontradas() ;
 	}
+	
+	public String salvarMusica() {
+    	Musica musica = new Musica();
+    	for (TipoGenero g : generosEscolhidos) {
+    		musica.addGenero(g);
+    	}
+    	musica.setIdioma(idiomaEscolhido);
+    	musica.setNome(nomeDaMusica);
+    	musica.setNumVezesFavoritado(numVezesFavoritado);
+    	musica.setDataLancamento(dataDeLancamento);
+    	musica.setDuracao(duracao);
+    	musicaService.save(musica);
+		auxBuscarMusica();
+		auxCleanForPedirSugestaoDeMusica();
+    	return paginaInicial();
+    	//return musicaArtistaAdicionar() ;
+    }
 	
 	
 	//Só getters e setters a partir daqui
@@ -353,7 +416,45 @@ public class MusicaController extends JSFController {
 	public void setDesabilitarBotaoBusca(Boolean desabilitarBotaoBusca) {
 		this.desabilitarBotaoBusca = desabilitarBotaoBusca;
 	}
+
+	public int getNumVezesFavoritado() {
+		return numVezesFavoritado;
+	}
+
+	public void setNumVezesFavoritado(int numVezesFavoritado) {
+		this.numVezesFavoritado = numVezesFavoritado;
+	}
 	
+	public void setDuracao(Date duracao) {
+		this.duracao = duracao;
+	}
+
+	public void setDataDeLancamento(Date dataDeLancamento) {
+		this.dataDeLancamento = dataDeLancamento;
+	}
 	
+	public Date getDuracao() {
+		return duracao;
+	}
+	
+	public Date getDataDeLancamento() {
+		return dataDeLancamento;
+	}
+
+	public TipoIdioma getIdiomaEscolhido() {
+		return idiomaEscolhido;
+	}
+
+	public void setIdiomaEscolhido(TipoIdioma idiomaEscolhido) {
+		this.idiomaEscolhido = idiomaEscolhido;
+	}
+
+	public Boolean getDesabilitarBotaoCadastro() {
+		return desabilitarBotaoCadastro;
+	}
+
+	public void setDesabilitarBotaoCadastro(Boolean desabilitarBotaoCadastro) {
+		this.desabilitarBotaoCadastro = desabilitarBotaoCadastro;
+	}
 
 }

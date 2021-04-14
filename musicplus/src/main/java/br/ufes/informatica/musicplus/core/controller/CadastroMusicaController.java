@@ -54,26 +54,26 @@ public class CadastroMusicaController extends JSFController {
 
 	private List<Musica> musicas ;
 	
-	private Boolean desabilitarBotao ;
+	private Boolean desabilitarBotaoAdRmArtista ;
 	
 	@PostConstruct
 	public void init() {
 		todosOsGeneros = TipoGenero.todos();
 		todosOsIdiomas = TipoIdioma.todos();
 		numVezesFavoritado = 0;
-		desabilitarBotao = true ;
+		desabilitarBotaoAdRmArtista = true ;
 	}
 
-	public Boolean getDesabilitarBotao() {
-		return desabilitarBotao;
+	public Boolean getDesabilitarBotaoAdRmArtista() {
+		return desabilitarBotaoAdRmArtista;
 	}
 
-	public void setDesabilitarBotao(Boolean desabilitarBotao) {
-		this.desabilitarBotao = desabilitarBotao;
+	public void setDesabilitarBotaoAdRmArtista(Boolean desabilitarBotaoAdRmArtista) {
+		this.desabilitarBotaoAdRmArtista = desabilitarBotaoAdRmArtista;
 	}
 	
-	public void habilitarBotao() {
-		desabilitarBotao = false ;
+	public void habilitarBotaoAdRmArtista() {
+		desabilitarBotaoAdRmArtista = false ;
 	}
 
 	public void setDuracao(Date duracao) {
@@ -172,7 +172,7 @@ public class CadastroMusicaController extends JSFController {
 	public void auxMusicaArtistaDefaults() {
 		musicas = null ;
 		artistaEscolhido = null ;
-		desabilitarBotao = true ;
+		desabilitarBotaoAdRmArtista = true ;
 	}
 	
 	public String musicaArtistaRemover() {
@@ -189,7 +189,7 @@ public class CadastroMusicaController extends JSFController {
 		artistas = null ;
 		musicas = musicaService.buscarPorNome(nome);
 		nome = null ;
-		desabilitarBotao = true ;
+		desabilitarBotaoAdRmArtista = true ;
 		return "/core/cadastrar/BuscarMusica.xhtml?faces-redirect=true" ;
 	}
 	
@@ -222,7 +222,7 @@ public class CadastroMusicaController extends JSFController {
 		artistas = null ;
 		musicas = null ;
 		musica = null ;
-		desabilitarBotao = true ;
+		desabilitarBotaoAdRmArtista = true ;
 	}
 	public String salvarArtistaMusica() {
 		this.musica.addArtista(this.artistaEscolhido) ;
