@@ -20,7 +20,11 @@
     <ui:define name="body">
 		<h:form id="registerForm">
 		
-			<p:outputLabel value="Nome"/>
+			<h:outputText value="#{musicaController.mensagem}"/>			
+					<br />	
+					<br />	
+
+			<p:outputLabel value="Nome *"/>
 					<br />
 			<p:inputText id="nome" value="#{musicaController.nomeDaMusica}" />
 		<br />	
@@ -31,7 +35,7 @@
         	</p:selectManyCheckbox>
 		<br />
 		<br />
-			<p:outputLabel value="Idioma"/>
+			<p:outputLabel value="Idioma *"/>
             <p:selectOneMenu id="labeled" value="#{musicaController.idiomaEscolhido}" label="Selecione o idioma da música"
                                 alwaysDisplayLabel="true">
             	<f:selectItems value="#{musicaController.todosOsIdiomas}"/>
@@ -39,10 +43,14 @@
 		<br />
         <br />
        		<p:outputLabel for="mask_c" value="Data de Lançamento: "/>
+       		        <br />
+       		
             <p:calendar id="mask_c" value="#{musicaController.dataDeLancamento}" navigator="true" locale="pt" pattern="dd/MM/yyyy" mask="true"/>         
         <br />
         <br />
-            <p:outputLabel value="Duração:"/>
+            <p:outputLabel value="Duração *"/>
+                    <br />
+            
             <p:calendar id="time" value="#{musicaController.duracao}" pattern="HH:mm:ss" timeOnly="true">
             	<f:convertDateTime pattern="HH:mm:ss"/>
             </p:calendar>

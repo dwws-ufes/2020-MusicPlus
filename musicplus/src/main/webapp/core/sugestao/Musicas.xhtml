@@ -32,7 +32,7 @@
 			<p:outputLabel for="gens" value="Deseja sugestões de músicas de quais gêneros?" />
 			<br/>
 			<p:outputLabel for="gens" value="OBS: Não selecionar nenhuma opção resultará em um conjunto vazio como resultado!" 
-			rendered="#{musicaController.warningVazioGenero}"/>
+			rendered="#{musicaController.warningVazioGenero()}"/>
 			<br/>
 			<br/>
 			<p:selectBooleanCheckbox itemLabel = "Todos os Gêneros" value="#{musicaController.allGeneros}">
@@ -49,7 +49,7 @@
 			<p:outputLabel for="linguas" value="Deseja sugestões de músicas em quais idiomas?" />
 			<br/>
 			<p:outputLabel for="linguas" value="OBS: Não selecionar nenhuma opção resultará em um conjunto vazio como resultado!" 
-			rendered="#{musicaController.warningVazioIdioma}"/>
+			rendered="#{musicaController.warningVazioIdioma()}"/>
 			<br/>
 			<br/>
 			<p:selectBooleanCheckbox itemLabel = "Todos os Idiomas" value="#{musicaController.allIdiomas}">
