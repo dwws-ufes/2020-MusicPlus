@@ -9,6 +9,7 @@ import javax.faces.context.FacesContext;
 import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
 
+import br.ufes.inf.nemo.jbutler.ejb.controller.JSFController;
 import br.ufes.informatica.musicplus.core.application.LoginService;
 
 /**
@@ -20,11 +21,11 @@ import br.ufes.informatica.musicplus.core.application.LoginService;
 
 @Named
 @SessionScoped
-public class SessionController implements Serializable {
-private static final long serialVersionUID = 1L;
+public class SessionController extends JSFController implements Serializable {
+	private static final long serialVersionUID = 1L;
 	
-	@EJB
-	private LoginService loginService;
+//	@EJB
+//	private LoginService loginService;
 	
 	private String email;
 	
@@ -43,7 +44,7 @@ private static final long serialVersionUID = 1L;
 		try {
 			// Uses the Session Information bean to authenticate the user.
 			
-			loginService.login(email, password);
+//			loginService.login(email, password);
 
 			// Also authenticates on JAAS.
 			// FIXME: is there a way to do this at the application package (in the EJB)?
