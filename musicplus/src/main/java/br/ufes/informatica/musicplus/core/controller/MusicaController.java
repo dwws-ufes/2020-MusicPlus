@@ -58,6 +58,8 @@ public class MusicaController extends JSFController {
 	
 	private Boolean desabilitarBotaoCadastro ;
 	
+	private Boolean editando ;
+	
 	private Integer numSugestoes;
 	
 	private String porRankingOuAleatorio;
@@ -71,9 +73,7 @@ public class MusicaController extends JSFController {
 	private TipoGenero[] todosOsGeneros ;
 	
 	private TipoIdioma idiomaEscolhido ;
-	
-	private int numVezesFavoritado;
-	
+		
 	private Date duracao;
 
 	private Date dataDeLancamento ;
@@ -96,6 +96,7 @@ public class MusicaController extends JSFController {
 	}
 	
 	public void auxBuscarMusica() {
+		editando = false ;
 		nomeDoArtista = null ;
 		nomeDaMusica = null ;
 		desabilitarBotaoBusca = true ;
@@ -103,6 +104,7 @@ public class MusicaController extends JSFController {
 	}
 	
 	public void auxCleanForPedirSugestaoDeMusica() {
+		editando = false ;
 		musicas = null ;
 		todosOsGeneros = TipoGenero.todos();
 		todosOsIdiomas = TipoIdioma.todos();
@@ -116,19 +118,14 @@ public class MusicaController extends JSFController {
 	}
 	
 	public void auxCadastrarMusica() {
+		editando = false ;
 		mensagem = null ;
 		duracao = null ;
 		dataDeLancamento = null ;
-		numVezesFavoritado = 0 ;
 		nomeDaMusica = null ;
 		desabilitarBotaoCadastro = true ;
 		//return "/core/cadastrar/Musica.xhtml?faces-redirect=true" ;
 	}
-	
-	public void auxAdRrmArtista() {
-		desabilitarBotao = true ;
-		artistaEscolhido = null ;
-	}	
 
 	public String redirecionaCadastroMusica(){
 		return "/core/cadastrar/Musica.xhtml?faces-redirect=true" ;
@@ -161,13 +158,14 @@ public class MusicaController extends JSFController {
 	}
 	
 	public String editar() {
+		editando = true ;
 		nomeDaMusica = musicaEscolhida.getNome() ;
-		//dataDeLancamento = musicaEscolhida.getDataLancamento();
-		//duracao = musicaEscolhida.getDuracao() ;
-		generosEscolhidos = (TipoGenero[]) musicaEscolhida.getGenero().toArray();
-		//idiomaEscolhido = musicaEscolhida.getIdioma() ;
-		numVezesFavoritado = musicaEscolhida.getNumVezesFavoritado(); 
-		return "/core/cadastrar/Musica.xhtml?faces-redirect=true" ;
+		dataDeLancamento = musicaEscolhida.getDataLancamento();
+		duracao = musicaEscolhida.getDuracao() ;
+		List<TipoGenero> aux = musicaEscolhida.getGenero() ;
+		generosEscolhidos = aux.toArray(new TipoGenero[aux.size()]) ;
+		idiomaEscolhido = musicaEscolhida.getIdioma() ;
+		return redirecionaCadastroMusica() ;
 	}
 	
 	public String musicasEncontradas() {
@@ -201,7 +199,6 @@ public class MusicaController extends JSFController {
 	}
 	
 	public void dispensarTodosOsGeneros() {
-		//warningVazioGenero = true ;
 		allGeneros = false ;
 		if (generosEscolhidos == null) {
 			return ;
@@ -209,7 +206,6 @@ public class MusicaController extends JSFController {
 		if (generosEscolhidos.length == 0) {
 			return ;
 		}
-		//warningVazioGenero = false ;
 		allGeneros = true ;
 		if (generosEscolhidos.length != todosOsGeneros.length) {
 			allGeneros = false ;
@@ -282,26 +278,35 @@ public class MusicaController extends JSFController {
 		}
 		if (limpo){
 			mensagem = null ;
-			return salvarMusicaPasso2() ;
+			if (editando) {
+				return salvarMusicaPasso2(musicaEscolhida) ;
+			}else {
+				return salvarMusicaPasso2(new Musica()) ;
+			}
 		}else{
 			mensagem = mensagem.substring(0, mensagem.length() - 2);
 			return redirecionaCadastroMusica() ;
 		}
 	}
 		
-	public String salvarMusicaPasso2() {
-	    	Musica musica = new Musica();
-	    	for (TipoGenero g : generosEscolhidos) {
-	    		musica.addGenero(g);
-	    	}
+	public String salvarMusicaPasso2(Musica musica) {
+			if  (editando) {
+				musica.getGenero().clear();
+			}
+			for (TipoGenero g : generosEscolhidos) {
+				musica.addGenero(g);
+			}
 	    	musica.setIdioma(idiomaEscolhido);
 	    	musica.setNome(nomeDaMusica);
-	    	musica.setNumVezesFavoritado(numVezesFavoritado);
+	    	if (!editando) {
+	    		musica.setNumVezesFavoritado(0);
+	    	}
 	    	musica.setDataLancamento(dataDeLancamento);
 	    	musica.setDuracao(duracao);
 	    	musicaService.save(musica);
 			auxBuscarMusica();
 			auxCleanForPedirSugestaoDeMusica();
+			editando = false ;
 	    	return paginaInicial();
     	//return musicaArtistaAdicionar() ;
     }
@@ -432,14 +437,6 @@ public class MusicaController extends JSFController {
 
 	public void setDesabilitarBotaoBusca(Boolean desabilitarBotaoBusca) {
 		this.desabilitarBotaoBusca = desabilitarBotaoBusca;
-	}
-
-	public int getNumVezesFavoritado() {
-		return numVezesFavoritado;
-	}
-
-	public void setNumVezesFavoritado(int numVezesFavoritado) {
-		this.numVezesFavoritado = numVezesFavoritado;
 	}
 	
 	public void setDuracao(Date duracao) {
