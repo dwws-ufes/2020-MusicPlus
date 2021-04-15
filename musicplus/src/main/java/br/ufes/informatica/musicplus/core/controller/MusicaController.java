@@ -111,7 +111,7 @@ public class MusicaController extends JSFController {
 		generosEscolhidos = null ;
 		allGeneros = false ;
 		allIdiomas = false ;
-		numSugestoes = null; 
+		numSugestoes = 1; 
 		desabilitarBotao = true ;
 		idiomaEscolhido = null ;
 		//return "/core/sugestao/Musica.xhtml?faces-redirect=true" ;
@@ -382,14 +382,6 @@ public class MusicaController extends JSFController {
 	public void setGenerosEscolhidos(TipoGenero[] generosEscolhidos) {
 		this.generosEscolhidos = generosEscolhidos;
 	}
-	
-	public Integer getNumSugestoes() {
-		return numSugestoes;
-	}
-
-	public void setNumSugestoes(Integer numSugestoes) {
-		this.numSugestoes = numSugestoes;
-	}
 
 	public String getPorRankingOuAleatorio() {
 		return porRankingOuAleatorio;
@@ -478,5 +470,15 @@ public class MusicaController extends JSFController {
 	public void setMensagem(String mensagem) {
 		this.mensagem = mensagem;
 	}
+
+	public Integer getNumSugestoes() {
+		return numSugestoes;
+	}
+
+	public void setNumSugestoes(Integer numSugestoes) {
+		this.numSugestoes = numSugestoes;
+	}
+
+
 
 }

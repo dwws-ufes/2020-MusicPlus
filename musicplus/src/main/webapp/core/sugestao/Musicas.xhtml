@@ -24,6 +24,7 @@
 			<br/>
 			<br/>
 			<p:inputNumber id="numSugestoes" value="#{musicaController.numSugestoes}" minValue="0" decimalPlaces="0">
+				<f:ajax event="change"/>
 			</p:inputNumber>
 		</h:form>
 		<br/>
@@ -75,7 +76,7 @@
 			<br/>
 			<br/>
 			<p:commandButton id ="myButtonId" type="submit" value="Requisitar Sugestão"
-			action="#{musicaController.pedirSugestaoMusica}"/>
+			action="#{musicaController.pedirSugestaoMusica()}"/>
 		</h:form>
 					
 	</ui:define>
