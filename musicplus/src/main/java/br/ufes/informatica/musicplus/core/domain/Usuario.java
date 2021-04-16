@@ -1,5 +1,6 @@
 package br.ufes.informatica.musicplus.core.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -136,6 +137,16 @@ public class Usuario extends PersistentObjectSupport implements Comparable<Usuar
 
 	public void setAdmin(Boolean admin) {
 		this.admin = admin;
+	}
+
+	public void addGenero(TipoGenero g) {
+		// TODO Auto-generated method stub
+		this.generoFavoritados.add(g);
+	}
+	
+	public Usuario() {
+		super();
+		this.generoFavoritados = new ArrayList<TipoGenero>(); 
 	}
 
 }
