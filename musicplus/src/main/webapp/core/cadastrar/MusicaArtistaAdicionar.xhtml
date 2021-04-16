@@ -21,58 +21,58 @@
 	    <h:form id="incorretForm">
 	    	<p:outputLabel value="Você não seguiu o fluxo certo de 
 	    	eventos para executar essa funcionalidade." 
-	    	rendered="#{empty cadastroMusicaController.musica}" />
+	    	rendered="#{empty musicaController.musicaEscolhida}" />
 		</h:form>
 	    
 		<h:form id="registerForm">
 		
 			<div class="card">
 			    <p:panelGrid columns="2"
-			    rendered="#{not empty cadastroMusicaController.musica}">
+			    rendered="#{not empty musicaController.musicaEscolhida}">
 			    
 			        <h:outputText value="Nome da Música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.nome}"/>
+			        <h:outputText value="#{musicaController.musicaEscolhida.nome}"/>
 					
 					<h:outputText value="Duração da Música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.duracao}">
+			        <h:outputText value="#{musicaController.musicaEscolhida.duracao}">
 			            <f:convertDateTime pattern="HH:mm:ss" />
 			        </h:outputText>
 			        
 			        <h:outputText value="Data de Lançamento da Música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.dataLancamento}">
+			        <h:outputText value="#{musicaController.musicaEscolhida.dataLancamento}">
 			            <f:convertDateTime pattern="dd/MM/yyyy" />
 			        </h:outputText>
 						        
 			        <h:outputText value="Gêneros da Música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.imprimirGeneros()}"/>
+			        <h:outputText value="#{musicaController.musicaEscolhida.imprimirGeneros()}"/>
 			
 			        <h:outputText value="Artistas que performam a música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.imprimirArtistas()}"/>
+			        <h:outputText value="#{musicaController.musicaEscolhida.imprimirArtistas()}"/>
 			
 			    </p:panelGrid>
 			</div>
 			<br/>
 			<br/>
 		    <p:outputLabel value="Procurar pelo artista que performa a música"
-		    rendered="#{not empty cadastroMusicaController.musica}"/>
+		    rendered="#{not empty musicaController.musicaEscolhida}"/>
 					<br />
-			<p:inputText id="nome" value="#{cadastroMusicaController.nome}" 
-			   rendered="#{not empty cadastroMusicaController.musica}"/>
+			<p:inputText id="nome" value="#{musicaController.nomeDoArtista}" 
+			   rendered="#{not empty musicaController.musicaEscolhida}"/>
 		<br />	
 		<br />
 			<p:commandButton type="submit" value="Procurar Artista"
-				action="#{cadastroMusicaController.descobrirArtistas}" 
-				rendered="#{not empty cadastroMusicaController.musica}"/>
+				action="#{musicaController.descobrirArtistas}" 
+				rendered="#{not empty musicaController.musicaEscolhida}"/>
 		</h:form>
 		<br />	
 		<br />
 		<h:form id="selectForm">
 			<div class="card">
-				<p:dataTable id="artistas" var="artista" value="#{cadastroMusicaController.artistas}"
-	                     selection="#{cadastroMusicaController.artistaEscolhido}" rowKey="#{artista.id}"
-	                     rendered="#{not empty cadastroMusicaController.artistas}">
+				<p:dataTable id="artistas" var="artista" value="#{musicaController.artistas}"
+	                     selection="#{musicaController.artistaEscolhido}" rowKey="#{artista.id}"
+	                     rendered="#{not empty musicaController.artistas}">
 	                
-	                <f:ajax event="rowSelectRadio" listener="#{cadastroMusicaController.habilitarBotaoAdRmArtista}" render="artistas"/>
+	                <f:ajax event="rowSelectRadio" render="artistas"/>
 	            	
 	            	<p:outputLabel value="Selecione o Artista que performa a música: "/>
 	            	<p:column selectionMode="single" style="width:50px;text-align:center"/>
@@ -88,8 +88,8 @@
 		                <h:outputText value="#{artista.imprimirGeneros()}" />
 		            </p:column>
 		            <f:facet name="footer">
-		                <p:commandButton id ="myButtonId" type="submit" value="Adicionar" disabled="#{cadastroMusicaController.desabilitarBotaoAdRmArtista}"
-						action="#{cadastroMusicaController.salvarArtistaMusica}"/>
+		                <p:commandButton id ="myButtonId" type="submit" value="Adicionar" disabled="#{musicaController.desabilitarBotaoAdRmArtistaEmAdmRm()}"
+						action="#{musicaController.salvarArtistaMusica}"/>
 	            	</f:facet>
         		</p:dataTable>	
         		

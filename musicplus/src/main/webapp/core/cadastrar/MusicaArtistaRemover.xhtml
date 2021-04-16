@@ -21,30 +21,30 @@
 	    <h:form id="incorretForm">
 	    	<p:outputLabel value="Você não seguiu o fluxo certo de 
 	    	eventos para executar essa funcionalidade." 
-	    	rendered="#{empty cadastroMusicaController.musica}" />
+	    	rendered="#{empty musicaController.musicaEscolhida}" />
 		</h:form>
 	    
 		<h:form id="registerForm">
 		
 			<div class="card">
 			    <p:panelGrid columns="2"
-			    rendered="#{not empty cadastroMusicaController.musica}">
+			    rendered="#{not empty musicaController.musicaEscolhida}">
 			    
 			        <h:outputText value="Nome da Música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.nome}"/>
+			        <h:outputText value="#{musicaController.musicaEscolhida.nome}"/>
 					
 					<h:outputText value="Duração da Música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.duracao}">
+			        <h:outputText value="#{musicaController.musicaEscolhida.duracao}">
 			            <f:convertDateTime pattern="HH:mm:ss" />
 			        </h:outputText>
 			        
 			        <h:outputText value="Data de Lançamento da Música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.dataLancamento}">
+			        <h:outputText value="#{musicaController.musicaEscolhida.dataLancamento}">
 			            <f:convertDateTime pattern="dd/MM/yyyy" />
 			        </h:outputText>
 			        
 			        <h:outputText value="Gêneros da Música:"/>
-			        <h:outputText value="#{cadastroMusicaController.musica.imprimirGeneros()}"/>
+			        <h:outputText value="#{musicaController.musicaEscolhida.imprimirGeneros()}"/>
 			
 			    </p:panelGrid>
 			</div>
@@ -53,16 +53,16 @@
 			<br/>
 			<br/>
 		    <p:outputLabel value="Artistas que performam a música:"
-		    rendered="#{not empty cadastroMusicaController.musica.artistas}"/>
+		    rendered="#{not empty musicaController.musicaEscolhida.artistas}"/>
 		<br />
 		<br />
 		<h:form id="selectForm">
 			<div class="card">
-				<p:dataTable id="artistas" var="artista" value="#{cadastroMusicaController.musica.artistas}"
-                     selection="#{cadastroMusicaController.artistaEscolhido}" rowKey="#{artista.id}"
-                     rendered="#{not empty cadastroMusicaController.musica.artistas}">
+				<p:dataTable id="artistas" var="artista" value="#{musicaController.musicaEscolhida.artistas}"
+                     selection="#{musicaController.artistaEscolhido}" rowKey="#{artista.id}"
+                     rendered="#{not empty musicaController.musicaEscolhida.artistas}">
 	                
-	                <f:ajax event="rowSelectRadio" listener="#{cadastroMusicaController.habilitarBotaoAdRmArtista}" render="artistas"/>
+	                <f:ajax event="rowSelectRadio" render="artistas"/>
 	            	
 	            	<p:outputLabel value="Selecione o Artista a ser removido da Música: "/>
 	            	<p:column selectionMode="single" style="width:50px;text-align:center"/>
@@ -78,8 +78,8 @@
 		                <h:outputText value="#{artista.imprimirGeneros()}" />
 		            </p:column>
 		            <f:facet name="footer">
-		                <p:commandButton id ="myButtonId" type="submit" value="Remover" disabled="#{cadastroMusicaController.desabilitarBotaoAdRmArtista}"
-					action="#{cadastroMusicaController.removerArtistaMusica}"/>
+		                <p:commandButton id ="myButtonId" type="submit" value="Remover" disabled="#{musicaController.desabilitarBotaoAdRmArtistaEmAdmRm()}"
+					action="#{musicaController.removerArtistaMusica}"/>
 		            </f:facet>		            
         		</p:dataTable>
     		</div>

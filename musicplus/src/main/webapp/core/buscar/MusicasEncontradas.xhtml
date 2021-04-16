@@ -22,7 +22,7 @@
 		<p:dataTable id="musicas" var="musica" value="#{musicaController.musicas}"
 		             selection="#{musicaController.musicaEscolhida}" rowKey="#{musica.id}">
 		    	
-		    	<f:ajax event="rowSelectRadio" listener="#{musicaController.habilitarBotao}" render="musicas"/>
+		    	<f:ajax event="rowSelectRadio" render="musicas"/>
 		    	
 		    	<p:outputLabel value="Selecione a Música: "/>
 		    	<p:column selectionMode="single" style="width:50px;text-align:center"/>
@@ -43,7 +43,7 @@
 			    </p:column>
 			    
 			    <p:column headerText="Duração">
-			    		<h:outputText value="#{cadastroMusicaController.musica.duracao}">
+			    		<h:outputText value="#{musica.duracao}">
 			            	<f:convertDateTime pattern="HH:mm:ss" />
 			    		</h:outputText>
 			    </p:column>
@@ -56,13 +56,13 @@
 			    
 			    
 			    <f:facet name="footer">
-			        <p:commandButton type="submit" value="Favoritar" disabled="#{musicaController.desabilitarBotao}"
+			        <p:commandButton type="submit" value="Favoritar" disabled="#{musicaController.desabilitarBotao()}"
 					action="#{musicaController.favoritar}" />
 			    </f:facet>
 			    
 			    			    
 			    <f:facet name="footer">
-			        <p:commandButton type="submit" value="Editar" disabled="#{musicaController.desabilitarBotao}"
+			        <p:commandButton type="submit" value="Editar" disabled="#{musicaController.desabilitarBotao()}"
 					action="#{musicaController.editar}" />
 			    </f:facet>
 			    
