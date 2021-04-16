@@ -34,7 +34,7 @@
 			<p:outputLabel for="gens" value="Deseja sugestões de artistas de quais gêneros musicais?" />
 			<br/>
 			<p:outputLabel for="gens" value="OBS: Não selecionar nenhuma opção resultará em um conjunto vazio como resultado!" 
-			rendered="#{sugestaoArtistaController.warningVazioGenero}"/>
+			rendered="#{sugestaoArtistaController.warningVazioGenero()}"/>
 			<br/>
 			<br/>
 			<p:selectBooleanCheckbox itemLabel = "Todos os Gêneros" value="#{sugestaoArtistaController.allGeneros}">
@@ -51,7 +51,7 @@
 			<p:outputLabel for="nacionalidades" value="Deseja sugestões de artistas de quais nacionalidades?" />
 			<br/>
 			<p:outputLabel for="nacionalidades" value="OBS: Não selecionar nenhuma opção resultará em um conjunto vazio como resultado!" 
-			rendered="#{sugestaoArtistaController.warningVazioPais}"/>
+			rendered="#{sugestaoArtistaController.warningVazioPais()}"/>
 			<br/>
 			<br/>
 			<p:selectBooleanCheckbox itemLabel = "Todas as Nacionalidades" value="#{sugestaoArtistaController.allPaises}">
@@ -77,7 +77,7 @@
 			<br/>
 			<br/>
 			<p:commandButton id ="myButtonId" type="submit" value="Requisitar Sugestão"
-			action="#{sugestaoArtistaController.pedirSugestaoArtista}"/>
+			action="#{sugestaoArtistaController.pedirSugestaoArtista()}"/>
 		</h:form>
 					
 	</ui:define>

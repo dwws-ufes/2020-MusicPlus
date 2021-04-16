@@ -55,14 +55,10 @@ public class SugestaoArtistaController extends JSFController {
 	private boolean allGeneros ;
 	
 	private boolean allPaises ;
-
-	private boolean warningVazioGenero ;
 	
-	private boolean warningVazioPais ;
-	
-	private Boolean desabilitarBotao ;
-
 	private Artista artistaEscolhido ;
+	
+	private List<Musica> musicas ;
 	
 	@PostConstruct
 	public void init() {
@@ -77,23 +73,16 @@ public class SugestaoArtistaController extends JSFController {
 		paisesEscolhidos = todosOsPaises ;
 		generosEscolhidos = todosOsGeneros ;
 		numSugestoes = null; 
-		warningVazioGenero = false ;
-		warningVazioPais = false ;
-		desabilitarBotao = true ;
-	}
-	
-	public Boolean getDesabilitarBotao() {
-		return desabilitarBotao;
 	}
 
-	public void setDesabilitarBotao(Boolean desabilitarBotao) {
-		this.desabilitarBotao = desabilitarBotao;
-	}
-	
-	public void habilitarBotao() {
-		desabilitarBotao = false ;
+	public boolean warningVazioGenero() {
+		return (generosEscolhidos == null);
 	}
 
+	public boolean warningVazioPais() {
+		return (paisesEscolhidos == null);
+	}
+	
 	public Artista getArtistaEscolhido() {
 		return artistaEscolhido;
 	}
@@ -159,15 +148,12 @@ public class SugestaoArtistaController extends JSFController {
 	public void escolherTodosOsGeneros() {
 		if (allGeneros == true) {
 			generosEscolhidos = todosOsGeneros ;
-			warningVazioGenero = false ;
 		}else {
 			generosEscolhidos = null ;
-			warningVazioGenero = true ;
 		}
 	}
 	
 	public void dispensarTodosOsGeneros() {
-		warningVazioGenero = true ;
 		allGeneros = false ;
 		if (generosEscolhidos == null) {
 			return ;
@@ -175,7 +161,6 @@ public class SugestaoArtistaController extends JSFController {
 		if (generosEscolhidos.length == 0) {
 			return ;
 		}
-		warningVazioGenero = false ;
 		allGeneros = true ;
 		if (generosEscolhidos.length != todosOsGeneros.length) {
 			allGeneros = false ;
@@ -186,15 +171,12 @@ public class SugestaoArtistaController extends JSFController {
 	public void escolherTodosOsPaises() {
 		if (allPaises == true) {
 			paisesEscolhidos = todosOsPaises ;
-			warningVazioPais = false ;
 		}else {
 			paisesEscolhidos = null ;
-			warningVazioPais = true ;
 		}
 	}
 	
 	public void dispensarTodosOsPaises() {
-		warningVazioPais = true ;
 		allPaises = false ;
 		if (paisesEscolhidos == null) {
 			return ;
@@ -202,7 +184,6 @@ public class SugestaoArtistaController extends JSFController {
 		if (paisesEscolhidos.length == 0) {
 			return ;
 		}
-		warningVazioPais = false ;
 		allPaises = true ;
 		if (paisesEscolhidos.length != todosOsPaises.length) {
 			allPaises = false ;
@@ -226,27 +207,11 @@ public class SugestaoArtistaController extends JSFController {
 		this.allPaises = allPaises;
 	}
 
-	public boolean isWarningVazioGenero() {
-		return warningVazioGenero;
-	}
-
-	public void setWarningVazioGenero(boolean warningVazioGenero) {
-		this.warningVazioGenero = warningVazioGenero;
-	}
-
-	public boolean isWarningVazioPais() {
-		return warningVazioPais;
-	}
-
-	public void setWarningVazioPais(boolean warningVazioPais) {
-		this.warningVazioPais = warningVazioPais;
-	}
-
 	public void auxSugestaoArtistaDefaults() {
 		artistas = null ;
 		artistaEscolhido = null ;
-		desabilitarBotao = true ;
 	}
+	
 	public String favoritar() {
 		// IF (USUARIO AINDA NAO FAVORITOU ARTISTA){
 		artistaEscolhido.incrementaNumVezesFavoritado();
@@ -256,8 +221,21 @@ public class SugestaoArtistaController extends JSFController {
 		return "/index.xhtml?faces-redirect=true" ;
 	}
 	
+	public boolean desabilitarBotao() {
+		return artistaEscolhido == null ;
+	}
+	
+	public String buscarMusicaPorArtista() {
+		musicas = musicaService.buscarPorArtista(artistaEscolhido); 
+		return musicasEncontradas() ;
+	}
+	
+	public String musicasEncontradas() {
+		return "/core/buscar/MusicasDoArtista.xhtml?faces-redirect=true" ;
+	}
+	
 	public String pedirSugestaoArtista() {
-		if (warningVazioGenero || warningVazioPais) {
+		if (generosEscolhidos == null || paisesEscolhidos == null) {
 			artistas = null ;
 		}else {
 			List<TipoPais> paises = new ArrayList<TipoPais>(); 
@@ -270,7 +248,24 @@ public class SugestaoArtistaController extends JSFController {
 			}
 			artistas = sugestaoService.pedirSugestaoArtista(porRankingOuAleatorio, paises, allPaises, numSugestoes, generos, allGeneros);
 		}
-		auxClean();
-		return "/core/sugestao/ArtistasEncontrados.xhtml?faces-redirect=true" ;
+		//auxCleanForBuscarArtista();
+		//auxCadastrarArtista();
+		musicas = null ;
+		artistaEscolhido = null ;
+		return artistasEncontrados() ;
 	}
+	
+	public String artistasEncontrados() {
+		return "/core/buscar/ArtistasEncontrados.xhtml?faces-redirect=true" ;
+	}
+
+	public List<Musica> getMusicas() {
+		return musicas;
+	}
+
+	public void setMusicas(List<Musica> musicas) {
+		this.musicas = musicas;
+	}
+	
+	
 }

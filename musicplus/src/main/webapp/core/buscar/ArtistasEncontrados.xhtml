@@ -20,9 +20,9 @@
 	<h:form id="selectForm">
 		<div class="card">
 		<p:dataTable id="artistas" var="artista" value="#{sugestaoArtistaController.artistas}"
-		             selection="#{musicaController.artistaEscolhido}" rowKey="#{artista.id}">
+		             selection="#{sugestaoArtistaController.artistaEscolhido}" rowKey="#{artista.id}">
 		    	
-		    	<f:ajax event="rowSelectRadio" listener="#{sugestaoArtistaController.habilitarBotao}" render="artistas"/>
+		    	<f:ajax event="rowSelectRadio" render="artistas"/>
 		    	
 		    	<p:outputLabel value="Selecione o Artista: "/>
 		    	<p:column selectionMode="single" style="width:50px;text-align:center"/>
@@ -39,12 +39,12 @@
 			    </p:column>
 			    
 			    <f:facet name="footer">
-			        <p:commandButton type="submit" value="Favoritar" disabled="#{sugestaoArtistaController.desabilitarBotao}"
+			        <p:commandButton type="submit" value="Favoritar" disabled="#{sugestaoArtistaController.desabilitarBotao()}"
 					action="#{sugestaoArtistaController.favoritar}" />
 			    </f:facet>
 			    <f:facet name="footer">
-			        <p:commandButton type="submit" value="Ver Musicas" disabled="#{sugestaoArtistaController.desabilitarBotao}"
-					action="#{musicaController.buscarMusicaPorArtista()}" />
+			        <p:commandButton type="submit" value="Ver Musicas" disabled="#{sugestaoArtistaController.desabilitarBotao()}"
+					action="#{sugestaoArtistaController.buscarMusicaPorArtista()}" />
 			    </f:facet>
         	</p:dataTable>
     		</div>
