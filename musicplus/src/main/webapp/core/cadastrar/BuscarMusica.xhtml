@@ -22,21 +22,21 @@
 		
 		    <p:outputLabel value="Procurar por música"/>
 					<br />
-			<p:inputText id="nome" value="#{cadastroMusicaController.nome}" />
+			<p:inputText id="nome" value="#{musicaController.nomeDaMusica}" />
 		<br />	
 		<br />
 			<p:commandButton type="submit" value="Procurar Música"
-				action="#{cadastroMusicaController.descobrirMusicas}" />
+				action="#{musicaController.descobrirMusicas}" />
 		</h:form>
 		<br />	
 		<br />
 		<h:form id="selectForm">
 			<div class="card">
-				<p:dataTable id="musicas" var="m" value="#{cadastroMusicaController.musicas}"
-                     selection="#{cadastroMusicaController.musica}" rowKey="#{m.id}"
-                     rendered="#{not empty cadastroMusicaController.musicas}">
+				<p:dataTable id="musicas" var="m" value="#{musicaController.musicas}"
+                     selection="#{musicaController.musicaEscolhida}" rowKey="#{m.id}"
+                     rendered="#{not empty musicaController.musicas}">
             	
-            	<f:ajax event="rowSelectRadio" listener="#{cadastroMusicaController.habilitarBotao}" render="musicas"/>
+            	<f:ajax event="rowSelectRadio" render="musicas"/>
             	
             	<p:outputLabel value="Selecione a Música: "/>
             	<p:column selectionMode="single" style="width:50px;text-align:center"/>
@@ -56,12 +56,12 @@
 	                <h:outputText value="#{m.imprimirArtistas()}" />
 	            </p:column>
 	            <f:facet name="footer">
-	                <p:commandButton type="submit" value="Adicionar Artista" disabled="#{cadastroMusicaController.desabilitarBotao}"
-				action="#{cadastroMusicaController.redirectToMusicaArtista}" />
+	                <p:commandButton type="submit" value="Adicionar Artista" disabled="#{musicaController.desabilitarBotaoAdRmArtistaEmBuscar()}"
+				action="#{musicaController.redirectToMusicaArtistaAdicionar}" />
 	            </f:facet>
 	            <f:facet name="footer">
-	                <p:commandButton type="submit" value="Remover Artista" disabled="#{cadastroMusicaController.desabilitarBotao}"
-				action="#{cadastroMusicaController.redirectToMusicaArtistaRemover}" />
+	                <p:commandButton type="submit" value="Remover Artista" disabled="#{musicaController.desabilitarBotaoAdRmArtistaEmBuscar()}"
+				action="#{musicaController.redirectToMusicaArtistaRemover}" />
 	            </f:facet>
         		</p:dataTable>
     		</div>

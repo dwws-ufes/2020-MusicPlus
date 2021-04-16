@@ -9,12 +9,12 @@
 	
 
     <ui:define name="title">
-        <h:outputText value="#{msgs['buscar_musica.title']}" />
+        <h:outputText value="#{msgs['buscar_artista.title']}" />
     </ui:define>
 			<br />
 			<br />
     <ui:define name="description">
-        <h:outputText value="#{msgs['buscar_musica.title.description']}" />
+        <h:outputText value="#{msgs['buscar_artista.title.description']}" />
     </ui:define>
 			<br />
 			<br />
@@ -23,21 +23,15 @@
 		<h:form id="buscaMusica">
 			<p:outputLabel value="Procurar pelo nome do artista/banda"/>
 			<br />
-			<p:inputText id="nomeArtista" value="#{musicaController.nomeDoArtista}">
+			<p:inputText id="nomeArtista" value="#{sugestaoArtistaController.nomeArtista}">
 			</p:inputText>
 			<br />	
 			<br />
-			<p:outputLabel value="Procurar pelo nome da música"/>
-			<br />
-			<p:inputText id="nomeMusica" value="#{musicaController.nomeDaMusica}">
-			</p:inputText>
+			<p:outputLabel value="OBS: Caso o campo não seja preenchido, todos os artistas cadastrados no sistema serão retornados."/>
 			<br />	
-			<br />
-			<p:outputLabel value="OBS: Caso nenhum dos campos seja preenchido, todas as músicas cadastradas no sistema serão retornadas."/>
-			<br />	
-			<br />
-			<p:commandButton id ="myButtonId" type="submit" value="Procurar Música" 
-			action="#{musicaController.buscarMusicas}"/>
+			<br />			
+			<p:commandButton id ="myButtonId" type="submit" value="Procurar Artista"
+			action="#{sugestaoArtistaController.buscarArtistas()}"/>
 		</h:form>
     
     </ui:define>
