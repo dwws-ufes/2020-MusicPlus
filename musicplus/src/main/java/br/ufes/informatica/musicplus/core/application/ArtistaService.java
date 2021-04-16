@@ -15,4 +15,6 @@ public interface ArtistaService extends Serializable {
 	public void save(Artista artista) ;
 
 	public List<Artista> buscarPorNome(String nome) ;
+	
+	public List<Artista> buscarTodosArtistas();
 }

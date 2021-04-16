@@ -60,6 +60,8 @@ public class SugestaoArtistaController extends JSFController {
 	
 	private List<Musica> musicas ;
 	
+	private String nomeArtista ;
+	
 	@PostConstruct
 	public void init() {
 		auxClean() ;
@@ -258,6 +260,16 @@ public class SugestaoArtistaController extends JSFController {
 	public String artistasEncontrados() {
 		return "/core/buscar/ArtistasEncontrados.xhtml?faces-redirect=true" ;
 	}
+	
+	public String buscarArtistas() {
+		artistaEscolhido = null ;
+		if (nomeArtista != null && nomeArtista.trim() != null) {
+			artistas = artistaService.buscarPorNome(nomeArtista);
+		}else {
+			artistas = artistaService.buscarTodosArtistas();
+		}
+		return artistasEncontrados() ;
+	}
 
 	public List<Musica> getMusicas() {
 		return musicas;
@@ -266,6 +278,12 @@ public class SugestaoArtistaController extends JSFController {
 	public void setMusicas(List<Musica> musicas) {
 		this.musicas = musicas;
 	}
-	
-	
+
+	public String getNomeArtista() {
+		return nomeArtista;
+	}
+
+	public void setNomeArtista(String nomeArtista) {
+		this.nomeArtista = nomeArtista;
+	}
 }

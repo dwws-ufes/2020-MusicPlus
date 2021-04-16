@@ -26,4 +26,9 @@ public class ArtistaServiceBean implements ArtistaService {
 		return artistaDAO.buscarPorNome(nome);
 	}
 
+	@Override
+	public List<Artista> buscarTodosArtistas() {
+		return artistaDAO.retrieveAll();
+	}
+
 }

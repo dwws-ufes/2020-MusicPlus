@@ -21,5 +21,7 @@ public interface MusicaService extends Serializable {
 
 	public List<Musica> buscarPorArtistas(List<Artista> artistas);
 	
+	public List<Musica> buscarTodasMusicas() ;
+	
 	public void save(Musica musica);
 }

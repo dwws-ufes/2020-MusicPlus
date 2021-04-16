@@ -52,12 +52,16 @@ public class MusicaServiceBean implements MusicaService {
 	}
 	
 	public List<Musica> buscarPorNome(String NomeDaMusica) {
-		// FIXME: auto-generated method stub
 		return musicaDAO.buscarPorNome(NomeDaMusica);
 	}
 	
 	public void save(Musica artista) {
 		musicaDAO.save(artista);
+	}
+
+	@Override
+	public List<Musica> buscarTodasMusicas() {
+		return musicaDAO.retrieveAll();
 	}
 
 }
