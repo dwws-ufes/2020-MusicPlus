@@ -177,11 +177,11 @@ public class Musica extends PersistentObjectSupport implements Comparable<Musica
 			return 0 ;
 		else {
 			if (this.numVezesFavoritado == o.numVezesFavoritado) {
-				return this.nome.compareTo(o.nome);
+				return this.nome.compareTo(o.nome); 
 			}else {
 				Integer thisNumVezesFavoritado = this.numVezesFavoritado;
 				Integer oNumVezesFavoritado = o.numVezesFavoritado;
-				return thisNumVezesFavoritado.compareTo(oNumVezesFavoritado);
+				return oNumVezesFavoritado.compareTo(thisNumVezesFavoritado); 
 			}
 		}
 	}
