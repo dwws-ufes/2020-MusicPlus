@@ -7,6 +7,7 @@ import javax.enterprise.inject.Model;
 
 import br.ufes.inf.nemo.jbutler.ejb.controller.JSFController;
 import br.ufes.informatica.musicplus.core.application.UsuarioService;
+import br.ufes.informatica.musicplus.core.application.EmailService;
 import br.ufes.informatica.musicplus.core.domain.TipoGenero;
 import br.ufes.informatica.musicplus.core.domain.Usuario;
 
@@ -17,6 +18,8 @@ public class CadastroUsuarioController extends JSFController {
 
 	@EJB
 	private UsuarioService usuarioService;
+	@EJB
+	private EmailService emailService;
 	private String nomeUsuario;
 	private String username;
 	private String email;
@@ -115,6 +118,7 @@ public class CadastroUsuarioController extends JSFController {
     	}
     	
     	usuarioService.save(user);
+    	emailService.enviarEmail("Confirmação de Cadastro", email, "Cadastro Realizado com Sucesso!");
 //    	generosEscolhidos = null ; make null
     	
     	return "/index.xhtml?faces-redirect=true" ;
