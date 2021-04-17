@@ -118,8 +118,12 @@ public class CadastroUsuarioController extends JSFController {
     	}
     	
     	usuarioService.save(user);
-    	emailService.enviarEmail("Confirmação de Cadastro", email, "Cadastro Realizado com Sucesso!");
-//    	generosEscolhidos = null ; make null
+//    	emailService.enviarEmail("Confirmação de Cadastro", email, "Cadastro Realizado com Sucesso!");
+    	nomeUsuario = null;
+    	username = null;
+    	email = null;
+    	senha = null;
+    	generosEscolhidos = null;
     	
     	return "/index.xhtml?faces-redirect=true" ;
     }
