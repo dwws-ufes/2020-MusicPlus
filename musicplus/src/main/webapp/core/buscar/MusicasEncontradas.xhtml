@@ -66,6 +66,17 @@
 					action="#{musicaController.editar}" />
 			    </f:facet>
 			    
+			    <f:facet name="footer">
+				    <p:growl id="mensagem" showDetail="true"/>
+					    <p:commandButton value="Excluir" disabled="#{musicaController.desabilitarBotao()}"
+					    action="#{musicaController.deleteMusica()}" udpate="mensagem" styleClass="p-mr-2" icon="pi pi-check">
+	    	        		<p:confirm header="Confirmação de Exclusão" message="Tem certeza que quer excluir esta música?" icon="pi pi-exclamation-triangle"/>
+	       				 </p:commandButton>
+	       				  <p:confirmDialog global="true" showEffect="fade" hideEffect="fade" responsive="true" width="350">
+	           				 <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no ui-button-flat"/>
+	           				 <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" />
+	       				 </p:confirmDialog>
+       			</f:facet>
 			    
         	</p:dataTable>
     		</div>

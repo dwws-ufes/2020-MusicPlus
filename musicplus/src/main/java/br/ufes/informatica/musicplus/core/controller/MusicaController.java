@@ -374,6 +374,12 @@ public class MusicaController extends JSFController {
 		return paginaInicial() ;
 	}
 	
+	public String deleteMusica() {
+		musicaService.delete(musicaEscolhida);
+		musicas.remove(musicaEscolhida) ;
+		musicaEscolhida = null ;
+		return musicasEncontradas() ;
+	}
 	
 	//Só getters e setters a partir daqui
 

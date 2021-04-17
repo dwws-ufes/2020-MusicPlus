@@ -266,7 +266,6 @@ public class SugestaoArtistaController extends JSFController {
 	}
 	
 	public String deleteArtista() {
-		System.out.println("Passou aqui") ;
 		artistaService.delete(artistaEscolhido);
 		artistas.remove(artistaEscolhido) ;
 		artistaEscolhido = null ;

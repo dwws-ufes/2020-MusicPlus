@@ -64,4 +64,9 @@ public class MusicaServiceBean implements MusicaService {
 		return musicaDAO.retrieveAll();
 	}
 
+	@Override
+	public void delete(Musica musicaEscolhida) {
+		musicaDAO.delete(musicaEscolhida);
+	}
+
 }
