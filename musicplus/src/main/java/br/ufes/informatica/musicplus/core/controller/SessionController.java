@@ -65,5 +65,25 @@ public class SessionController extends JSFController implements Serializable {
 //		currentUser = loginService.getCurrentUser();
 		return "core/index.xhtml?faces-redirect=true";
 	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setCurrentUser(Usuario currentUser) {
+		this.currentUser = currentUser;
+	}
 	
 }

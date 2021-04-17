@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+	<ui:define name="title">
+		<h:outputText value="#{msgs['login.home']}" />
+	</ui:define>
+
+	<ui:define name="description">
+		<h:outputText value="#{msgs['login.home.description']}" />
+	</ui:define>
+    
+	<br/>
+    <ui:define name="body">
+		<h:form id="registerForm">
+		
+		<p:outputLabel value="Email"/>
+					<br />
+			
+			<p:inputText id="email" value="#{sessionController.email}" />
+		<br />	
+		
+		<br />	
+		<p:outputLabel value="Senha"/>
+					<br />
+			
+			<p:password id="senha" value="#{sessionController.password}" />
+		<br />	
+		
+		
+        <br />
+            <p:commandButton type="submit" value="Salvar"
+			action="#{sessionController.login}" />
+		</h:form>
+		<br />
+
+    
+    </ui:define>
+</ui:composition>
