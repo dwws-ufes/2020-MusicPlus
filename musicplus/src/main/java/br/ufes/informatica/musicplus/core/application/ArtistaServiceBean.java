@@ -31,4 +31,9 @@ public class ArtistaServiceBean implements ArtistaService {
 		return artistaDAO.retrieveAll();
 	}
 
+	@Override
+	public void delete(Artista artista) {
+		artistaDAO.delete(artista);
+	}
+
 }

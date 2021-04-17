@@ -89,7 +89,6 @@ public class MusicaController extends JSFController {
 	
 	
 	public Boolean desabilitarBotaoAdRmArtistaEmAdmRm() {
-		System.out.println("Passei aqui");
 		return artistaEscolhido == null ;
 	}
 	

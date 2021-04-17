@@ -220,6 +220,10 @@ public class SugestaoArtistaController extends JSFController {
 		artistaService.save(artistaEscolhido);
 		// }
 		auxSugestaoArtistaDefaults() ;
+		return paginaInicial();
+	}
+	
+	public String paginaInicial() {
 		return "/index.xhtml?faces-redirect=true" ;
 	}
 	
@@ -259,6 +263,14 @@ public class SugestaoArtistaController extends JSFController {
 	
 	public String artistasEncontrados() {
 		return "/core/buscar/ArtistasEncontrados.xhtml?faces-redirect=true" ;
+	}
+	
+	public String deleteArtista() {
+		System.out.println("Passou aqui") ;
+		artistaService.delete(artistaEscolhido);
+		artistas.remove(artistaEscolhido) ;
+		artistaEscolhido = null ;
+		return artistasEncontrados() ;
 	}
 	
 	public String buscarArtistas() {
