@@ -23,7 +23,7 @@
 		<h:form id="buscaMusica">
 			<p:outputLabel value="Procurar pelo nome do artista/banda"/>
 			<br />
-			<p:inputText id="nomeArtista" value="#{sugestaoArtistaController.nomeArtista}">
+			<p:inputText id="nomeArtista" value="#{artistaController.nomeArtista}">
 			</p:inputText>
 			<br />	
 			<br />
@@ -31,7 +31,7 @@
 			<br />	
 			<br />			
 			<p:commandButton id ="myButtonId" type="submit" value="Procurar Artista"
-			action="#{sugestaoArtistaController.buscarArtistas()}"/>
+			action="#{artistaController.buscarArtistas()}"/>
 		</h:form>
     
     </ui:define>

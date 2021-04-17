@@ -18,8 +18,8 @@
     <ui:define name="body">
 	<h:form id="selectForm">
 		<div class="card">
-		<p:dataTable id="artistas" var="artista" value="#{sugestaoArtistaController.artistas}"
-		             selection="#{sugestaoArtistaController.artistaEscolhido}" rowKey="#{artista.id}">
+		<p:dataTable id="artistas" var="artista" value="#{artistaController.artistas}"
+		             selection="#{artistaController.artistaEscolhido}" rowKey="#{artista.id}">
 		    	
 		    	<f:ajax event="rowSelectRadio" render="artistas"/>
 		    	
@@ -38,17 +38,22 @@
 			    </p:column>
 			    
 			    <f:facet name="footer">
-			        <p:commandButton type="submit" value="Favoritar" disabled="#{sugestaoArtistaController.desabilitarBotao()}"
-					action="#{sugestaoArtistaController.favoritar}" />
+			        <p:commandButton type="submit" value="Favoritar" disabled="#{artistaController.desabilitarBotao()}"
+					action="#{artistaController.favoritar}" />
 			    </f:facet>
 			    <f:facet name="footer">
-			        <p:commandButton type="submit" value="Ver Musicas" disabled="#{sugestaoArtistaController.desabilitarBotao()}"
-					action="#{sugestaoArtistaController.buscarMusicaPorArtista()}" />
+			        <p:commandButton type="submit" value="Ver Musicas" disabled="#{artistaController.desabilitarBotao()}"
+					action="#{artistaController.buscarMusicaPorArtista()}" />
 			    </f:facet>
+			    <f:facet name="footer">
+			        <p:commandButton type="submit" value="Editar" disabled="#{artistaController.desabilitarBotao()}"
+					action="#{artistaController.editar}" />
+			    </f:facet>
+			    
 			    <f:facet name="footer">
 			        <p:growl id="mensagem" showDetail="true"/>
-				    <p:commandButton value="Excluir" disabled="#{sugestaoArtistaController.desabilitarBotao()}"
-				    action="#{sugestaoArtistaController.deleteArtista()}" udpate="mensagem" styleClass="p-mr-2" icon="pi pi-check">
+				    <p:commandButton value="Excluir" disabled="#{artistaController.desabilitarBotao()}"
+				    action="#{artistaController.deleteArtista()}" udpate="mensagem" styleClass="p-mr-2" icon="pi pi-check">
     	        		<p:confirm header="Confirmação de Exclusão" message="Tem certeza que quer excluir esse artista?" icon="pi pi-exclamation-triangle"/>
        				 </p:commandButton>
        				  <p:confirmDialog global="true" showEffect="fade" hideEffect="fade" responsive="true" width="350">

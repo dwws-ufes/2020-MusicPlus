@@ -78,20 +78,5 @@ public class CadastroArtistaController extends JSFController {
 	public void setGenerosEscolhidos(TipoGenero[] generosEscolhidos) {
 		this.generosEscolhidos = generosEscolhidos;
 	}
-
-	public String salvarArtista() {
-    	Artista artista = new Artista();
-    	for (TipoGenero g : generosEscolhidos) {
-    		artista.addGenero(g);
-    	}
-    	artista.setNacionalidade(nacionalidade);
-    	artista.setNome(nomeArtista);
-    	artista.setNumVezesFavoritado(numVezesFavoritado);
-    	artistaService.save(artista);
-    	generosEscolhidos = null ;
-    	nomeArtista = null ;
-    	nacionalidade = null ;
-    	return "/index.xhtml?faces-redirect=true" ;
-    }
 	
 }

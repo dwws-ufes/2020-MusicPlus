@@ -18,28 +18,33 @@
 	<br/>
     <ui:define name="body">
 		<h:form id="registerForm">
-		
-			<p:outputLabel value="Nome"/>
+				
+			<h:outputLabel value="#{artistaController.mensagem}"/>			
+					<br />	
+					<br />	
+					
+					
+			<p:outputLabel value="Nome *"/>
 					<br />
 			
-			<p:inputText id="nome" value="#{cadastroArtistaController.nomeArtista}" />
+			<p:inputText id="nome" value="#{artistaController.nomeArtista}" />
 		<br />	
 		<br />
 			<p:outputLabel value="Generos Musicais"/>
-        	<p:selectManyCheckbox id="grid" value="#{cadastroArtistaController.generosEscolhidos}" layout="grid" columns="3" styleClass="grid-checkbox">
-            	<f:selectItems value="#{cadastroArtistaController.todosOsGeneros}"/>
+        	<p:selectManyCheckbox id="grid" value="#{artistaController.generosEscolhidos}" layout="grid" columns="3" styleClass="grid-checkbox">
+            	<f:selectItems value="#{artistaController.todosOsGeneros}"/>
         	</p:selectManyCheckbox>
 		<br />
 		<br />
-			<p:outputLabel value="Nacionalidade"/>
-            <p:selectOneMenu id="labeled" value="#{cadastroArtistaController.nacionalidade}" label="Selecione o país de origem do artista"
+			<p:outputLabel value="Nacionalidade "/>
+            <p:selectOneMenu id="labeled" value="#{artistaController.nacionalidade}" label="Selecione o país de origem do artista"
                                 alwaysDisplayLabel="true">
-            	<f:selectItems value="#{cadastroArtistaController.todosOsPaises}"/>
+            	<f:selectItems value="#{artistaController.todosOsPaises}"/>
             </p:selectOneMenu>
 		<br />
         <br />
             <p:commandButton type="submit" value="Salvar"
-			action="#{cadastroArtistaController.salvarArtista}" />
+			action="#{artistaController.salvarArtista}" />
 		</h:form>
 		<br />
 
