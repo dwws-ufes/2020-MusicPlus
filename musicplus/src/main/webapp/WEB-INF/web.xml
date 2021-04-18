@@ -51,4 +51,16 @@
 	<session-config>
 		<session-timeout>30</session-timeout>
 	</session-config>
+	<security-constraint>
+		<display-name>CRUD of Usuario</display-name>
+		<web-resource-collection>
+		<web-resource-name>Usuario</web-resource-name>
+		<description />
+		<url-pattern>/core/cadastrar/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+		<description>Administrator only</description>
+		<role-name>Admin</role-name>
+		</auth-constraint>
+	</security-constraint>
 </web-app>

@@ -9,6 +9,7 @@ import br.ufes.inf.nemo.jbutler.ejb.controller.JSFController;
 import br.ufes.informatica.musicplus.core.application.UsuarioService;
 import br.ufes.informatica.musicplus.core.application.EmailService;
 import br.ufes.informatica.musicplus.core.domain.TipoGenero;
+import br.ufes.informatica.musicplus.core.domain.TipoUsuario;
 import br.ufes.informatica.musicplus.core.domain.Usuario;
 
 @Model
@@ -111,21 +112,25 @@ public class CadastroUsuarioController extends JSFController {
     	user.setNome(nomeUsuario);
     	user.setUsername(username);
     	user.setEmail(email);
-    	user.setSenha(senha);// encrypt before saving
-    	user.setAdmin(false); // change this later
+    	user.setSenha(senha);// encrypt before saving on service
+    	user.setAdmin(TipoUsuario.NonAdmin); 
     	for (TipoGenero g : generosEscolhidos) {
     		user.addGenero(g);
     	}
     	
     	usuarioService.save(user);
-    	emailService.enviarEmail("Confirmação de Cadastro", email, "Cadastro Realizado com Sucesso!");
-//    	generosEscolhidos = null ; make null
+//    	emailService.enviarEmail("Confirmação de Cadastro", email, "Cadastro Realizado com Sucesso!");
+    	generosEscolhidos = null ;
+    	nomeUsuario = null;
+    	username = null;
+    	email=null;
+    	senha = null;
     	
     	return "/index.xhtml?faces-redirect=true" ;
     }
 	
 	public String redirectCadastrar() {
-		return "/core/cadastrar/Usuario.xhtml?faces-redirect=true" ;
+		return "/core/cadastrarusuario/Usuario.xhtml?faces-redirect=true" ;
 	}
 	
 }
