@@ -116,7 +116,7 @@ Aqui estão os possíveis próximos passos para este projeto:
 - [@kaiorosa1](https://github.com/kaiorosa1)
 - [@gsbiel](https://github.com/gsbiel)
 - [@isaribeirot](https://github.com/IsaRibeirot)
-- [](https://github.com/)
+- [@naticalmon](https://github.com/naticalmon)
 
 ## 🎉 Considerações finais <a name = "acknowledgement"></a>
 
