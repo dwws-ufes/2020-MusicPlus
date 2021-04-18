@@ -47,7 +47,6 @@ public class LoginServiceBean implements LoginService{
 				Usuario currentUser = user;
 				pwd = null;
 				
-//				SessionInformation.getInstance().setUsuarioLogado(currentUser);
 				System.out.println("Usuario logando com sucesso");
 				// Fires a login event.
 				loginEvent.fire(new LoginEvent(currentUser));
@@ -57,6 +56,7 @@ public class LoginServiceBean implements LoginService{
 		} catch (PersistentObjectNotFoundException | MultiplePersistentObjectsFoundException | NoSuchAlgorithmException | UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			System.out.println("Erro aqui Login Service Bean");
+			return;
 //			e.printStackTrace();
 		}
 

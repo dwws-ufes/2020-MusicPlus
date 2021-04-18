@@ -22,7 +22,7 @@ import br.ufes.informatica.musicplus.core.domain.Usuario;
 
 @Named
 @SessionScoped
-public class SessionController extends JSFController implements Serializable {
+public class SessionController implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@EJB
@@ -32,12 +32,26 @@ public class SessionController extends JSFController implements Serializable {
 	
 	private String password;
 	
-	private Usuario currentUser; // (GET BACK HERE)
+	private Usuario currentUser;
 	
-	public Usuario getCurrentUser() { // (GET BACK HERE)
+	public Usuario getCurrentUser() { 
 		return currentUser;
 	}
+	
+	private class MyJSFController extends JSFController {
+	    private static final long serialVersionUID = 1L;
 
+	    void addMessage(String bundleName, FacesMessage.Severity severity, String summaryKey,
+	        String detailKey) {
+	      addGlobalI18nMessage(bundleName, severity, summaryKey, detailKey);
+	    }
+
+	    void addMessage(String bundleName, FacesMessage.Severity severity, String summaryKey,
+	        Object[] summaryParams, String detailKey, Object[] detailParams) {
+	      addGlobalI18nMessage(bundleName, severity, summaryKey, summaryParams, detailKey,
+	          detailParams);
+	    }
+	  };
 	/**
 	 * Accesses the Login service to authenticate the user given his email and password.
 	 */
@@ -55,14 +69,20 @@ public class SessionController extends JSFController implements Serializable {
 			}
 			catch (Exception e) {
 				// handling exception
+				new MyJSFController().addMessage("msgs", FacesMessage.SEVERITY_ERROR,
+			              "login.error.nomatch.summary", "login.error.nomatch.detail");
+				return null;
 			}
 		}
 		catch (Exception e) {
 			// handling exception
+			new MyJSFController().addMessage("msgs", FacesMessage.SEVERITY_ERROR,
+		              "login.error.nomatch.summary", "login.error.nomatch.detail");
+			return null;
 		}
 
 		// If everything is OK, stores the current user and redirects back to the home screen.
-//		currentUser = loginService.getCurrentUser();
+		currentUser = loginService.getCurrentUser();
 		return "core/home/index.xhtml?faces-redirect=true";
 	}
 
