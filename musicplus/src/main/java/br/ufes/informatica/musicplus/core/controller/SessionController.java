@@ -55,20 +55,15 @@ public class SessionController extends JSFController implements Serializable {
 			}
 			catch (Exception e) {
 				// handling exception
-//				System.out.println("JAAS Wildfly 1");
-//				e.printStackTrace();
-				return "/Login.xhtml?faces-redirect=true";
 			}
 		}
 		catch (Exception e) {
 			// handling exception
-			System.out.println("JAAS Wildfly 2");
-//			e.printStackTrace();
 		}
 
 		// If everything is OK, stores the current user and redirects back to the home screen.
-		currentUser = loginService.getCurrentUser();
-		return "/PaginaUsuario.xhtml?faces-redirect=true";
+//		currentUser = loginService.getCurrentUser();
+		return "core/home/index.xhtml?faces-redirect=true";
 	}
 
 	public String getEmail() {

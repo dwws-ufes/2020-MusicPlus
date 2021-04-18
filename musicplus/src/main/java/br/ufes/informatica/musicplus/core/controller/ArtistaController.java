@@ -233,7 +233,7 @@ public class ArtistaController extends JSFController {
 	}
 	
 	public String paginaInicial() {
-		return "/index.xhtml?faces-redirect=true" ;
+		return "/core/home/index.xhtml?faces-redirect=true" ;
 	}
 	
 	public boolean desabilitarBotao() {
