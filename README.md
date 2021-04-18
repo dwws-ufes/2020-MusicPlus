@@ -10,7 +10,7 @@
 ---
 O Music+ é um sistema de análise e informações do meio musical visando simplificar a experiência do usuário em suas buscas. O sistema possui dois modelos de usuários e reúne diversas funcionalidades com dois vieses: a consulta de dados e o comportamento da comunidade.
 
-No ramo de consulta de dados, temos os usuários do tipo Administradores que controlam o cadastro das informações como artistas, álbuns e músicas. Temos também os usuários do tipo consumidores que podem procurar por essas informações de modo direto,favoritar músicas, artistas e gêneros musicais, agrupar músicas em formato de playlist e modificar essas playlists em outro momento.
+No ramo de consulta de dados, temos os usuários do tipo Administradores que controlam o cadastro das informações como artistas e músicas. Temos também os usuários do tipo consumidores que podem procurar por essas informações de modo direto, favoritar músicas, artistas e gêneros musicais, agrupar músicas em formato de playlist e modificar essas playlists em outro momento.
 
 No ramo de comportamento de comunidade, o usuário do tipo consumidor alimentará uma análise de conteúdo combinando suas preferências com a da comunidade. O formato com que este usuário consome essa análise é realizando uma busca de músicas e artistas com perfil aleatório ou baseado em um “ranking” de mais favoritados pela comunidade. Os resultados dessa busca procuram ser alinhados com as preferências musicais do usuário consumidor.
 
@@ -35,7 +35,7 @@ O projeto pode ter integração com banco de dados local ou remoto.
 
 ```
 Docker configurado ou banco de dados
-Java 15
+Java 11
 Maven
 ```
 
@@ -79,7 +79,7 @@ Verifique que a aplicação backend está espelhada na porta 8080.
 
 - [Java EE 7](https://docs.oracle.com/javaee/7/index.html) - Conjunto de especificação de APIs e tecnologias, que são implementadas por programas servidores de aplicação.
 
-- [Java 15](https://www.oracle.com/br/java/technologies/javase-jdk15-downloads.html) - Linguagem de programação orientada a objetos e independente de plataforma.
+- [Java 13](https://www.oracle.com/br/java/technologies/javase-jdk11-downloads.html) - Linguagem de programação orientada a objetos e independente de plataforma.
 
 - [JSF 2.2.12](https://mvnrepository.com/artifact/com.sun.faces/jsf-api/2.2.12) - API para a construção de interfaces de usuários baseada em componentes para aplicações Web.
 
@@ -95,7 +95,7 @@ Verifique que a aplicação backend está espelhada na porta 8080.
 	
 - [MySQL Database 8.0](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/) - Banco de Dados Relacional gratuito.
 	
-- [WildFly 22.0.1](https://www.wildfly.org/downloads/) - Servidor de Aplicações para Java EE. 
+- [WildFly 19.0.0](https://www.wildfly.org/downloads/) - Servidor de Aplicações para Java EE. 
 
 - [Docker 20.10.5](https://docs.docker.com/engine/release-notes/) - Plataforma para gerenciamento e isolamento de ambientes.
 
@@ -105,6 +105,7 @@ Verifique que a aplicação backend está espelhada na porta 8080.
 
 Aqui estão os possíveis próximos passos para este projeto:
 
+O projeto irá ser populado com dados interligados da web para compor um banco de dados mais abrangente.
 ```
 
 ```
