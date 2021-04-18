@@ -125,7 +125,7 @@ public class CadastroUsuarioController extends JSFController {
     	senha = null;
     	generosEscolhidos = null;
     	
-    	return "/index.xhtml?faces-redirect=true" ;
+    	return "/Login.xhtml?faces-redirect=true" ;
     }
 	
 }

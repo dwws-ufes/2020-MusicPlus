@@ -68,7 +68,7 @@ public class SessionController extends JSFController implements Serializable {
 
 		// If everything is OK, stores the current user and redirects back to the home screen.
 		currentUser = loginService.getCurrentUser();
-		return "/index.xhtml?faces-redirect=true";
+		return "/PaginaUsuario.xhtml?faces-redirect=true";
 	}
 
 	public String getEmail() {
