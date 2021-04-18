@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
@@ -55,6 +56,7 @@ public class MusicaServiceBean implements MusicaService {
 		return musicaDAO.buscarPorNome(NomeDaMusica);
 	}
 	
+	@RolesAllowed("Admin")
 	public void save(Musica artista) {
 		musicaDAO.save(artista);
 	}
@@ -65,6 +67,7 @@ public class MusicaServiceBean implements MusicaService {
 	}
 
 	@Override
+	@RolesAllowed("Admin")
 	public void delete(Musica musicaEscolhida) {
 		musicaDAO.delete(musicaEscolhida);
 	}

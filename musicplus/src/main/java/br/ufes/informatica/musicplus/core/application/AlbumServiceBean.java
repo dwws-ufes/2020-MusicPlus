@@ -2,6 +2,7 @@ package br.ufes.informatica.musicplus.core.application;
 
 import java.util.List;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
@@ -43,6 +44,7 @@ public class AlbumServiceBean implements AlbumService {
 	}
 
 	@Override
+	@RolesAllowed("Admin")
 	public void save(Album album) {
 		// TODO Auto-generated method stub
 		albumDAO.save(album);

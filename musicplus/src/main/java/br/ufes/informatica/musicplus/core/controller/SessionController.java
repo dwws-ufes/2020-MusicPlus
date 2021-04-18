@@ -86,6 +86,8 @@ public class SessionController implements Serializable {
 		return "core/home/index.xhtml?faces-redirect=true";
 	}
 
+	
+	
 	public String getEmail() {
 		return email;
 	}

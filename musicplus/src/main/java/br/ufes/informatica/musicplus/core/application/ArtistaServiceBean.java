@@ -2,6 +2,7 @@ package br.ufes.informatica.musicplus.core.application;
 
 import java.util.List;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
@@ -17,6 +18,7 @@ public class ArtistaServiceBean implements ArtistaService {
 	@EJB
 	private ArtistaDAO artistaDAO;
 
+	@RolesAllowed("Admin")
 	public void save(Artista artista) {
 		artistaDAO.save(artista);
 	}
@@ -32,6 +34,7 @@ public class ArtistaServiceBean implements ArtistaService {
 	}
 
 	@Override
+	@RolesAllowed("Admin")
 	public void delete(Artista artista) {
 		artistaDAO.delete(artista);
 	}
