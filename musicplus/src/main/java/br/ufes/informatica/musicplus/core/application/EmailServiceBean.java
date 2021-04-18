@@ -23,7 +23,7 @@ public class EmailServiceBean implements EmailService {
        Mail mail = new Mail(from, assunto, to, content);
 
 //       chave super secreta
-       SendGrid sg = new SendGrid("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");
+       SendGrid sg = new SendGrid("");
        Request request = new Request();
 
        try {
