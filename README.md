@@ -115,7 +115,7 @@ Aqui estão os possíveis próximos passos para este projeto:
 - [@csguterres](https://github.com/csguterres)
 - [@kaiorosa1](https://github.com/kaiorosa1)
 - [@gsbiel](https://github.com/gsbiel)
-- [](https://github.com/)
+- [@isaribeirot](https://github.com/IsaRibeirot)
 - [](https://github.com/)
 
 ## 🎉 Considerações finais <a name = "acknowledgement"></a>
