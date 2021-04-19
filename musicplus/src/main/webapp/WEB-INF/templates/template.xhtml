@@ -96,7 +96,7 @@ PrimeFaces.locales['pt'] = {
 				<span>Associação Música-Artista</span>
 			</p:link></li>
 				
-			<li><p:link rendered="#{sessionController.checkLogin() == true}" outcome="/index" onclick="clearBreadCrumbs()">
+			<li><p:link rendered="#{sessionController.checkLogin() == true}" outcome="/core/playlist/criarPlaylist.xhtml" onclick="clearBreadCrumbs()">
 					<i class="fa fa-play-circle"></i>
 					<span>Playlist</span>
 				</p:link></li>
