@@ -19,6 +19,7 @@ import br.ufes.inf.nemo.jbutler.ejb.persistence.exceptions.PersistentObjectNotFo
 import br.ufes.informatica.musicplus.core.domain.Artista;
 import br.ufes.informatica.musicplus.core.domain.Musica;
 import br.ufes.informatica.musicplus.core.domain.Musica_;
+import br.ufes.informatica.musicplus.core.domain.Playlist;
 import br.ufes.informatica.musicplus.core.domain.TipoGenero;
 import br.ufes.informatica.musicplus.core.domain.TipoIdioma;
 
@@ -103,6 +104,22 @@ public class MusicaDAOJPA extends BaseJPADAO<Musica> implements MusicaDAO {
 		cq.where(cb.equal(root.get(Musica_.idioma), idioma));
 		List<Musica> result = entityManager.createQuery(cq).getResultList();
 		logger.log(Level.INFO, "Recuperando a Musica pelo pais \"{0}\" retornou \"{1}\"", new Object[] { idioma, result });
+		return result;
+	}
+	
+	@Override
+	public List<Musica> buscarPorPlaylist(Playlist playlist) {
+		logger.log(Level.FINE, "Recuperando as musicas da playlist \"{0}\"...", playlist);
+
+		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+		CriteriaQuery<Musica> cq = cb.createQuery(Musica.class);
+		Root<Musica> root = cq.from(Musica.class);
+		SetJoin<Musica, Playlist> Musica_playlist = root.join(Musica_.playlists);
+		
+		cq.where(cb.equal(Musica_playlist, playlist));
+		List<Musica> result = entityManager.createQuery(cq).getResultList();
+		logger.log(Level.INFO, "Recuperandos as Musicas da playlist \"{0}\" retornou \"{1}\"", new Object[] { playlist, result });
+
 		return result;
 	}
 

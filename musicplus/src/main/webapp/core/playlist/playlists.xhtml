@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+
+    <ui:define name="title">
+        <h:outputText value="#{msgs['playlists.title']}" />
+    </ui:define>
+
+    <ui:define name="body">
+	<h:form id="selectForm">
+		<div class="card">
+		<p:dataTable id="playlists" var="playlist" value="#{playlistController.playlists}"
+		             selection="#{playlistController.playlistEscolhida}" rowKey="#{playlist.id}">
+		    	
+		    	<f:ajax event="rowSelectRadio" render="playlists"/>
+		    	
+		    	<p:outputLabel value="Selecione a Música: "/>
+		    	<p:column selectionMode="single" style="width:50px;text-align:center"/>
+			    <p:column headerText="Nome">
+			        <h:outputText value="#{playlist.nome}" />
+			    </p:column>
+			    
+			    <f:facet name="footer">
+			        <p:commandButton type="submit" value="Ver Músicas"
+					action="#{playlistController.listarMusicasDaPlaylist()}" />
+			    </f:facet>
+			    			    
+			    <f:facet name="footer">
+			        <p:commandButton type="submit" value="Renomear"
+					action="#{playlistController.redirectRenomearPlaylist()}" />
+			    </f:facet>
+			    
+			    <f:facet name="footer">
+				    <p:growl id="mensagem" showDetail="true"/>
+					    <p:commandButton value="Excluir"
+					    action="#{playlistController.deletePlaylist()}" udpate="mensagem" styleClass="p-mr-2" icon="pi pi-check">
+	    	        		<p:confirm header="Confirmação de Exclusão" message="Tem certeza que quer excluir esta música?" icon="pi pi-exclamation-triangle"/>
+	       				 </p:commandButton>
+	       				  <p:confirmDialog global="true" showEffect="fade" hideEffect="fade" responsive="true" width="350">
+	           				 <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no ui-button-flat"/>
+	           				 <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" />
+	       				 </p:confirmDialog>
+       			</f:facet>
+			    
+        	</p:dataTable>
+    		</div>
+    	</h:form>
+    </ui:define>
+</ui:composition>

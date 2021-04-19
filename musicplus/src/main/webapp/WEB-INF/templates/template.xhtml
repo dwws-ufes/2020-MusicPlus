@@ -80,11 +80,6 @@ PrimeFaces.locales['pt'] = {
 					<i class="fa fa-user"></i>
 					<span>Artista</span>
 				</p:link></li>
-				
-			<li><p:link outcome="/core/cadastrarusuario/Usuario.xhtml" onclick="clearBreadCrumbs()">
-					<i class="fa fa-user"></i>
-					<span>Usuario</span>
-				</p:link></li>
 					
 			<li><p:link rendered="#{sessionController.admin == true}" outcome="/core/cadastrar/Musica.xhtml" onclick="clearBreadCrumbs()">
 					<i class="fa fa-music"></i>
@@ -103,33 +98,34 @@ PrimeFaces.locales['pt'] = {
 				
 			<li class="header">Buscar</li>
 			
-			<li><p:link outcome="/core/buscar/Artista.xhtml" onclick="clearBreadCrumbs()">
+			<li><p:link rendered="#{sessionController.checkLogin() == true}" outcome="/core/buscar/Artista.xhtml" onclick="clearBreadCrumbs()">
 					<i class="fa fa-user"></i>
 					<span>Artista</span>
 				</p:link></li>
 					
-			<li><p:link outcome="/core/buscar/Musica.xhtml" onclick="clearBreadCrumbs()">
+			<li><p:link rendered="#{sessionController.checkLogin() == true}" outcome="/core/buscar/Musica.xhtml" onclick="clearBreadCrumbs()">
 					<i class="fa fa-music"></i>
 					<span>Música</span>
 				</p:link></li>
 				
-			<li><p:link outcome="/index" onclick="clearBreadCrumbs()">
-					<i class="fa fa-play-circle"></i>
-					<span>Playlist</span>
-				</p:link></li>
-				
 			<li class="header">Sugestões</li>
 			
-			<li><p:link outcome="/core/sugestao/Musicas.xhtml" onclick="clearBreadCrumbs()">
+			<li><p:link rendered="#{sessionController.checkLogin() == true}" outcome="/core/sugestao/Musicas.xhtml" onclick="clearBreadCrumbs()">
 					<i class="fa fa-music"></i>
 					<span>Músicas</span>
 				</p:link></li>
 				
-				<li><p:link outcome="/core/sugestao/Artistas.xhtml" onclick="clearBreadCrumbs()">
+				<li><p:link rendered="#{sessionController.checkLogin() == true}" outcome="/core/sugestao/Artistas.xhtml" onclick="clearBreadCrumbs()">
 					<i class="fa fa-users"></i>
 					<span>Artistas</span>
 				</p:link></li>			
 			
+			<li class="header">Visualizar</li>
+			
+				<li><p:link rendered="#{sessionController.checkLogin() == true}" outcome="/core/playlist/playlists.xhtml" onclick="clearBreadCrumbs()">
+					<i class="fa fa-play-circle"></i>
+					<span>Playlists</span>
+				</p:link></li>
 				
 		</ul>
 	</ui:define>

@@ -5,14 +5,10 @@
     xmlns:h="http://java.sun.com/jsf/html"
     xmlns:p="http://primefaces.org/ui"
     xmlns:adm="http://github.com/adminfaces"
-    template="/WEB-INF/templates/template.xhtml">
+    template="/WEB-INF/templates/templateLogin.xhtml">
 	
 	<ui:define name="title">
 		<h:outputText value="#{msgs['usuario.novo']}" />
-	</ui:define>
-
-	<ui:define name="description">
-		<h:outputText value="#{msgs['usuario.novo.description']}" />
 	</ui:define>
     
 	<br/>
@@ -45,14 +41,14 @@
 		<br />	
 		
 		<br />
-			<p:outputLabel value="Generos Musicais"/>
+			<p:outputLabel value="Generos Musicais Favoritos:"/>
         	<p:selectManyCheckbox id="grid" value="#{cadastroUsuarioController.generosEscolhidos}" layout="grid" columns="3" styleClass="grid-checkbox">
             	<f:selectItems value="#{cadastroUsuarioController.todosOsGeneros}"/>
         	</p:selectManyCheckbox>
 		<br />
 		
         <br />
-            <p:commandButton type="submit" value="Salvar"
+            <p:commandButton type="submit" value="Cadastrar"
 			action="#{cadastroUsuarioController.salvarUsuario}" />
 		</h:form>
 		<br />
