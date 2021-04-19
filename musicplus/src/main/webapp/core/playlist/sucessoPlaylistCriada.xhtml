@@ -9,15 +9,34 @@
 	
 
     <ui:define name="title">
-        <h:outputText value="#{msgsCore['playlist.title']}" />
+        <h:outputText value="#{msgs['playlist.sucesso']}" />
     </ui:define>
-
-    <ui:define name="description">
-        <h:outputText value="#{msgsCore['playlist.title.description']}" />
-    </ui:define>
-
+   <br/>
+      <br/>
+         <br/>
     <ui:define name="body">
-		<adm:breadcrumb link="/core/registration/index" title="#{msgsCore['playlist.title']}" />
-		<h:outputText id="playlist.nome" value="#{playlistController.playlist.nome}" />
-    </ui:define>
+		<p:outputLabel value="A Playlist #{playlistController.nome} foi criada com sucesso."/>
+    <br/>
+    <br/>
+        <br/>
+            <br/>
+    <h:form>
+   	<p:outputLabel value="Deseja procurar músicas para adicionar à sua playlist?"/>
+    </h:form>
+    
+    <br/>
+                 <h:form>
+    <p:commandButton type="submit" value="Procurar Músicas"
+    action="#{playlistController.redirecionarBuscarMusicas()}" />   
+        </h:form>
+       
+      <br/>
+   <br/>
+      <br/>
+                       <h:form>
+    <p:commandButton type="submit" value="Voltar" 
+    action="#{playlistController.redirecionarHome()}" />
+    </h:form>
+            </ui:define>
+    
 </ui:composition>
