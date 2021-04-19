@@ -16,14 +16,14 @@ public class EmailServiceBean implements EmailService {
 
        Email from = new Email("sistemamusicplus@gmail.com");
        Email to = new Email(destinatario); // use your own email address here
-
+       System.out.println("Destinatario: "+destinatario);
 //       formatando mensagem de email
        Content content = new Content("text/html", conteudo);
 
        Mail mail = new Mail(from, assunto, to, content);
 
 //       chave super secreta
-       SendGrid sg = new SendGrid("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");
+       SendGrid sg = new SendGrid("");
        Request request = new Request();
 
        try {

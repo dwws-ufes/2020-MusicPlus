@@ -1,5 +1,7 @@
 package br.ufes.informatica.musicplus.core.controller;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
@@ -28,10 +30,13 @@ public class CadastroUsuarioController extends JSFController {
 	// artistasFavoritados not here
 	private TipoGenero[] generosEscolhidos;
 	private TipoGenero[] todosOsGeneros;
+	private Usuario user;
+	private Boolean editando;
 	
 	@PostConstruct
 	public void init() {
 		todosOsGeneros = TipoGenero.todos();
+		user = new Usuario();
 		
 	}
 	
@@ -108,7 +113,7 @@ public class CadastroUsuarioController extends JSFController {
 
 	
 	public String salvarUsuario() {
-    	Usuario user = new Usuario();
+  
     	user.setNome(nomeUsuario);
     	user.setUsername(username);
     	user.setEmail(email);
@@ -128,6 +133,18 @@ public class CadastroUsuarioController extends JSFController {
     	
     	return "/index.xhtml?faces-redirect=true" ;
     }
+	
+	public String editar() {
+		editando = true ;
+		List<TipoGenero> aux = user.getGeneroFavoritados();
+		generosEscolhidos =  aux.toArray(new TipoGenero[aux.size()]);
+    	nomeUsuario = user.getNome();
+    	username = user.getUsername();
+    	email=user.getEmail();
+    	senha = user.getSenha();
+		return redirectCadastrar();
+	}
+	
 	
 	public String redirectCadastrar() {
 		return "/core/cadastrarusuario/Usuario.xhtml?faces-redirect=true" ;

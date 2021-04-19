@@ -56,7 +56,7 @@ public class MusicaServiceBean implements MusicaService {
 		return musicaDAO.buscarPorNome(NomeDaMusica);
 	}
 	
-	@RolesAllowed("Admin")
+//	@RolesAllowed("Admin")
 	public void save(Musica artista) {
 		musicaDAO.save(artista);
 	}
@@ -67,7 +67,7 @@ public class MusicaServiceBean implements MusicaService {
 	}
 
 	@Override
-	@RolesAllowed("Admin")
+//	@RolesAllowed("Admin")
 	public void delete(Musica musicaEscolhida) {
 		musicaDAO.delete(musicaEscolhida);
 	}

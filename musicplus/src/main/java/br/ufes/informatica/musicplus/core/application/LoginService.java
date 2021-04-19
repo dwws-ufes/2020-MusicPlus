@@ -10,7 +10,6 @@ import br.ufes.informatica.musicplus.core.domain.Usuario;
 @Local
 public interface LoginService extends Serializable{
 	void login(String username, String password);
-//			how we are handling exceptions?
 
 	Usuario getCurrentUser();
 }

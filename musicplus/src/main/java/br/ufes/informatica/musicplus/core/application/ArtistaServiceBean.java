@@ -18,7 +18,7 @@ public class ArtistaServiceBean implements ArtistaService {
 	@EJB
 	private ArtistaDAO artistaDAO;
 
-	@RolesAllowed("Admin")
+//	@RolesAllowed("Admin")
 	public void save(Artista artista) {
 		artistaDAO.save(artista);
 	}
@@ -34,7 +34,7 @@ public class ArtistaServiceBean implements ArtistaService {
 	}
 
 	@Override
-	@RolesAllowed("Admin")
+//	@RolesAllowed("Admin")
 	public void delete(Artista artista) {
 		artistaDAO.delete(artista);
 	}

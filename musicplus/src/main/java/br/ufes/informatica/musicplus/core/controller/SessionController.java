@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import br.ufes.inf.nemo.jbutler.ejb.controller.JSFController;
 import br.ufes.informatica.musicplus.core.application.LoginService;
+import br.ufes.informatica.musicplus.core.domain.TipoUsuario;
 import br.ufes.informatica.musicplus.core.domain.Usuario;
 
 /**
@@ -83,11 +84,28 @@ public class SessionController implements Serializable {
 
 		// If everything is OK, stores the current user and redirects back to the home screen.
 		currentUser = loginService.getCurrentUser();
+		System.out.println("Hello "+ currentUser.getNome());
 		return "core/home/index.xhtml?faces-redirect=true";
 	}
 
+	public boolean isLoggedIn() {
+
+		return currentUser != null; 
+	}
 	
+	public boolean checkLogin() {
+		if(!isLoggedIn()) {
+			return false;
+		}
+		return true;
+	}
 	
+	public boolean isAdmin() {
+		if(!isLoggedIn()) {
+			return false;
+		}
+		return currentUser.getAdmin().equals(TipoUsuario.Admin); 
+	}
 	public String getEmail() {
 		return email;
 	}

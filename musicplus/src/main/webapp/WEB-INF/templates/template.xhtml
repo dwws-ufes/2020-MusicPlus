@@ -53,15 +53,30 @@ PrimeFaces.locales['pt'] = {
 					<span><h:outputText value="#{msgs['menu.home']}" /></span>
 				</p:link></li>
 				
-				<li><p:link outcome="/index.xhtml" onclick="clearBreadCrumbs()">
+				<li><p:link rendered="#{sessionController.checkLogin() == false}"  outcome="/index.xhtml" onclick="clearBreadCrumbs()">
 					<i class="fa fa-user"></i>
 					<span><h:outputText value="#{msgs['menu.login']}" /></span>
+				</p:link></li>
+				
+				<li><p:link 
+				href="#{facesContext.externalContext.requestContextPath}/logout"
+				rendered="#{sessionController.checkLogin() == true}"  
+				onclick="clearBreadCrumbs()">
+					<i class="fa fa-user"></i>
+					<span><h:outputText value="#{msgs['menu.logout']}" /></span>
+				</p:link></li>
+				
+				<li><p:link
+				rendered="#{sessionController.checkLogin() == true}" 
+				outcome="/core/usuario/MyHome.xhtml" onclick="clearBreadCrumbs()">
+					<i class="fa fa-home"></i>
+					<span>My Home</span>
 				</p:link></li>
 				
 			<li class="header">Criar</li>
 			
 			
-			<li><p:link outcome="/core/cadastrar/Artista.xhtml" onclick="clearBreadCrumbs()">
+			<li><p:link rendered="#{sessionController.admin == true}" outcome="/core/cadastrar/Artista.xhtml" onclick="clearBreadCrumbs()">
 					<i class="fa fa-user"></i>
 					<span>Artista</span>
 				</p:link></li>
@@ -71,17 +86,17 @@ PrimeFaces.locales['pt'] = {
 					<span>Usuario</span>
 				</p:link></li>
 					
-			<li><p:link outcome="/core/cadastrar/Musica.xhtml" onclick="clearBreadCrumbs()">
+			<li><p:link rendered="#{sessionController.admin == true}" outcome="/core/cadastrar/Musica.xhtml" onclick="clearBreadCrumbs()">
 					<i class="fa fa-music"></i>
 					<span>Música</span>
 				</p:link></li>
 				
-			<li><p:link outcome="/core/cadastrar/BuscarMusica.xhtml" onclick="clearBreadCrumbs()">
+			<li><p:link rendered="#{sessionController.admin == true}" outcome="/core/cadastrar/BuscarMusica.xhtml" onclick="clearBreadCrumbs()">
 				<i class="fa fa-cog"></i>
 				<span>Associação Música-Artista</span>
 			</p:link></li>
 				
-			<li><p:link outcome="/index" onclick="clearBreadCrumbs()">
+			<li><p:link rendered="#{sessionController.checkLogin() == true}" outcome="/index" onclick="clearBreadCrumbs()">
 					<i class="fa fa-play-circle"></i>
 					<span>Playlist</span>
 				</p:link></li>

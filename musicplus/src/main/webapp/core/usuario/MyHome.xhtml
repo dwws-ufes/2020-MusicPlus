@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+
+    <ui:define name="title">
+        <h:outputText value="#{msgs['usuario.title']}" />
+    </ui:define>
+		<br/>
+		<br/>
+    <ui:define name="description">
+        <h:outputText value="#{msgs['usuario.title.description']}" />
+    </ui:define>
+		<br/>
+		<br/>
+    <ui:define name="body">
+        
+       <h2>
+       Hello,
+        <h:outputText value="#{sessionController.currentUser.nome}" />
+       </h2>
+       
+      <h3>Generos Favoritos: </h3>
+ 		<div class="card">
+        	<h:outputText value="#{sessionController.currentUser.imprimirGeneros()}" />
+   	 	</div>
+
+	 <h3>Artistas Favoritos: </h3>
+ 		<div class="card">
+        	<h:outputText value="#{sessionController.currentUser.imprimirArtistas()}" />
+   	 	</div>
+		
+		
+					
+	</ui:define>
+</ui:composition>
