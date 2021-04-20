@@ -1,6 +1,9 @@
 package br.ufes.informatica.musicplus.core.controller;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Set;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
@@ -11,6 +14,10 @@ import javax.servlet.http.HttpServletRequest;
 
 import br.ufes.inf.nemo.jbutler.ejb.controller.JSFController;
 import br.ufes.informatica.musicplus.core.application.LoginService;
+import br.ufes.informatica.musicplus.core.application.MusicaService;
+import br.ufes.informatica.musicplus.core.application.UsuarioService;
+import br.ufes.informatica.musicplus.core.domain.Artista;
+import br.ufes.informatica.musicplus.core.domain.Musica;
 import br.ufes.informatica.musicplus.core.domain.TipoUsuario;
 import br.ufes.informatica.musicplus.core.domain.Usuario;
 
@@ -29,11 +36,23 @@ public class SessionController implements Serializable {
 	@EJB
 	private LoginService loginService;
 	
+	@EJB
+	private UsuarioService usuarioService ;
+
+	@EJB
+	private MusicaService musicaService ;
+
 	private String email;
 	
 	private String password;
 	
 	private Usuario currentUser;
+		
+	private Musica musicaEscolhida ;
+
+	private Artista artistaEscolhido ;
+
+	private Set<Musica> musicas ;
 	
 	public Usuario getCurrentUser() { 
 		return currentUser;
@@ -125,5 +144,73 @@ public class SessionController implements Serializable {
 	public void setCurrentUser(Usuario currentUser) {
 		this.currentUser = currentUser;
 	}
+	/*
+	public List<Musica> getMusicasFavoritas() {
+		musicasFavoritas = new ArrayList<Musica>() ;
+		for (Musica musica : currentUser.getMusicasFavoritadas()) {
+			musicasFavoritas.add(musica);
+		}
+		return musicasFavoritas ;
+	}
+	*/
+	/*
+	public List<Artista> getArtistasFavoritos() {
+		artistasFavoritos = new ArrayList<Artista>() ;
+		for (Artista artista : currentUser.getArtistasFavoritados()) {
+			artistasFavoritos.add(artista);
+		}
+		return artistasFavoritos ;
+	}
+	*/
+	
+	public String desfavoritarMusica() {
+		//musicasFavoritas.remove(musicaEscolhida);
+		currentUser.getMusicasFavoritadas().remove(musicaEscolhida);
+		usuarioService.atualizar(currentUser);
+		currentUser = getCurrentUser() ;
+		musicaEscolhida.decrementaNumVezesFavorito();
+		musicaService.save(musicaEscolhida);
+		musicaEscolhida = null ;
+		return "/core/usuario/MyHome.xhtml?faces-redirect=true" ;
+	}
+	
+	public String desfavoritarArtista() {
+		//implementar
+		return "/core/usuario/MyHome.xhtml";
+	}
+	
+	public Musica getMusicaEscolhida() {
+		return musicaEscolhida;
+	}
+
+	public void setMusicaEscolhida(Musica musicaEscolhida) {
+		this.musicaEscolhida = musicaEscolhida;
+	}
+	
+	public Boolean desabilitarBotaoMusica() {
+		return musicaEscolhida == null ;
+	}
+	
+	public Boolean desabilitarBotaoArtista() {
+		return artistaEscolhido == null ;
+	}
+
+	public Artista getArtistaEscolhido() {
+		return artistaEscolhido;
+	}
+
+	public void setArtistaEscolhido(Artista artistaEscolhido) {
+		this.artistaEscolhido = artistaEscolhido;
+	}
+
+	public Set<Musica> getMusicas() {
+		currentUser = getCurrentUser() ;
+		return currentUser.getMusicasFavoritadas();
+	}
+
+	public void setMusicas(Set<Musica> musicas) {
+		this.musicas = musicas;
+	}
+	
 	
 }

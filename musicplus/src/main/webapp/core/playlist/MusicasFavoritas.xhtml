@@ -53,17 +53,10 @@
 			            <f:convertDateTime pattern="dd/MM/yyyy" />
 			        </h:outputText>
 			    </p:column>
-			    
-			    
-			    <f:facet name="footer">
-			        <p:commandButton type="submit" value="Favoritar" disabled="#{musicaController.desabilitarBotao()}"
-					action="#{musicaController.favoritar}" />
-			    </f:facet>
-			    
 			    			    
 			    <f:facet name="footer">
-			        <p:commandButton type="submit" value="Editar" disabled="#{musicaController.desabilitarBotao()}"
-					action="#{musicaController.editar}" />
+			        <p:commandButton type="submit" value="Desfavoritar" disabled="#{musicaController.desabilitarBotao()}"
+					action="#{playlistController.remover}" />
 			    </f:facet>
 			    
 			    

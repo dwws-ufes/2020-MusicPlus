@@ -50,6 +50,10 @@ public class Playlist extends PersistentObjectSupport implements Comparable<Play
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
+	
+	public void add(Musica m) {
+		this.musicas.add(m);
+	}
 
 	/** @see java.lang.Comparable#compareTo(java.lang.Object) */
 	@Override

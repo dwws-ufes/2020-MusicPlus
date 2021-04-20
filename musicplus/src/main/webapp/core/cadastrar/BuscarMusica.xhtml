@@ -55,6 +55,20 @@
 	            <p:column headerText="Artistas">
 	                <h:outputText value="#{m.imprimirArtistas()}" />
 	            </p:column>
+	            
+	            <p:column headerText="Duração">
+			    		<h:outputText value="#{m.duracao}">
+			            	<f:convertDateTime pattern="HH:mm:ss" />
+			    		</h:outputText>
+			    </p:column>
+			    
+	            <p:column headerText="Data de Lançamento">
+			        <h:outputText value="#{m.dataLancamento}">
+			            <f:convertDateTime pattern="dd/MM/yyyy" />
+			        </h:outputText>
+			    </p:column>
+			    
+			    
 	            <f:facet name="footer">
 	                <p:commandButton type="submit" value="Adicionar Artista" disabled="#{musicaController.desabilitarBotaoAdRmArtistaEmBuscar()}"
 				action="#{musicaController.redirectToMusicaArtistaAdicionar}" />

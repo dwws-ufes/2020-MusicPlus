@@ -19,22 +19,104 @@
 		<br/>
 		<br/>
     <ui:define name="body">
-        
-       <h2>
-       Hello,
-        <h:outputText value="#{sessionController.currentUser.nome}" />
-       </h2>
-       
-      <h3>Generos Favoritos: </h3>
- 		<div class="card">
-        	<h:outputText value="#{sessionController.currentUser.imprimirGeneros()}" />
-   	 	</div>
+        <h:form>
+        <h:outputText value="Bem vindo, #{sessionController.currentUser.nome}" style="font-size: 23px"/>       
+      		<br/>
+		<br/>
+		<br/>
+      	<p:outputLabel value ="Seus Generos Musicais Favoritos:"/>
+      	<br/>
+        <h:outputText value="#{sessionController.currentUser.imprimirGeneros()}" />
 
-	 <h3>Artistas Favoritos: </h3>
- 		<div class="card">
-        	<h:outputText value="#{sessionController.currentUser.imprimirArtistas()}" />
-   	 	</div>
+		<br/>
+		<br/>
+		<br/>
+
+
+        </h:form>
+	<h:form>
+	
+	 <h3>Suas Músicas Favoritas: </h3>
+	 			<div class="card">
+	 
+		<p:dataTable id="musicas" var="musica" value="#{sessionController.musicas}"
+		             selection="#{sessionController.musicaEscolhida}" rowKey="#{musica.id}">
+		    	
+		    	<f:ajax event="rowSelectRadio" render="musicas"/>
+		    	
+		    	<p:outputLabel value="Selecione a Música: "/>
+		    	<p:column selectionMode="single" style="width:50px;text-align:center"/>
+			    <p:column headerText="Nome">
+			        <h:outputText value="#{musica.nome}" />
+			    </p:column>
 		
+			    <p:column headerText="Idioma">
+			        <h:outputText value="#{musica.idioma}" />
+			    </p:column>
+		
+			    <p:column headerText="Gêneros">
+			        <h:outputText value="#{musica.imprimirGeneros()}" />
+			    </p:column>
+
+			    <p:column headerText="Artistas">
+			        <h:outputText value="#{musica.imprimirArtistas()}" />
+			    </p:column>
+			    
+			    <p:column headerText="Duração">
+			    		<h:outputText value="#{musica.duracao}">
+			            	<f:convertDateTime pattern="HH:mm:ss" />
+			    		</h:outputText>
+			    </p:column>
+			    
+			    <p:column headerText="Data de Lançamento">
+			        <h:outputText value="#{musica.dataLancamento}">
+			            <f:convertDateTime pattern="dd/MM/yyyy" />
+			        </h:outputText>
+			    </p:column>
+			    			    
+			    <f:facet name="footer">
+			        <p:commandButton type="submit" value="Desfavoritar" disabled="#{sessionController.desabilitarBotaoMusica()}"
+					action="#{sessionController.desfavoritarMusica()}" />
+			    </f:facet>
+			</p:dataTable>
+			</div>
+			    
+		</h:form>
+		<br/>
+				<br/>
+				<br/>
+				<br/>
+		
+		<h:form>
+		<h3>Seus Artistas Favoritos: </h3>
+			 			<div class="card">
+		
+		<p:dataTable id="artistas" var="artista" value="#{sessionController.currentUser.artistasFavoritados}"
+		             selection="#{sessionController.artistaEscolhido}" rowKey="#{artista.id}">
+		    	
+		    	<f:ajax event="rowSelectRadio" render="artistas"/>
+		    	
+		    	<p:column selectionMode="single" style="width:50px;text-align:center"/>
+			    <p:column headerText="Nome">
+			        <h:outputText value="#{artista.nome}" />
+			    </p:column>
+		
+			    <p:column headerText="Nacionalidade">
+			        <h:outputText value="#{artista.nacionalidade}" />
+			    </p:column>
+		
+			    <p:column headerText="Gêneros Músicais de destaque">
+			        <h:outputText value="#{artista.imprimirGeneros()}" />
+			    </p:column>
+
+			    			    
+			    <f:facet name="footer">
+			        <p:commandButton type="submit" value="Desfavoritar" disabled="#{sessionController.desabilitarBotaoArtista()}"
+					action="#{sessionController.desfavoritarArtista()}" />
+			    </f:facet>
+			</p:dataTable>
+			    </div>
+		</h:form>
 		
 					
 	</ui:define>

@@ -51,6 +51,10 @@ public class UsuarioServiceBean implements UsuarioService {
 		}
 		
 	}
+	
+	public void atualizar(Usuario usuario) {
+		usuarioDAO.save(usuario);
+	}
 
 
 }

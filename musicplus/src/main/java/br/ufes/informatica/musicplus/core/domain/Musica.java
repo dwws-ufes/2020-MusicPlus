@@ -189,4 +189,9 @@ public class Musica extends PersistentObjectSupport implements Comparable<Musica
 	public void incrementaNumVezesFavoritado() {
 		this.numVezesFavoritado = this.numVezesFavoritado + 1 ;
 	}
+
+	public void decrementaNumVezesFavorito() {
+		this.numVezesFavoritado = this.numVezesFavoritado - 1 ;
+		
+	}
 }

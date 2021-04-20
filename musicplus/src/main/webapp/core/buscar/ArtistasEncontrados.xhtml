@@ -46,13 +46,15 @@
 					action="#{artistaController.buscarMusicaPorArtista()}" />
 			    </f:facet>
 			    <f:facet name="footer">
-			        <p:commandButton type="submit" value="Editar" disabled="#{artistaController.desabilitarBotao()}"
+			        <p:commandButton type="submit" value="Editar"
+			        rendered="#{sessionController.admin == true}" 
+			        disabled="#{artistaController.desabilitarBotao()}"
 					action="#{artistaController.editar}" />
 			    </f:facet>
 			    
 			    <f:facet name="footer">
 			        <p:growl id="mensagem" showDetail="true"/>
-				    <p:commandButton value="Excluir" disabled="#{artistaController.desabilitarBotao()}"
+				    <p:commandButton value="Excluir" disabled="#{artistaController.desabilitarBotao()}" rendered="#{sessionController.admin == true}"
 				    action="#{artistaController.deleteArtista()}" udpate="mensagem" styleClass="p-mr-2" icon="pi pi-check">
     	        		<p:confirm header="Confirmação de Exclusão" message="Tem certeza que quer excluir esse artista?" icon="pi pi-exclamation-triangle"/>
        				 </p:commandButton>

@@ -82,8 +82,8 @@ public class ArtistaController extends JSFController {
 		todosOsPaises = TipoPais.todos();
 		allGeneros = true ;
 		allPaises = true; 
-		paisesEscolhidos = todosOsPaises ;
-		generosEscolhidos = todosOsGeneros ;
+		paisesEscolhidos = null ;
+		generosEscolhidos = null ;
 		numSugestoes = null; 
 	}
 
