@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+    <ui:define name="title">
+        <h:outputText value="#{msgs['artistas.title']}" />
+    </ui:define>
+
+    <ui:define name="description">
+        <h:outputText value="#{msgs['artistas.title.description']}" />
+    </ui:define>
+
+    <ui:define name="body">
+	<h:form id="selectForm">
+		<div class="card">
+		<p:dataTable id="artistasExternos" var="artistaExterno" value="#{artistaController.artistasExternos}"
+		             selection="#{artistaController.artistaExternoEscolhido}" rowKey="#{artistaExterno.uri}">
+		    	
+		    	<f:ajax event="rowSelectRadio" render="artistasExternos"/>
+		    	
+		    	<p:outputLabel value="Selecione o Artista: "/>
+		    	<p:column selectionMode="single" style="width:50px;text-align:center"/>
+			    <p:column headerText="Nome">
+			        <h:outputText value="#{artistaExterno.name}" />
+			    </p:column>
+			    
+			    <f:facet name="footer">
+			        <p:commandButton type="submit" value="Ver Musicas" disabled="#{artistaController.artistaExternoEscolhido == null}"
+					action="#{artistaController.buscarMusicasPorArtistaExterno()}" />
+			    </f:facet>
+			    
+        	</p:dataTable>
+    		</div>
+    	</h:form>
+    </ui:define>
+</ui:composition>
