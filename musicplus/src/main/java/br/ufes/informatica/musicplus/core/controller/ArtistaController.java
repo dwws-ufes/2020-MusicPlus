@@ -355,7 +355,6 @@ public class ArtistaController extends JSFController {
 	}
 	
 	public String buscarMusicasPorArtistaExterno() {
-		System.out.println(offset);
 		musicasExternas = new ArrayList<MusicaExterna>();
 		String query = "SELECT DISTINCT ?property ?isValueOf ?title ?length\n"
 				+ "WHERE {\n"
