@@ -87,6 +87,14 @@ public class ArtistaController extends JSFController {
 
 	private String mensagem ;
 	
+	private int page = 0;
+	
+	private int limit = 10;
+	
+	private int offset = 0;
+	
+	private boolean ultimaPaginaAlcancada = false;
+	
 	@PostConstruct
 	public void init() {
 		auxClean() ;
@@ -101,6 +109,7 @@ public class ArtistaController extends JSFController {
 		paisesEscolhidos = null ;
 		generosEscolhidos = null ;
 		numSugestoes = null; 
+		offset = offset + page*limit;
 	}
 
 	public boolean warningVazioGenero() {
@@ -346,18 +355,19 @@ public class ArtistaController extends JSFController {
 	}
 	
 	public String buscarMusicasPorArtistaExterno() {
+		System.out.println(offset);
 		musicasExternas = new ArrayList<MusicaExterna>();
-		System.out.println(artistaExternoEscolhido.getName());
-		System.out.println(artistaExternoEscolhido.getUri());
 		String query = "SELECT DISTINCT ?property ?isValueOf ?title ?length\n"
 				+ "WHERE {\n"
 				+ String.format("?isValueOf ?property <%s> .\n",artistaExternoEscolhido.getUri())
 				+ "?isValueOf <http://purl.org/dc/elements/1.1/title> ?title .\n"
 				+ "?isValueOf <http://purl.org/ontology/mo/length> ?length .\n"
-				+ "}LIMIT 10";
+				+ String.format("}LIMIT %s\n",limit)
+				+ String.format("OFFSET %s",offset);
 		String sparqlEndpoint = "http://dbtune.org/musicbrainz/sparql";
 		QueryExecution queryExecution = QueryExecutionFactory.sparqlService(sparqlEndpoint,query);
 		ResultSet results = queryExecution.execSelect();
+		int contador = 1;
 		while(results.hasNext()) {
 			QuerySolution querySolution = results.next();
 			Literal title = querySolution.getLiteral("title");
@@ -373,12 +383,30 @@ public class ArtistaController extends JSFController {
 			musicaExterna.setName(title.getString());
 			musicaExterna.setDuracao(duracao);
 			musicasExternas.add(musicaExterna);
+			contador = contador + 1;
+		}
+		if(contador < limit) {
+			ultimaPaginaAlcancada = true;
+		}
+		else {
+			ultimaPaginaAlcancada = false;
 		}
 		return musicasExternasEncontradas();
 	}
 	
+	public void avancarPagina() {
+		page = page + 1;
+		offset = offset + limit;
+		buscarMusicasPorArtistaExterno();
+	}
+	
+	public void voltarPagina() {
+		page = page - 1;
+		offset = offset - limit;
+		buscarMusicasPorArtistaExterno();
+	}
+	
 	public String deletarMusicaExterna() {
-		System.out.println(musicaExternaEscolhida.getName());
 		musicasExternas.remove(musicaExternaEscolhida);
 		return musicasExternasEncontradas();
 	}
@@ -511,6 +539,30 @@ public class ArtistaController extends JSFController {
 
 	public void setMusicaExternaEscolhida(MusicaExterna musicaExternaEscolhida) {
 		this.musicaExternaEscolhida = musicaExternaEscolhida;
+	}
+
+	public int getPage() {
+		return page;
+	}
+
+	public void setPage(int page) {
+		this.page = page;
+	}
+
+	public int getOffset() {
+		return offset;
+	}
+
+	public void setOffset(int offset) {
+		this.offset = offset;
+	}
+
+	public boolean isUltimaPaginaAlcancada() {
+		return ultimaPaginaAlcancada;
+	}
+
+	public void setUltimaPaginaAlcancada(boolean ultimaPaginaAlcancada) {
+		this.ultimaPaginaAlcancada = ultimaPaginaAlcancada;
 	}
 	
 	

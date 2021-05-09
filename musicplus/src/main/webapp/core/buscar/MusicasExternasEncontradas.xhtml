@@ -37,17 +37,17 @@
 			    </p:column>
 			    	    	    
 			    <f:facet name="footer">
-				    <p:growl id="mensagem" showDetail="true"/>
-					    <p:commandButton value="Excluir" disabled="#{artistaController.musicaExternaEscolhida == null}"
-					    action="#{artistaController.deletarMusicaExterna()}" udpate="mensagem" styleClass="p-mr-2" icon="pi pi-check">
-	    	        		<p:confirm header="Confirmação de Exclusão" message="Tem certeza que deseja remover esta da lista música?" icon="pi pi-exclamation-triangle"/>
-	       				 </p:commandButton>
-	       				  <p:confirmDialog global="true" showEffect="fade" hideEffect="fade" responsive="true" width="350">
-	           				 <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no ui-button-flat"/>
-	           				 <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" />
-	       				 </p:confirmDialog>
-       			</f:facet>
-			    
+			        <p:commandButton type="submit" value="Voltar" disabled="#{artistaController.page == 0}">
+			        	<f:ajax listener="#{artistaController.voltarPagina}" render="musicasExternas" event="click"/>
+			        </p:commandButton>
+			    </f:facet>
+
+			    <f:facet name="footer">
+			        <p:commandButton type="submit" value="Avançar" disabled="#{artistaController.ultimaPaginaAlcancada}">
+						<f:ajax listener="#{artistaController.avancarPagina}" render="musicasExternas" event="click"/>
+					</p:commandButton>
+			    </f:facet>
+			    	    
         	</p:dataTable>
     		</div>
     	</h:form>
