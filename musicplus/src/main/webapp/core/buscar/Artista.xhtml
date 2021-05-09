@@ -30,8 +30,11 @@
 			<p:outputLabel value="OBS: Caso o campo não seja preenchido, todos os artistas cadastrados no sistema serão retornados."/>
 			<br />	
 			<br />			
-			<p:commandButton id ="myButtonId" type="submit" value="Procurar Artista"
+			<p:commandButton id ="myButtonId" type="submit" value="Busca Externa"
 			action="#{artistaController.buscarArtistasExternos()}"/>
+			
+			<p:commandButton id ="myButtonId2" type="submit" value="Busca Interna"
+			action="#{artistaController.buscarArtistas()}"/>
 		</h:form>
     
     </ui:define>
