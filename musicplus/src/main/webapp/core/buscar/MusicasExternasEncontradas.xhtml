@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:adm="http://github.com/adminfaces"
+    template="/WEB-INF/templates/template.xhtml">
+	
+
+    <ui:define name="title">
+        <h:outputText value="#{msgs['musicas.title']}" />
+    </ui:define>
+
+    <ui:define name="description">
+        <h:outputText value="#{msgs['musicas.title.description']}" />
+    </ui:define>
+
+    <ui:define name="body">
+	<h:form id="selectForm">
+		<div class="card">
+		<p:dataTable id="musicasExternas" var="musicaExterna" value="#{artistaController.musicasExternas}"
+		             selection="#{artistaController.musicaExternaEscolhida}" rowKey="#{musicaExterna.name}">
+		    	
+		    	<f:ajax event="rowSelectRadio" render="musicasExternas"/>
+		    	
+		    	<p:outputLabel value="Selecione a Música: "/>
+		    	<p:column selectionMode="single" style="width:50px;text-align:center"/>
+			    <p:column headerText="Nome">
+			        <h:outputText value="#{musicaExterna.name}" />
+			    </p:column>
+			    
+			    <p:column headerText="Duração">
+			    		<h:outputText value="#{musicaExterna.duracao}">
+			            	<f:convertDateTime pattern="HH:mm:ss" />
+			    		</h:outputText>
+			    </p:column>
+			    	    	    
+			    <f:facet name="footer">
+			        <p:commandButton type="submit" value="Voltar" disabled="#{artistaController.page == 0}">
+			        	<f:ajax listener="#{artistaController.voltarPagina}" render="musicasExternas" event="click"/>
+			        </p:commandButton>
+			    </f:facet>
+
+			    <f:facet name="footer">
+			        <p:commandButton type="submit" value="Avançar" disabled="#{artistaController.ultimaPaginaAlcancada}">
+						<f:ajax listener="#{artistaController.avancarPagina}" render="musicasExternas" event="click"/>
+					</p:commandButton>
+			    </f:facet>
+			    	    
+        	</p:dataTable>
+    		</div>
+    	</h:form>
+    </ui:define>
+</ui:composition>
