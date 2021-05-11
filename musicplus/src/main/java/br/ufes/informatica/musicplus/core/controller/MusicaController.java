@@ -1,5 +1,7 @@
 package br.ufes.informatica.musicplus.core.controller;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -8,6 +10,12 @@ import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.enterprise.inject.Model;
+
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QuerySolution;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.rdf.model.Literal;
 
 import br.ufes.inf.nemo.jbutler.ejb.controller.JSFController;
 import br.ufes.informatica.musicplus.core.application.ArtistaService;
@@ -77,7 +85,7 @@ public class MusicaController extends JSFController {
 	
 	private TipoIdioma idiomaEscolhido ;
 		
-	private Date duracao;
+	private String duracao;
 
 	private Date dataDeLancamento ;
 	
@@ -499,7 +507,7 @@ public class MusicaController extends JSFController {
 		this.todosOsGeneros = todosOsGeneros;
 	}
 	
-	public void setDuracao(Date duracao) {
+	public void setDuracao(String duracao) {
 		this.duracao = duracao;
 	}
 
@@ -507,7 +515,7 @@ public class MusicaController extends JSFController {
 		this.dataDeLancamento = dataDeLancamento;
 	}
 	
-	public Date getDuracao() {
+	public String getDuracao() {
 		return duracao;
 	}
 	
@@ -545,5 +553,40 @@ public class MusicaController extends JSFController {
 
 	public void setArtistas(List<Artista> artistas) {
 		this.artistas = artistas;
+	}
+	
+	public void suggestDescription() {
+		String name= nomeDaMusica;
+		if (name != null && name.length() > 3) {
+			String query= "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
+					+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
+					+ "SELECT ?tempo?Data?Genero\n"
+					+ "WHERE {\n"
+					+ "?uri a dbo:Song;\n"
+					+ "dbp:name \"Toxic\"@en;\n"
+					+ "dbo:runtime?tempo;\n"
+					+ "dbo:releaseDate?Data;\n"
+					+ "dbp:genre?Genero.\n"
+					+ "}";
+			
+			QueryExecution queryExecution =
+				QueryExecutionFactory.sparqlService("https://dbpedia.org/sparql",query);
+			ResultSet results = queryExecution.execSelect();
+					
+			if (results.hasNext()) {
+				QuerySolution querySolution = results.next();
+				Literal literal1 = querySolution.getLiteral("tempo");
+				duracao = "" + literal1.getValue();
+				Literal literal2 = querySolution.getLiteral("Data");
+				Date date1;
+				try {
+					date1 = new SimpleDateFormat("yyyy-MM-dd").parse("" + literal2.getValue());
+					dataDeLancamento = date1;
+				} catch (ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}  	
+			}
+		}
 	}
 }
