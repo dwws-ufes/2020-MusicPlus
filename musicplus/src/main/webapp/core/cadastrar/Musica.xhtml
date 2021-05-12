@@ -27,8 +27,8 @@
 			<p:outputLabel value="Nome *"/>
 					<br />
 			<p:inputText id="nome" value="#{musicaController.nomeDaMusica}">
-				<f:ajax event= "blur" listener= "#{musicaController.suggestDescription}"
-					execute= "@this" render= "time mask_c"/>
+				<f:ajax event= "blur" listener= "#{musicaController.suggestMusicAttributes}"
+					execute= "@this" render= "time mask_c grid"/>
 			</p:inputText>
 		<br />	
 		<br />

@@ -3,6 +3,7 @@ package br.ufes.informatica.musicplus.core.controller;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -555,7 +556,7 @@ public class MusicaController extends JSFController {
 		this.artistas = artistas;
 	}
 	
-	public void suggestDescription() {
+	public void suggestMusicAttributes() {
 		String name= nomeDaMusica;
 		if (name != null && name.length() > 3) {
 			String query= "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
@@ -575,13 +576,57 @@ public class MusicaController extends JSFController {
 					
 			if (results.hasNext()) {
 				QuerySolution querySolution = results.next();
-				Literal literal1 = querySolution.getLiteral("tempo");
-				duracao = "" + literal1.getValue();
-				Literal literal2 = querySolution.getLiteral("Data");
-				Date date1;
+				Literal tempoObtido = querySolution.getLiteral("tempo");
+				duracao = "" + tempoObtido.getValue();
+				Literal dataLancamentoLiteral = querySolution.getLiteral("Data");
+				Literal generoLiteral = querySolution.getLiteral("Genero");
+				
+				String generoObtido = ""+generoLiteral.getValue();
+								
+				TipoGenero[] generosList= new TipoGenero[8]; 
+				
+				List<TipoGenero> tipoGeneroList= new ArrayList<TipoGenero>();
+				
+				if(generoObtido.contains("pop") || generoObtido.contains("Pop")) {
+					tipoGeneroList.add(TipoGenero.Pop);
+				}
+				
+				if(generoObtido.contains("indie") || generoObtido.contains("Indie")) {
+					tipoGeneroList.add(TipoGenero.Indie);
+				}
+				
+				if(generoObtido.contains("samba") || generoObtido.contains("Samba")) {
+					tipoGeneroList.add(TipoGenero.Samba);
+				}
+				
+				if(generoObtido.contains("electronic") || generoObtido.contains("Electronic")) {
+					tipoGeneroList.add(TipoGenero.Eletronica);
+				}
+				
+				if(generoObtido.contains("rock") || generoObtido.contains("Rock")) {
+					tipoGeneroList.add(TipoGenero.Rock);
+				}
+				
+				if(generoObtido.contains("jazz") || generoObtido.contains("Jazz")) {
+					tipoGeneroList.add(TipoGenero.Jazz);
+				}
+				
+				if(generoObtido.contains("country") || generoObtido.contains("Country")) {
+					tipoGeneroList.add(TipoGenero.Country);
+				}
+				
+				if(generoObtido.contains("gospel") || generoObtido.contains("Gospel")) {
+					tipoGeneroList.add(TipoGenero.Gospel);
+				}
+				
+				generosList = tipoGeneroList.toArray(generosList);
+				
+				generosEscolhidos = generosList;
+				
+				Date dataLancamentoObtido;
 				try {
-					date1 = new SimpleDateFormat("yyyy-MM-dd").parse("" + literal2.getValue());
-					dataDeLancamento = date1;
+					dataLancamentoObtido = new SimpleDateFormat("yyyy-MM-dd").parse("" + dataLancamentoLiteral.getValue());
+					dataDeLancamento = dataLancamentoObtido;
 				} catch (ParseException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
