@@ -563,149 +563,80 @@ public class MusicaController extends JSFController {
 		
 		String name= nomeDaMusica;
 		if (name != null && name.length() > 3) {
+			String nameToSearch = "\"" + name + "\"" ;
 			String query = "";
-			if(name.equals("Toxic")) {
-				 query= "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
-						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
-						+ "SELECT ?Tempo?Data?Genero\n"
-						+ "WHERE {\n"
-						+ "?uri a dbo:Song;\n"
-						+ "dbp:name \"Toxic\"@en;\n"
-						+ "dbo:runtime?Tempo;\n"
-						+ "dbo:releaseDate?Data;\n"
-						+ "dbp:genre?Genero.\n"
-						+ "}";
-			}
-			else if (name.equals("Losing My Religion")) {
-				query = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
-						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
-						+ "SELECT ?Tempo?Data?Genero\n"
-						+ "WHERE {\n"
-						+ "?uri a dbo:Song;\n"
-						+ "dbp:name \"Losing My Religion\"@en;\n"
-						+ " dbo:runtime?Tempo;\n"
-						+ "dbo:releaseDate?Data;\n"
-						+ "dbp:genre?Genero.\n"
-						+ "}";
-			}
-			
-			else if (name.equals("Iris")) {
-				query = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
-						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
-						+ "SELECT ?Tempo?Data?Genero\n"
-						+ "WHERE {\n"
-						+ "?uri a dbo:Song;\n"
-						+ "dbp:name \"Iris\"@en;\n"
-						+ " dbo:runtime?Tempo;\n"
-						+ "dbo:releaseDate?Data;\n"
-						+ "dbp:genre?Genero.\n"
-						+ "\n"
-						+ "}";
-			}
-			
-			else if (name.equals("Sex on Fire")) {
-				query = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
-						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
-						+ "SELECT ?Tempo?Data?Genero\n"
-						+ "WHERE {\n"
-						+ "?uri a dbo:Song;\n"
-						+ "dbp:name \"Sex on Fire\"@en;\n"
-						+ "dbo:runtime?Tempo;\n"
-						+ "dbo:releaseDate?Data;\n"
-						+ "dbp:genre?Genero.\n"
-						+ "}";
-			}
-			
-			else if (name.equals("Use Somebody")) {
-				query = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
-						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
-						+ "SELECT ?Tempo?Data?Genero\n"
-						+ "WHERE {\n"
-						+ "?uri a dbo:Song;\n"
-						+ "dbp:name \"Use Somebody\"@en;\n"
-						+ "dbo:runtime?Tempo;\n"
-						+ "dbo:releaseDate?Data;\n"
-						+ "dbp:genre?Genero.\n"
-						+ "}";
-			}
-			else if (name.equals("Umbrella")) {
-				query = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
-						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
-						+ "SELECT ?Tempo?Data?Genero\n"
-						+ "WHERE {\n"
-						+ "?uri a dbo:Song;\n"
-						+ "dbp:name \"Umbrella\"@en;\n"
-						+ " dbo:runtime?Tempo;\n"
-						+ "dbo:releaseDate?Data;\n"
-						+ "dbp:genre?Genero.\n"
-						+ "}";
-			}
-			else {
-				return;
-			}
-			
-			
-			QueryExecution queryExecution =
-				QueryExecutionFactory.sparqlService("https://dbpedia.org/sparql",query);
-			ResultSet results = queryExecution.execSelect();
+			query= "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
+				+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
+				+ "SELECT ?Tempo?Data?Genero\n"
+				+ "WHERE {\n"
+				+ "?uri a dbo:Song;\n"
+				+ "dbp:name" + nameToSearch + "@en;\n"
+				+ "dbo:runtime?Tempo;\n"
+				+ "dbo:releaseDate?Data;\n"
+				+ "dbp:genre?Genero.\n"
+				+ "}";
+	
+			try {
+				QueryExecution queryExecution =
+					QueryExecutionFactory.sparqlService("https://dbpedia.org/sparql",query);
+				ResultSet results = queryExecution.execSelect();
+						
+				if (results.hasNext()) {
+					QuerySolution querySolution = results.next();
+					Literal tempoObtido = querySolution.getLiteral("Tempo");
+					duracao = "" + tempoObtido.getValue();
+					Literal dataLancamentoLiteral = querySolution.getLiteral("Data");
+					Literal generoLiteral = querySolution.getLiteral("Genero");
 					
-			if (results.hasNext()) {
-				QuerySolution querySolution = results.next();
-				Literal tempoObtido = querySolution.getLiteral("Tempo");
-				duracao = "" + tempoObtido.getValue();
-				Literal dataLancamentoLiteral = querySolution.getLiteral("Data");
-				Literal generoLiteral = querySolution.getLiteral("Genero");
-				
-				String generoObtido = ""+generoLiteral.getValue();
-								
-				TipoGenero[] generosList= new TipoGenero[8]; 
-				
-				List<TipoGenero> tipoGeneroList= new ArrayList<TipoGenero>();
-				
-				if(generoObtido.contains("pop") || generoObtido.contains("Pop")) {
-					tipoGeneroList.add(TipoGenero.Pop);
+					String generoObtido = ""+generoLiteral.getValue();
+									
+					TipoGenero[] generosList= new TipoGenero[8]; 
+					
+					List<TipoGenero> tipoGeneroList= new ArrayList<TipoGenero>();
+					
+					if(generoObtido.contains("pop") || generoObtido.contains("Pop")) {
+						tipoGeneroList.add(TipoGenero.Pop);
+					}
+					
+					if(generoObtido.contains("indie") || generoObtido.contains("Indie")) {
+						tipoGeneroList.add(TipoGenero.Indie);
+					}
+					
+					if(generoObtido.contains("electronic") || generoObtido.contains("Electronic")) {
+						tipoGeneroList.add(TipoGenero.Eletronica);
+					}
+					
+					if(generoObtido.contains("rock") || generoObtido.contains("Rock")) {
+						tipoGeneroList.add(TipoGenero.Rock);
+					}
+					
+					if(generoObtido.contains("jazz") || generoObtido.contains("Jazz")) {
+						tipoGeneroList.add(TipoGenero.Jazz);
+					}
+					
+					if(generoObtido.contains("country") || generoObtido.contains("Country")) {
+						tipoGeneroList.add(TipoGenero.Country);
+					}
+					
+					if(generoObtido.contains("gospel") || generoObtido.contains("Gospel")) {
+						tipoGeneroList.add(TipoGenero.Gospel);
+					}
+					
+					generosList = tipoGeneroList.toArray(generosList);
+					
+					generosEscolhidos = generosList;
+					
+					Date dataLancamentoObtido;
+					try {
+						dataLancamentoObtido = new SimpleDateFormat("yyyy-MM-dd").parse("" + dataLancamentoLiteral.getValue());
+						dataDeLancamento = dataLancamentoObtido;
+					} catch (ParseException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} 
 				}
-				
-				if(generoObtido.contains("indie") || generoObtido.contains("Indie")) {
-					tipoGeneroList.add(TipoGenero.Indie);
-				}
-				
-				if(generoObtido.contains("samba") || generoObtido.contains("Samba")) {
-					tipoGeneroList.add(TipoGenero.Samba);
-				}
-				
-				if(generoObtido.contains("electronic") || generoObtido.contains("Electronic")) {
-					tipoGeneroList.add(TipoGenero.Eletronica);
-				}
-				
-				if(generoObtido.contains("rock") || generoObtido.contains("Rock")) {
-					tipoGeneroList.add(TipoGenero.Rock);
-				}
-				
-				if(generoObtido.contains("jazz") || generoObtido.contains("Jazz")) {
-					tipoGeneroList.add(TipoGenero.Jazz);
-				}
-				
-				if(generoObtido.contains("country") || generoObtido.contains("Country")) {
-					tipoGeneroList.add(TipoGenero.Country);
-				}
-				
-				if(generoObtido.contains("gospel") || generoObtido.contains("Gospel")) {
-					tipoGeneroList.add(TipoGenero.Gospel);
-				}
-				
-				generosList = tipoGeneroList.toArray(generosList);
-				
-				generosEscolhidos = generosList;
-				
-				Date dataLancamentoObtido;
-				try {
-					dataLancamentoObtido = new SimpleDateFormat("yyyy-MM-dd").parse("" + dataLancamentoLiteral.getValue());
-					dataDeLancamento = dataLancamentoObtido;
-				} catch (ParseException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}  	
+			}catch (Exception e) {
+				e.printStackTrace();
 			}
 		}
 	}
