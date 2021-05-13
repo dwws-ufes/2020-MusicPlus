@@ -19,6 +19,9 @@
     <ui:define name="body">
 	<h:form id="selectForm">
 		<div class="card">
+		<a style="float: right;"
+					href="#{facesContext.externalContext.requestContextPath}/data/music">RDF
+					/XML</a>
 		<p:dataTable id="musicas" var="musica" value="#{musicaController.musicas}"
 		             selection="#{musicaController.musicaEscolhida}" rowKey="#{musica.id}">
 		    	
@@ -76,7 +79,6 @@
 	           				 <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" />
 	       				 </p:confirmDialog>
        			</f:facet>
-			    
         	</p:dataTable>
     		</div>
     	</h:form>

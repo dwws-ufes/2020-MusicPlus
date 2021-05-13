@@ -557,18 +557,93 @@ public class MusicaController extends JSFController {
 	}
 	
 	public void suggestMusicAttributes() {
+		duracao= null;
+		generosEscolhidos=null;
+		dataDeLancamento=null;
+		
 		String name= nomeDaMusica;
 		if (name != null && name.length() > 3) {
-			String query= "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
-					+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
-					+ "SELECT ?tempo?Data?Genero\n"
-					+ "WHERE {\n"
-					+ "?uri a dbo:Song;\n"
-					+ "dbp:name \"Toxic\"@en;\n"
-					+ "dbo:runtime?tempo;\n"
-					+ "dbo:releaseDate?Data;\n"
-					+ "dbp:genre?Genero.\n"
-					+ "}";
+			String query = "";
+			if(name.equals("Toxic")) {
+				 query= "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
+						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
+						+ "SELECT ?Tempo?Data?Genero\n"
+						+ "WHERE {\n"
+						+ "?uri a dbo:Song;\n"
+						+ "dbp:name \"Toxic\"@en;\n"
+						+ "dbo:runtime?Tempo;\n"
+						+ "dbo:releaseDate?Data;\n"
+						+ "dbp:genre?Genero.\n"
+						+ "}";
+			}
+			else if (name.equals("Losing My Religion")) {
+				query = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
+						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
+						+ "SELECT ?Tempo?Data?Genero\n"
+						+ "WHERE {\n"
+						+ "?uri a dbo:Song;\n"
+						+ "dbp:name \"Losing My Religion\"@en;\n"
+						+ " dbo:runtime?Tempo;\n"
+						+ "dbo:releaseDate?Data;\n"
+						+ "dbp:genre?Genero.\n"
+						+ "}";
+			}
+			
+			else if (name.equals("Iris")) {
+				query = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
+						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
+						+ "SELECT ?Tempo?Data?Genero\n"
+						+ "WHERE {\n"
+						+ "?uri a dbo:Song;\n"
+						+ "dbp:name \"Iris\"@en;\n"
+						+ " dbo:runtime?Tempo;\n"
+						+ "dbo:releaseDate?Data;\n"
+						+ "dbp:genre?Genero.\n"
+						+ "\n"
+						+ "}";
+			}
+			
+			else if (name.equals("Sex on Fire")) {
+				query = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
+						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
+						+ "SELECT ?Tempo?Data?Genero\n"
+						+ "WHERE {\n"
+						+ "?uri a dbo:Song;\n"
+						+ "dbp:name \"Sex on Fire\"@en;\n"
+						+ "dbo:runtime?Tempo;\n"
+						+ "dbo:releaseDate?Data;\n"
+						+ "dbp:genre?Genero.\n"
+						+ "}";
+			}
+			
+			else if (name.equals("Use Somebody")) {
+				query = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
+						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
+						+ "SELECT ?Tempo?Data?Genero\n"
+						+ "WHERE {\n"
+						+ "?uri a dbo:Song;\n"
+						+ "dbp:name \"Use Somebody\"@en;\n"
+						+ "dbo:runtime?Tempo;\n"
+						+ "dbo:releaseDate?Data;\n"
+						+ "dbp:genre?Genero.\n"
+						+ "}";
+			}
+			else if (name.equals("Umbrella")) {
+				query = "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
+						+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
+						+ "SELECT ?Tempo?Data?Genero\n"
+						+ "WHERE {\n"
+						+ "?uri a dbo:Song;\n"
+						+ "dbp:name \"Umbrella\"@en;\n"
+						+ " dbo:runtime?Tempo;\n"
+						+ "dbo:releaseDate?Data;\n"
+						+ "dbp:genre?Genero.\n"
+						+ "}";
+			}
+			else {
+				return;
+			}
+			
 			
 			QueryExecution queryExecution =
 				QueryExecutionFactory.sparqlService("https://dbpedia.org/sparql",query);
@@ -576,7 +651,7 @@ public class MusicaController extends JSFController {
 					
 			if (results.hasNext()) {
 				QuerySolution querySolution = results.next();
-				Literal tempoObtido = querySolution.getLiteral("tempo");
+				Literal tempoObtido = querySolution.getLiteral("Tempo");
 				duracao = "" + tempoObtido.getValue();
 				Literal dataLancamentoLiteral = querySolution.getLiteral("Data");
 				Literal generoLiteral = querySolution.getLiteral("Genero");
