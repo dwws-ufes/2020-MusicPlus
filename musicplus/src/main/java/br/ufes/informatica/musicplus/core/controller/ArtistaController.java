@@ -1,6 +1,9 @@
 package br.ufes.informatica.musicplus.core.controller;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -564,6 +567,97 @@ public class ArtistaController extends JSFController {
 		this.ultimaPaginaAlcancada = ultimaPaginaAlcancada;
 	}
 	
+	public void suggestArtistsAttributes(){
+		generosEscolhidos = null;
+		nacionalidade = null;
+		String name= nomeArtista;
+		if (name != null && name.length() > 3) {
+			String nameToSearch = "\"" + name + "\"" ;
+			String query = "";
+			String query2 = "";
+			
+			query= "PREFIX dbo: <http://dbpedia.org/ontology/>\n"
+					+ "PREFIX dbp: <http://dbpedia.org/property/>\n"
+					+ "SELECT ?Genero?Origin\n"
+					+ "WHERE {\n"
+					+ "?uri a dbo:Band;\n"
+					+ "dbp:name" +nameToSearch +"@en;\n"
+					+ "dbo:genre ?Genero;\n"
+					+ "dbp:origin ?Origin.\n"
+					+ "}";
+			
 	
+			try {
+				QueryExecution queryExecution =
+					QueryExecutionFactory.sparqlService("https://dbpedia.org/sparql",query);
+				ResultSet results = queryExecution.execSelect();
+						
+				if (results.hasNext()) {
+					QuerySolution querySolution = results.next();
+					
+					String nacionalidadeObtida = ""+ querySolution.get("Origin");
+					String generoObtido= ""+ querySolution.get("Genero");
+					
+				
+					
+					TipoPais pais = TipoPais.Brasil;
+					
+					if(nacionalidadeObtida.contains("England")) {
+						pais = TipoPais.Reino_Unido;
+					}
+					else if(nacionalidadeObtida.contains("U.S")) {
+						pais = TipoPais.EUA;
+					}
+					else if(nacionalidadeObtida.contains("Brazillian")) {
+						pais = TipoPais.Brasil;
+					}
+					else if(nacionalidadeObtida.contains("Mexican")) {
+						pais = TipoPais.Mexico;
+					}
+					
+					nacionalidade = pais;
+														
+					TipoGenero[] generosList= new TipoGenero[8]; 
+					
+					List<TipoGenero> tipoGeneroList= new ArrayList<TipoGenero>();
+					
+					if(generoObtido.contains("pop") || generoObtido.contains("Pop")) {
+						tipoGeneroList.add(TipoGenero.Pop);
+					}
+					
+					if(generoObtido.contains("indie") || generoObtido.contains("Indie")) {
+						tipoGeneroList.add(TipoGenero.Indie);
+					}
+					
+					if(generoObtido.contains("electronic") || generoObtido.contains("Electronic")) {
+						tipoGeneroList.add(TipoGenero.Eletronica);
+					}
+					
+					if(generoObtido.contains("rock") || generoObtido.contains("Rock")) {
+						tipoGeneroList.add(TipoGenero.Rock);
+					}
+					
+					if(generoObtido.contains("jazz") || generoObtido.contains("Jazz")) {
+						tipoGeneroList.add(TipoGenero.Jazz);
+					}
+					
+					if(generoObtido.contains("country") || generoObtido.contains("Country")) {
+						tipoGeneroList.add(TipoGenero.Country);
+					}
+					
+					if(generoObtido.contains("gospel") || generoObtido.contains("Gospel")) {
+						tipoGeneroList.add(TipoGenero.Gospel);
+					}
+					
+					generosList = tipoGeneroList.toArray(generosList);
+					
+					generosEscolhidos = generosList;
+					
+				}
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
 	
 }

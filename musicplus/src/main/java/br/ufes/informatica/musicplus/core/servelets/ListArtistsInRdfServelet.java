@@ -52,14 +52,11 @@ public class ListArtistsInRdfServelet extends HttpServlet {
 		
 		// Classes do vocabulário
 		Resource moArtist = ResourceFactory.createResource(moNS + "MusicArtist");
-		//Resource moTrack = ResourceFactory.createResource(moNS + "Track");
 		
 		// Propriedades(predicados) do vocabulário
-		Property moDiscography = ResourceFactory.createProperty(moNS + "discography");
+		Property moGenre = ResourceFactory.createProperty(moNS + "genre");
 		Property moOrigin = ResourceFactory.createProperty(moNS + "origin");
-		Property moLength = ResourceFactory.createProperty(moNS + "length");
 		Property moTrack = ResourceFactory.createProperty(moNS + "track");
-		Property dcLanguage = ResourceFactory.createProperty(dcNS + "language");
 
 		// Produzir o modelo em memória
 		for(Artista artista: artistas) {
@@ -67,18 +64,12 @@ public class ListArtistsInRdfServelet extends HttpServlet {
 			Resource artistResource = model.createResource(myNS + artista.getId());
 			artistResource.addProperty(RDF.type, moArtist);
 			artistResource.addProperty(RDFS.label, artista.getNome());
-			artistResource.addProperty(moDiscography, artista.getColecoes().toString());
+			artistResource.addProperty(moGenre, artista.getGenero().toString());
 			artistResource.addProperty(moOrigin, artista.getNacionalidade().toString());
 			
 			Set<Musica> musicasDoArtista = artista.getMusicas();
 			for(Musica musicadoArtista: musicasDoArtista) {
 				artistResource.addProperty(moTrack, musicadoArtista.getNome());
-//				Resource musicResource = model.createResource(myNS + musicadoArtista.getId());
-//				musicResource.addProperty(RDF.type, moTrack);
-//				musicResource.addProperty(RDFS.label, musicadoArtista.getNome());
-//				musicResource.addProperty(moLength, df.format(musicadoArtista.getDuracao()));
-//				musicResource.addProperty(dcLanguage, musicadoArtista.getIdioma().toString());	
-//				artistResource.(moTrack, musicResource);
 			}
 		}
 		

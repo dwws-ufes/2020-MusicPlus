@@ -27,7 +27,10 @@
 			<p:outputLabel value="Nome *"/>
 					<br />
 			
-			<p:inputText id="nome" value="#{artistaController.nomeArtista}" />
+			<p:inputText id="nome" value="#{artistaController.nomeArtista}" >
+			<f:ajax event= "blur" listener= "#{artistaController.suggestArtistsAttributes}"
+					execute= "@this" render= "grid labeled"/>
+			</p:inputText>
 		<br />	
 		<br />
 			<p:outputLabel value="Generos Musicais"/>

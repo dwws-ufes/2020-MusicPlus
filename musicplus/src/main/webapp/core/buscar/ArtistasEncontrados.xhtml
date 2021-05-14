@@ -19,6 +19,8 @@
     
 	<h:form id="selectForm">
 		<div class="card">
+		<a style="float: right;" href="#{facesContext.externalContext.requestContextPath}/data/artists">RDF/XML</a>
+		
 		<p:dataTable id="artistas" var="artista" value="#{artistaController.artistas}"
 		             selection="#{artistaController.artistaEscolhido}" rowKey="#{artista.id}">
 		    	
